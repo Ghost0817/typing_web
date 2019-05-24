@@ -1,0 +1,123 @@
+{% extends 'teacher.html.twig' %}
+
+{% block title %}{% trans %}Bicheech.com{% endtrans %} {% trans %}Teacher Portal{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+    <h3 class="pageHeader">{%trans%}Import Students{%endtrans%}<small> {%trans%}import your entire student roster{%endtrans%}</small></h3>
+
+    <div class="alter-nsg">
+      {% for flash_message in app.session.flashbag.get('a_success') %}
+          <div class="msg-error">
+              {{ flash_message|raw }}
+          </div>
+      {% endfor %}
+    </div>
+    <div class="panel panel-default step-1">
+	    <div class="panel-heading">{%trans%}Step #1 - Upload Data{%endtrans%}</div>
+	    <div class="panel-body">
+	    	<img src="{{ asset('teacher/images/excel_screen.png') }}" ALIGN=RIGHT />
+	    	<p>{%trans%}To import your students into Bicheech.com, you must upload a CSV (comma separated format) file in the correct format. To create your file, open a spreadsheet software such as Excel.{%endtrans%}</p><br/>
+	    	<p><a href="{{ asset('teacher/sample.csv') }}">{%trans%}Click here for an example file in the correct format.{%endtrans%}</a></p>
+	    	<p>{%trans%}Column Order: username*, password*, firstname, lastname, email{%endtrans%} <br>*{%trans%}Only username and password are required.{%endtrans%}</p>
+	    	<p>{%trans%}Once your spreadsheet is ready, choose the "Save As..." option, and select "Comma Delimited (CSV)" from the Format options, and upload this new file into the form below.{%endtrans%}</p>
+	    	<p>{%trans%}Note that the upload should take no more than 60 seconds (often much less). If it takes more, most likely there is a problem with your connection or the file format caused an error, and you should try again.{%endtrans%}</p>
+
+	    	{{ form_start(a_form, {'action': path('usercreateimportpage'), 'method': 'POST', 'id': 'form_register', 'autocomplete': 'off'}) }}
+			      <div class="form-group">
+                {{ form_label(a_form.file) }}
+                {{ form_widget(a_form.file, {'attr': {'class': 'form-control'}}) }}
+                {% if(a_form.file.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(a_form.file) }}</div>
+                {% endif %}
+            </div>
+	          <div class="form-group">
+                {{ form_label(a_form.grade) }}
+                {{ form_widget(a_form.grade, {'attr': {'class': 'form-control'}}) }}
+                {% if(a_form.grade.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(a_form.grade) }}</div>
+                {% endif %}
+            </div>
+			      {{ form_errors(a_form) }}
+
+            {{ form_end(a_form) }}
+	    </div>
+    </div>
+
+
+    <div class="panel panel-default step-2" style="display: none;">
+	    <div class="panel-heading">{%trans%}Step #2 - Verify Data{%endtrans%}</div>
+	    <div class="panel-body">
+	    	<div id="grid" style="height: 400px;">
+        </div>
+        <br>
+        <a href="{{ path('usercreateimportpage')}}" class="btn btn-defualt reupload">{%trans%}Reupload Data File{%endtrans%}</a>
+        <a href="#" onclick="uploadfileData()" class="btn btn-defualt complete">{%trans%}Complete Import{%endtrans%}</a>
+	    </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/w2ui.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/w2ui.min.js') }}"></script>
+<script>
+    $( document ).ready(function() {
+        var csgo = 0;
+        $('form').bind('submit',function(e){
+            e.preventDefault();
+            var formData = new FormData($(this)[0]);
+            if(csgo == 0){
+                $.ajax({
+                    url: '{{ path('usercreateimportvalidpage')}}',
+                    type: 'post',
+                    dataType: 'json',
+                    data: formData,
+                    async: false,
+                    success: function(data) {
+                        $( ".alter-nsg" ).html( data.msg );
+                        $( ".step-1" ).hide();
+                        $( ".step-2" ).show();
+                        if(data.error == true){
+                            $( ".reupload" ).show();
+                            $( ".complete" ).hide();
+                        } else {
+                            $( ".reupload" ).hide();
+                            $( ".complete" ).show();
+                        }
+                        $('#grid').w2grid({
+                            name: 'grid',
+                            header: 'List of Names',
+                            columns: [
+                                { field: 'recid', caption: 'ID', size: '50px', 'hidden': true, sortable: true, attr: 'align=center' },
+                                { field: 'status', caption: '', size: '35px', sortable: true, resizable: true, attr: 'align=center' },
+                                { field: 'username', caption: 'User Name', size: '30%', sortable: true, resizable: true },
+                                { field: 'password', caption: 'Password', size: '30%', sortable: true, resizable: true },
+                                { field: 'firstname', caption: 'First Name', size: '30%', sortable: true, resizable: true },
+                                { field: 'lastname', caption: 'Last Name', size: '30%', sortable: true, resizable: true },
+                                { field: 'email', caption: 'Email', size: '30%', sortable: true, resizable: true },
+                            ],
+                            records: data.data
+                        });
+
+                    },
+                    cache: false,
+                    contentType: false,
+                    processData: false
+                });
+                e.preventDefault();
+            }
+        });
+
+        function uploadfileData(){
+            csgo = 1;
+            $( "form" ).submit();
+        }
+    });
+</script>
+{% endblock javascripts %}

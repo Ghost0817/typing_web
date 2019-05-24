@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<img src=\"\/tutor\/images\/aesop.png\" align=\"right\" \/><br \/><br \/><br \/><p class=\"typinghelp\" \/><div align=\"center\"><br \/><strong>The Butterfly (Aesop Fables) <br \/><br \/>by Hans Christian Andersen<br \/><br \/>(1805-1875)<strong><\/p>";
+		lessonData.congratsText = "<p class=\"typinghelp\">That was a short preview of this premium lesson. The full lesson is much longer and more comprehensive.<\/p>  <p class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\">Upgrading to a Gold Membership<\/a> will remove all advertisements, unlock all premium content, and allow for priority email support.<\/p><br \/><p style=\"text-align:center\" class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\" target=\"_top\">UPGRADE ACCOUNT<\/a><\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"115165","lessonID":"342","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Part 1 of 22","exercise":"THERE was once a butterfly who wished for a bride,\r\nand, as may be supposed, he wanted to choose a\r\nvery pretty one from among the flowers. He glanced\r\nwith a very critical eye, at all the flower-beds,\r\nand found that the flowers were seated quietly and\r\ndemurely on their stalks, just as maidens should\r\nsit before they are engaged;","helpText":""},{"lessonExerciseID":"115166","lessonID":"342","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Part 2 of 22","exercise":"but there was a great number of them, and it\r\nappeared as if his search would become very\r\nwearisome. The butterfly did not like to take too\r\nmuch trouble, so he flew off on a visit to the\r\ndaisies. The French call this flower \"Marguerite,\"\r\nand they say that the little daisy can prophesy.","helpText":""},{"lessonExerciseID":"115167","lessonID":"342","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115168","lessonID":"342","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115169","lessonID":"342","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115170","lessonID":"342","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115171","lessonID":"342","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115172","lessonID":"342","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115173","lessonID":"342","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115174","lessonID":"342","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115175","lessonID":"342","type":"mixed","displayOrder":"12","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115176","lessonID":"342","type":"mixed","displayOrder":"13","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115177","lessonID":"342","type":"mixed","displayOrder":"14","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115178","lessonID":"342","type":"mixed","displayOrder":"15","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115179","lessonID":"342","type":"mixed","displayOrder":"16","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115180","lessonID":"342","type":"mixed","displayOrder":"17","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115181","lessonID":"342","type":"mixed","displayOrder":"18","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115182","lessonID":"342","type":"mixed","displayOrder":"19","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115183","lessonID":"342","type":"mixed","displayOrder":"20","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115184","lessonID":"342","type":"mixed","displayOrder":"21","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115185","lessonID":"342","type":"mixed","displayOrder":"22","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115186","lessonID":"342","type":"mixed","displayOrder":"23","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""}];
+		lessonData.lessonID = '342';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Aesop Fables - The Butterfly";
+		lessonData.restricted = '1';
+		lessonData.playSounds = true;
+		lessonData.course = 'SPECIALTY_COURSE';
+		lessonData.hasTrophy = 0;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =1;
+		lessonData.noKeyboard = 1;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 1;
+			

@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<p class=\"typinghelp\">Now that you've got a hold on proper finger placement and which fingers hit which keys, we're going to kick it up a notch by moving into short, easy to type words that all start on the Home Row.<\/p><p><center><img src=\"\/tutor\/images\/intros\/all_keys.png\" alt=\"Keyboard Finger Position\" \/><\/center><br \/><\/p><p class=\"typinghelp\">Always remember to return your finger to the home row after typing a letter.  Refer to the onscreen keyboard and hands if you are unsure as to which finger should press the key.  Try to keep your eyes off your hands as much as possible.  Good luck!<\/p>";
+		lessonData.congratsText = "<img src=\"\/tutor\/images\/congrats_1.png\" alt=\"\" align=\"left\" style=\"padding-right: 20px\" \/><p class=\"typinghelp\">You rock!  You are now on your way to typing words without looking at your keys! Keep up the great work, you're making awesome progress.<\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"114779","lessonID":"319","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>A<\/key> is for Awesome","exercise":"add all alley aft agh ask afford ajar adapt arf\r\nate art app arty awe aww apt arr aught apt award\r\nabs acct among aztec ant am avenue acorn axe ach","helpText":""},{"lessonExerciseID":"114780","lessonID":"319","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>S<\/key> is for Super","exercise":"salad sap slap slide shell sad sat shall shad shaq\r\nsuper sure sip sod side sewer sell soup sire sue\r\nsam sack salmon sniper salmonella snack snoop ","helpText":""},{"lessonExerciseID":"114781","lessonID":"319","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>D<\/key> is for Duper","exercise":"dad dan decide dag darpa dart defer deter dash\r\ndip destiny dread dew do dipity dud did dui dirt\r\ndax dimmer dinner dav dam dax dent doom dabble","helpText":""},{"lessonExerciseID":"114782","lessonID":"319","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>F<\/key> is for Fabulous","exercise":"fan fantastic flirt fledgling fact flute flapper\r\nfill fed fun few fewer fewest fist fern fad fickle\r\nfanatic fancy fab favorite fennel feminine fervor","helpText":""},{"lessonExerciseID":"114783","lessonID":"319","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>G<\/key> is for Great","exercise":"gandalf garden gas gad gallant gapless gallery\r\ngreat goo good gin gestapo guard garden green gwen\r\ngamma gentleman gammy gym gabby gib gone gaven","helpText":""},{"lessonExerciseID":"114784","lessonID":"319","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>H<\/key> is for Happy","exercise":"has hag hat half haha ham halpert had handy helmet\r\nhep hurting hip heart hem hurt hew hippo heard\r\nhand hammy hen hummer hunger hack hax hammer hung","helpText":""},{"lessonExerciseID":"114785","lessonID":"319","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>J<\/key> is for Joyous","exercise":"jason jam jan jail jandy jag jandy jalp jaff jas\r\njest jen jill john joyous jimmy joomla jester jim\r\njam jabber jamming jax javvy jammers jandy jazz","helpText":""},{"lessonExerciseID":"114786","lessonID":"319","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>K<\/key> is for Kupo","exercise":"kangaroo kayak kernite kerosene keystroke kiddy\r\nkey killer kitten kelp keyboard koala king kite\r\nknot karma knife knee kemp kick kimberley kindle","helpText":""},{"lessonExerciseID":"114787","lessonID":"319","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"<key>L<\/key> is for Lemonade","exercise":"ladybug lamb ladybug last lamp lad laugh lard loss\r\nleaf lollipop lobster lips log lion lemon loud loo\r\nlack lamb lam lob laminate labs lament lavish ","helpText":""}];
+		lessonData.lessonID = '319';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Easy Home Row Words";
+		lessonData.restricted = '';
+		lessonData.playSounds = true;
+		lessonData.course = 'BEGINNER_COURSE';
+		lessonData.hasTrophy = 1;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+			

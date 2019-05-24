@@ -1,0 +1,42 @@
+<div class="lesson">
+<div class="text">
+<div class="title" align="center">{% trans %}Introduction Text{% endtrans %}</div>
+{% if app.request.getLocale() == 'mn' %}{{ lssn.mnIntro|raw }}{% endif %}
+{% if app.request.getLocale() == 'en' %}{{ lssn.enIntro|raw }}{% endif %}
+<br class="clear"/>
+</div>
+{% for exercise in exercises %}
+{% if app.request.getLocale() == 'en' %}
+    {% if(exercise.enBody != '') %}
+    <div class="text">
+        <div class="title" align="center">{% trans %}Help Text{% endtrans %}</div>
+        {{ exercise.enBody|replace({'\\r\\n': '', '\\': ''})|raw }}
+    </div>
+    {% endif %}
+{% endif %}
+
+{% if app.request.getLocale() == 'mn' %}
+    {% if(exercise.mnBody != '') %}
+    <div class="text">
+        <div class="title" align="center">{% trans %}Help Text{% endtrans %}</div>
+        {{ exercise.mnBody|replace({'\\r\\n': '', '\\': ''})|raw }}
+    </div>
+    {% endif %}
+{% endif %}
+
+<div class="exercise">
+    <div class="title">{% trans %}Exercise{% endtrans %} #{{ exercise.sortnum }} - {% if app.request.getLocale() == 'mn' %}{{ exercise.mnTitle }}{% endif %}{% if app.request.getLocale() == 'en' %}{{ exercise.enTitle }}{% endif %}</div>
+    {{ exercise.tutor|replace({'\\n': '<br />'})|raw }}
+</div>
+{% else %}
+    No exercises have been found.
+{% endfor %}
+
+<div class="title" align="center">Congratulations Text</div>
+<img src="/tutor/images/congrats_1.png" alt="" align="left" style="padding: 20px"/>
+<p class="typinghelp">You have just completed the first Bicheech.com lesson! How does it feel to know your Home Row keys?</p>
+<p class="typinghelp">Depending on your comfort level with the Home Row you may want to repeat this lesson, however it is suggested that you move on to the Top and Bottom rows. You will be reviewing the Home Row keys in future lessons.</p>
+<p class="typinghelp">You're doing great, so keep it up!</p>
+<br class="clear"/>
+</div>
+</div>

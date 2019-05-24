@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Learn to Type{% endtrans %} | {% trans %}Typing Games{% endtrans %} | {% if app.request.attributes.get('_locale') == 'mn' %}{{ entity.mnTitle }}{% else %}{{ entity.enTitle|trans }}{% endif %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+
+    <div>
+
+        <div class="content-full">
+            {{entity.body|raw}}
+
+            <p class="text-center">{% trans %}Also check out Fun To Type for Free{% endtrans %} <a href="http://www.funtotype.com">Typing Games</a></p>
+        </div>
+    </div>
+</div>
+{% endblock body %}

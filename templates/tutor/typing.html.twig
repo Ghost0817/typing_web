@@ -1,0 +1,323 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="my_content">
+
+        <div class="content-mid">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}{% else %}
+                <div class="login_warring"><a class="close" onclick="jQuery(this).parent().hide()">x</a>{% trans %}You are not logged in. Typing progress will not be saved.{% endtrans %}</div>
+            {% endif %}
+
+            <div class="container">
+                <div class="bread-crumb">
+                    <div class="pull-left">
+                        <a href="{{ path('tutor_index') }}" target="_top">{% trans %}Course{% endtrans %}</a> /
+                        <a href="{{ path('tutor_course',{"lang":lang.id}) }}" target="_top">{% if app.request.attributes.get('_locale') == 'mn' %}{{ lang.mnTitle }}{% endif %}{% if app.request.attributes.get('_locale') == 'en' %}{{ lang.enTitle }}{% endif %}</a> /
+                        <a href="{{ path('tutor_course_to',{"lang":lang.id,'slug':entities.slug}) }}" target="_top" id="courseLink">{% if app.request.attributes.get('_locale') == 'mn' %}{{ entities.mnTitle }}{% endif %}{% if app.request.attributes.get('_locale') == 'en' %}{{ entities.enTitle }}{% endif %}</a> /
+                        <a href="#" onclick="javascript:$('.bs-example-modal-sm').modal({'keyboard'  : true,'how' : true });" target="_top" id="lessonLink">{% if app.request.attributes.get('_locale') == 'mn' %}{{ subentities.mnTitle }}{% endif %}{% if app.request.attributes.get('_locale') == 'en' %}{{ subentities.enTitle }}{% endif %}</a> /
+                        <strong id="exercise-title" style="visibility: visible;">#</strong>
+                    </div>
+                    <div class="pull-right" style="position: relative;">
+                        <a href="{{ path('tutor_typing',{"lang":lang.id,"category":entities.id,"lesson":subentities.id,"num":1}) }}" id="start-over">{% trans %}Start Over{% endtrans %}</a>
+                    </div>
+                </div>
+
+                <div class="typing-box">
+                    <div class="typing-status">
+                        <div class="time">
+                            <div id="time">
+                                00:00
+                            </div>
+                        </div>
+
+                        <div class="wpm">
+                            <div id="wpm">
+                                0
+                            </div>
+                            <span>{% if app.user %}{{ app.user.measureSpeed|trans }}{% else %}wpm{% endif %}</span>
+                        </div>
+
+                        <div class="pro">
+                            <div id="pro">
+                                100%
+                            </div>
+                            <span>{% trans %}accuracy{% endtrans %}</span>
+                        </div>
+
+                        <div class="lwpm">
+                            <div id="lwpm">
+                            0
+                            </div>
+                            <span>{% trans %}lesson{% endtrans %} {% if app.user %}{{ app.user.measureSpeed|trans }}{% else %}wpm{% endif %}</span>
+                        </div>
+
+                        <div class="lpro">
+                            <div id="lpro">
+                                100%
+                            </div>
+                            <span>{% trans %}lesson acc{% endtrans %}</span>
+                        </div>
+
+                        <div class="full-screen" id="toggle-full-screen">
+                        </div>
+
+                        <div class="volume on" id="volume">
+                        </div>
+
+                    </div>
+
+                    <div class="typing-text">
+                        <div class="typingtext" id="typing-exercise">
+
+                        </div>
+                    </div>
+
+                    <div class="typing-position" id="keyboardshell" style="{% if subentities.isshowkeys == "" %}visibility:hidden;{% endif %}{% if subentities.keyLayout == 'Keyboard' %}width:100%;{% endif %}{% if subentities.keyLayout == 'Keypad' %}width:330px;{% endif %}">
+                        {% if subentities.keyLayout == 'Keyboard' %}
+                            <div class="hands">
+                                <img src="{{ asset('css/images/lhand_'~app.request.locale~'.png') }}" width="166px" alt="Left Hand" />
+                                <img src="{{ asset('css/images/center.gif') }}" class="whitchfinger" id="lhand" alt="Pointer">
+                            </div>
+                            {% if (lang.id == 'mongolian') %}
+                                {% include 'Keys/mn_keyboard1.html.twig' %}
+                            {% else %}
+                                {% include 'Keys/en_keyboard1.html.twig' %}
+                            {% endif %}
+                            <div class="hands">
+                                <img src="{{ asset('css/images/rhand_'~app.request.locale~'.png') }}" width="166px" alt="Right Hand" />
+                                <img src="{{ asset('css/images/center.gif') }}" class="whitchfinger" id="rhand" alt="Pointer">
+                            </div>
+                        {% endif %}
+
+                        {% if subentities.keyLayout == 'Keypad' %}
+                            {% include 'Keys/keypad.html.twig' %}
+                            <div class="hands">
+                                <img src="{{ asset('css/images/rhand_'~app.request.locale~'.png') }}" alt="Right Hand" />
+                                <img src="{{ asset('css/images/center.gif') }}" class="whitchfinger" id="rhand" alt="Pointer" />
+                            </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="typing-diagram">
+                        <a onclick="jQuery('.typing-position').css('visibility') == 'visible' ? (jQuery('.typing-position').css('visibility','hidden')) :(jQuery('.typing-position').css('visibility','visible'));">{% trans %}Show/Hide Keyboard Diagram{% endtrans %} »</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<bgsound src="" id="ieSoundEffect" loop="1" autostart="false"></bgsound>
+
+<div id="text-template" style="display:none">
+  <div class="lesson-container" id="{introContentId}">
+    <div class="lesson-box-text"><h2>{title} {link}</h2><br>{text}</div>
+    <div class="lesson-box-begin">
+    {link}
+    </div>
+  </div>
+</div>
+
+<div id="text-template-help" style="display:none">
+  <div class="lesson-container">
+    <div class="lesson-box-text"><h2>{title} {link}</h2><br>{text}</div>
+    <div class="lesson-box-begin">
+      {link}
+    </div>
+  </div>
+</div>
+
+<div id="text-template-complete" style="display: none;">
+  <div class="lesson-container template-complete">
+    <div class="lesson-box-text"><h2>{title}</h2>
+    <br>
+    {text}
+    </div>
+    <div class="lesson-box-begin">
+      <div class="box-left">
+      {link}
+      </div>
+      <div class="box-right">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- start phone input -->
+<div class="toggle">
+    <input class="js-software-input js-input-box toggle-input" id="iOS-input" type="text" autocomplete="off" autocorrect="off" autocapitalize="none">
+    <svg width="23px" height="30px" viewBox="0 0 23 30">
+        <path d="M22.75,16.25 L22.75,29.75 L0.25,29.75 L0.25,16.25 L22.75,16.25 Z M1.75,17.75 L1.75,28.25 L21.25,28.25 L21.25,17.75 L1.75,17.75 Z M3,25 L5,25 L5,27 L3,27 L3,25 Z M6,25 L17,25 L17,27 L6,27 L6,25 Z M18,25 L20,25 L20,27 L18,27 L18,25 Z M3,22 L5,22 L5,24 L3,24 L3,22 Z M6,22 L8,22 L8,24 L6,24 L6,22 Z M9,22 L11,22 L11,24 L9,24 L9,22 Z M12,22 L14,22 L14,24 L12,24 L12,22 Z M15,22 L17,22 L17,24 L15,24 L15,22 Z M18,22 L20,22 L20,24 L18,24 L18,22 Z M18,19 L20,19 L20,21 L18,21 L18,19 Z M15,19 L17,19 L17,21 L15,21 L15,19 Z M12,19 L14,19 L14,21 L12,21 L12,19 Z M9,19 L11,19 L11,21 L9,21 L9,19 Z M6,19 L8,19 L8,21 L6,21 L6,19 Z M12.5,3.90819544 L12.5,13 L10.5,13 L10.5,3.91734897 L7.71024219,6.70710678 L6.29602863,5.29289322 L11.5045768,0.0843450802 L16.6811262,5.26089447 L15.2669126,6.67510803 L12.5,3.90819544 Z M3,19 L5,19 L5,21 L3,21 L3,19 Z" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </svg>
+</div>
+<!-- end phone input -->
+
+
+<textarea style="display:none" id="progress-template">
+<div class="lesson-container">
+
+
+<div id="progressBox">
+
+<h1>Exercise Complete! {link}</h1>
+
+<div class="statBox">
+	<span class="statHeader">
+		Net Speed	</span>
+	<span class="statData">
+		{netSpeed} {speedType}
+	</span>
+</div>
+
+<div class="statBox">
+	<span class="statHeader">
+		Gross Speed	</span>
+	<span class="statData">
+		{grossSpeed} {speedType}
+	</span>
+</div>
+
+<div class="statBox">
+	<span class="statHeader">
+		Accuracy	</span>
+	<span class="statData">
+		{accuracy}%
+	</span>
+</div>
+
+<div class="statBox">
+	<span class="statHeader">
+		Time Elapsed	</span>
+	<span class="statData">
+		{time}
+	</span>
+</div>
+
+<div class="statBox">
+	<span class="statHeader">
+		Problem Keys	</span>
+	<span class="statData">
+		{problemKeys}
+	</span>
+</div>
+
+<div style="clear: both;"></div>
+
+<div class="statProgress">
+	<p><strong>Lesson Averages</strong></p>
+	<p>Net Speed: {lessonNetSpeed} {speedType}</p>
+	<p>Accuracy: {lessonAccuracy}%</p>
+</div>
+
+<div class="statProgress">
+	<p><strong>Lesson Progress</strong></p>
+	<!-- <p>Bar Here</p>  -->
+	<div id="progressContainer">
+		<div id="progressBar" style="width: {progressBar}px"></div>
+	</div>
+	<p>{percentComplete}% complete</p>
+</div>
+
+<div id="retakeLesson">
+	<a id="retake">{restartLink} &raquo;</a>
+</div>
+
+<div id="stopDisplaying">
+	<input type="checkbox" id="stop-displaying" onclick="lesson.showProgressWindow = (this.checked)?false:true" /> <p><label for="stop-displaying">stop displaying this popup between exercises</label></p>
+</div>
+
+<div id="continueLesson">
+	<a href="#" style="text-decoration:none" onclick="return false">{link}</a>
+	<p>(press enter or space)</p>
+</div>
+
+
+
+</div>
+</textarea>
+
+{% endblock body %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+<link rel="stylesheet" href="{{ asset('css/lesson.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('js/shadowbox3/shadowbox.css') }}" />
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/shadowbox3/shadowbox.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('adapter/ext/ext-base.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/ext-all.js') }}"></script>
+    <script>
+    		Shadowbox.init({
+    			 skipSetup: true,
+    			 animate: false,
+    			 animateFade: true,
+    			 animSequence: false,
+    			 modal: true,
+    			 overlayOpacity: 0.5,
+    			 displayNav: false,
+    			 enableKeys: false
+    		});
+  	</script>
+
+    <script>
+url = {"SAVE_URL": "{{ path("test_statistics_save") }}",
+};
+text = {"ADS_BENEFIT1":"Remove Ads","ADS_BENEFIT2":"Unlock Premium Lessons","ADS_PRICE":"Only $9.99","ADVANCED":"Advanced","BASED_ON_TYPING_TESTS":"Based on typing test","BEGINNER":"Beginner","CANCEL":"Cancel","CERTIFICATION":"Certifications","COMMUNICATIONS_ERROR":"Bicheech.com Communications Error","COMMUNICATIONS_ERROR_TEXT":"Your computer is unable to communicate with the Bicheech.com.  It is possible you have lost your Internet connection.  Please check your connection and restart.","CONGRATULATIONS":"Congratulations!","FEMALE":"Female","HALL_OF_FAME":"hall of fame","HEADLINE_EXERCISES":"News Headline Exercises","HELLO":"Hello","IE6_ERROR_NOTICE":"YOU ARE RUNNING AN UNSUPPORTED WEB BROWSER <a href=\"#\" id=\"ie6-help\">what is this?<\/a>","INACTIVE_TEXT":"You have been logged out due to inactivity.","INTERMEDIATE":"Intermediate","ITS_FREE":"It's free","I_AM_A":"I am a","I_LIVE_IN":"I live in","I_WAS_BORN_IN":"I was born in","LOGGED_OUT":"Logged Out","LOGGED_OUT_TEXT":"You have been logged out by the Administrator.","LOG_IN_NOW":"Would you like to sign in or register now? Registration is completely free.","LOG_OUT_TEXT":"Are you sure you want to log out?","MALE":"Male","MUST_LOG_IN":"You must be registered and signed in to use this feature.","NAV_CERTIFICATION":"Certifications","NAV_COURSES":"Courses","NAV_GAMES":"Games","NAV_HALL_OF_FAME":"Hall of Fame","NAV_HELP":"Help","NAV_LOG_IN":"Log In","NAV_LOG_OUT":"Log Out","NAV_PREFERENCES":"Preferences","NAV_SCOREBOARD":"Class Scoreboard","NAV_SELECT_LANGUAGE":"Language & Keyboard","NAV_SKINS":"Skins","NAV_STATISTICS":"Statistics","NAV_TEST":"Test","NAV_TROPHIES":"Trophies","NEW":"new","NO":"No","NOT_LOGGED_IN_CALLOUT":"You are not logged in.  Typing progress will not be saved.","OFFICIAL":"Official","ONLINE_TYPING_TUTOR":"Online Typing Tutor","PLEASE_LOG_IN":"Please Log In","PLEASE_WAIT":"Please wait...","PREMIUM_LESSONS":"Premium Lessons","PROBLEM_KEYS":"Problem Keys","QUICK_SURVEY":"Quick Survey","REGISTER_NOW":"Register Now","REGISTER_NOW_TEXT":"Register with Bicheech.com to track your progress, access additional content and compete for your place in the Hall of Fame.","REMOVE_ADS":"UPGRADE ACCOUNT","REMOVE_ADS_TEXT":"<u>Remove annoying ads<\/u><br \/>Access premium lessons<br \/>Receive priority support","REMOVE_ADS_TEXT2":"ONLY $9.99!","RESTART_LESSON":"Restart Lesson?","RESTART_LESSON_TEXT":"Are you sure you would like to restart the lesson?","SCOREBOARD":"Scoreboard","SEND":"send","SUGGEST_TRANSLATION":"Suggest Translation Improvement","TAKE_TYPING_TEST":"GO TO TYPING TEST","TEACHER_TOOLS":"Teacher Tools","THANK_YOU":"Thank You!","TIMED_OUT_TEXT":"Your session has timed out.  Please log back in.","TIP_OF_THE_DAY":"Tip of the Day","UNKNOWN":"Unknown","UPGRADE_ACCOUNT":"UPGRADE <span>account<\/span>","WHOS_TYPING_NOW":"Who's Typing Now?","YES":"Yes","YOUR_SKILL_LEVEL":"Your Skill Level","ACCURACY":"accuracy","ACCURACY_CAPS":"Accuracy","ADVANCED_COURSE":"Advanced Course","BACK_TO_COURSES":"Back to Courses","BEGINNER_COURSE":"Beginner Course","BEGIN_LESSON":"BEGIN LESSON","BROUGHT_TO_YOU_BY":"Bicheech.com is brought to you by...","CAPS_LOCK_PRESSED":"You pressed the CAPS LOCK key. Please check your keyboard and turn off your CAPS LOCK before continuing.","CAPS_LOCK_TITLE":"Caps Lock Key Warning","CAPS_LOCK_WARNING":"You typed a capital letter.   You might have your CAPS LOCK key pressed.  Please check your keyboard and turn off your CAPS LOCK before continuing.","CERT_UPGRADE_TEXT":"To print or ship your official Bicheech.com certificates, you must <strong><a href=\"https:\/\/www.Bicheech.com\/upgrade\/membership\/level\/platinum\/\" target=\"_top\">upgrade your account to Platinum<\/a><\/strong> level membership.  Platinum Membership allows <strong>unlimited certificate printing<\/strong>, as well as all the benefits of a Gold Membership, such as <strong>removing ads and unlocking premium lessons<\/strong>.","COMPLETE":"complete","CONTINUE_LESSON":"CONTINUE LESSON","COURSES":"Courses","EXERCISE_ACCURACY":"Exercise Accuracy","EXERCISE_COMPLETE":"Exercise Complete!","EXERCISE_FAILURE":"Oops! Exercise Requirements Not Reached.","EXERCISE_SPEED":"Exercise Speed","FAILURE_ACCURACY":"You must score at least a {0}% accuracy to continue.","FAILURE_SPEED":"You must type at least {0} {1} to continue.","FAILURE_TIME":"You must complete the exercise in under {0} seconds to continue.","GROSS_SPEED":"Gross Speed","INTERMEDIATE_COURSE":"Intermediate Course","I_JUST_FINISHED":"I just finished lesson","LESSON":"lesson","LESSON_ACC":"lesson acc","LESSON_AVERAGES":"Lesson Averages","LESSON_PROGRESS":"Lesson Progress","LESSON_WILL_BEGIN":"Lesson will begin in <span class=\"countdownTimer\">15<\/span> seconds.","LOADING_LESSON":"Loading Lesson Content","MY_SCORE":"My Score","NET_SPEED":"Net Speed","NONE":"none","NO_TESTS_CONGRATS":"You have taken the typing test once. We suggest you take the typing test after completing each lesson, or every few days to view your progress over time.","NUM_LOCK_TITLE":"Num Lock Key Warning","NUM_LOCK_WARNING":"It is possible that your NUM LOCK key is not enabled.  This must be enabled to properly take this lesson.","PREMIUM_LESSON_CONGRATS":"<p class=\"typinghelp\">That was a short preview of this premium lesson. The full lesson is much longer and more comprehensive.<\/p>  <p class=\"typinghelp\"><a href=\"https:\/\/www.Bicheech.com\/upgrade\/membership\/\">Upgrading to a Gold Membership<\/a> will remove all advertisements, unlock all premium content, and allow for priority email support.<\/p>","PRESS_ENTER":"press enter or space","PROGRESS":"Progress","RETAKE_EXERCISE":"retake exercise","RETURN_TO_COURSES":"RETURN TO COURSES","SAVE_AND_CONTINUE":"SAVE &amp; CONTINUE","SHOW_HIDE_HANDS":"Show\/Hide Keyboard Diagram","SKIP_AD":"Skip Ad","SPECIALTY_COURSE":"Specialty Lessons","START_OVER":"Start Over","STOP_DISPLAYING":"stop displaying this popup between exercises","TEST":"Typing Test","TIME_ELAPSED":"Time Elapsed","TWEET":"tweet!","TWEET_SENT":"Tweet Sent!","TWITTER_NOT_LINKED":"You must link Bicheech.com to Twitter","TWITTER_NOT_LINKED2":"Click 'OK' to close this window and click the 'Sign In' button.","YOUR_RESULTS":"your results"};
+</script>
+
+    <script>
+		lessonData = {};
+		lessonData.userID = '{% if(app.user) %}{{app.user.id}}{% endif %}';
+		lessonData.introText = '{% if app.request.attributes.get('_locale') == 'mn' %}{{ subentities.mnIntro|raw }}{% endif %}{% if app.request.attributes.get('_locale') == 'en' %}{{ subentities.enIntro|raw }}{% endif %}';
+    {% if(app.user) %}
+      {% if(app.user.role != 'ROLE_FREE') %}
+      lessonData.congratsText = '<img src=\"\/tutor\/images\/congrats_2.png\" alt=\"\" align=\"left\" style=\"padding-right: 20px\" \/><p class=\"typinghelp\">You are now a Top Row genius!  It was just that simple.  Off you go to the Bottom Row.  I saved that one for last because, well, it is a tad harder... just a smidgen though, so relax.<\/p>';
+      {% else %}
+      lessonData.congratsText = '<p class=\"typinghelp\">That was a short preview of this premium lesson. The full lesson is much longer and more comprehensive.<\/p>  <p class=\"typinghelp\"><a href=\"{{ path('tutor_upgrade') }}">Upgrading to a Gold Membership<\/a> will remove all advertisements, unlock all premium content, and allow for priority email support.<\/p><br \/><p style=\"text-align:center\" class=\"typinghelp\"><a href=\"{{ path('tutor_upgrade') }}" target=\"_top\">UPGRADE ACCOUNT<\/a><\/p>';
+      {% endif %}
+    {% else %}
+    lessonData.congratsText = '<p class=\"typinghelp\">That was a short preview of this premium lesson. The full lesson is much longer and more comprehensive.<\/p>  <p class=\"typinghelp\"><a href=\"{{ path('tutor_upgrade') }}">Upgrading to a Gold Membership<\/a> will remove all advertisements, unlock all premium content, and allow for priority email support.<\/p><br \/><p style=\"text-align:center\" class=\"typinghelp\"><a href=\"{{ path('tutor_upgrade') }}" target=\"_top\">UPGRADE ACCOUNT<\/a><\/p>';
+    {% endif %}
+
+		lessonData.exercises = {{ json_str|raw }};
+		lessonData.lessonID = '{{ subentities.id }}';
+		lessonData.speedType = 'wpm';
+		lessonData.exerciseNum = {{ exerciseNum }};
+		lessonData.lang = '{{ lang.id }}';
+		lessonData.locale = '{{ app.request.attributes.get('_locale') }}';
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = '{% if app.request.attributes.get('_locale') == 'mn' %}{{ subentities.mnTitle }}{% endif %}{% if app.request.attributes.get('_locale') == 'en' %}{{ subentities.enTitle }}{% endif %}';
+		lessonData.restricted = '';
+		lessonData.playSounds = {% if(app.user and app.user.enableSounds == 1) %}true{% else %}false{% endif %};
+		lessonData.course = '{{ entities.slug }}';
+		lessonData.hasTrophy = 0;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardData = {{ my_kb.items | raw }};
+        lessonData.layout = '{{ subentities.keyLayout }}';
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+        lessonData.currentbttn = 'current';
+        lessonData.shiftbttn = 'shiftbttn';
+        lessonData.chiesenone = 'slash';
+        lessonData.space = 'spacebttn';
+        lessonData.righthand = 'rhand';
+        lessonData.lefthand = 'lhand';
+		</script>
+    <script type="text/javascript" src="{{ asset('js/lesson.js') }}"></script>
+
+{% endblock javascripts %}

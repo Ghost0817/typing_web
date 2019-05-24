@@ -1,0 +1,1643 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="mn" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>free online typing tutor.</source>
+                <target>Онлайн үнэгүй бичвэрийн заавар.</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>Login</source>
+                <target>Нэвтрэх</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>Home</source>
+                <target>Нүүр</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>Times Taken</source>
+                <target>Авсан Удаа</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>Typing Tests</source>
+                <target>Шивэх Сорил</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>Blog</source>
+                <target>Блог</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>FAQs</source>
+                <target>ТТА-ууд</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>Frequently Asked Questions</source>
+                <target>Түгээмэл Тавигддаг Асуултууд</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>Student Progress Overview</source>
+                <target>Сурагчдын Явцын Тойм</target>
+            </trans-unit>
+            <trans-unit id="10">
+                <source>Contact Us</source>
+                <target>Холбоо барих</target>
+            </trans-unit>
+            <trans-unit id="11">
+                <source>Detailed by Lesson</source>
+                <target>Хичээл Дэлгэрэнгүй</target>
+            </trans-unit>
+            <trans-unit id="12">
+                <source>Class Scoreboard</source>
+                <target>Ангийн Онооны Самбар</target>
+            </trans-unit>
+            <trans-unit id="13">
+                <source>records</source>
+                <target>бичлэг</target>
+            </trans-unit>
+            <trans-unit id="14">
+                <source>Print</source>
+                <target>Хэвлэх</target>
+            </trans-unit>
+            <trans-unit id="15">
+                <source>Perfect for All Ages</source>
+                <target>Бүх насныханд зохицсон</target>
+            </trans-unit>
+            <trans-unit id="16">
+                <source>Lessons for All Skill Levels</source>
+                <target>Бүх ур чадварын төвшинүүдэд хичээлүүдтэй</target>
+            </trans-unit>
+            <trans-unit id="17">
+                <source>Run Report</source>
+                <target>Тайлан Ажиллуулах</target>
+            </trans-unit>
+            <trans-unit id="18">
+                <source>Select a Date Range</source>
+                <target>Огнооны мужийг сонгох</target>
+            </trans-unit>
+            <trans-unit id="19">
+                <source>Select a Report</source>
+                <target>Тайлан Сонгох</target>
+            </trans-unit>
+            <trans-unit id="20">
+                <source>Premium Packages</source>
+                <target>Дээд Зэрэглэлийн Багцууд</target>
+            </trans-unit>
+            <trans-unit id="21">
+                <source>Bronze</source>
+                <target>Хүрэл</target>
+            </trans-unit>
+            <trans-unit id="22">
+                <source>Gold</source>
+                <target>Алтан</target>
+            </trans-unit>
+            <trans-unit id="23">
+                <source>Platinum</source>
+                <target>Платинум</target>
+            </trans-unit>
+            <trans-unit id="24">
+                <source>Remove Distracting Ads</source>
+                <target>Садаатай зар устга</target>
+            </trans-unit>
+            <trans-unit id="25">
+                <source>16 Premium Lessons</source>
+                <target>16 Нэмэгдэл Хичээлүүд</target>
+            </trans-unit>
+            <trans-unit id="26">
+                <source>Priority email support</source>
+                <target>И-мэйл Дэмжлэгийн Давуу эрх</target>
+            </trans-unit>
+            <trans-unit id="27">
+                <source>Course</source>
+                <target>Курс</target>
+            </trans-unit>
+            <trans-unit id="28">
+                <source>Games</source>
+                <target>Тоглоомууд</target>
+            </trans-unit>
+            <trans-unit id="29">
+                <source>Test</source>
+                <target>Тест</target>
+            </trans-unit>
+            <trans-unit id="30">
+                <source>Statistics</source>
+                <target>Статистик</target>
+            </trans-unit>
+            <trans-unit id="31">
+                <source>Register Now</source>
+                <target>Одоо Бүртгүүлэх</target>
+            </trans-unit>
+            <trans-unit id="32">
+                <source>It's free</source>
+                <target>Үнэ төлбөргүй</target>
+            </trans-unit>
+            <trans-unit id="33">
+                <source>Register with Bicheech to track your progress, access additional content and compete for your place in the Hall of Fame.</source>
+                <target>Үйлдэлээ үргэлжлүүлэх болон нэмэгдэл мэдээлэл бүхий агуулга мөн ажилаа мэргэжилийн түвшинд дуусгамаар байвал Бичээчид бүртгүүлнэ үү.</target>
+            </trans-unit>
+            <trans-unit id="34">
+                <source>Your Skill Level</source>
+                <target>Таны ур чадварын түвшин</target>
+            </trans-unit>
+            <trans-unit id="35">
+                <source>Hall of Fame</source>
+                <target>Алдарын танхимд</target>
+            </trans-unit>
+            <trans-unit id="36">
+                <source>You are not logged in. Typing progress will not be saved.</source>
+                <target>Та холбогдоогvй байна. Бичвэрийн ахиц дэвшил нь хадгалагдахгүй байх болно.</target>
+            </trans-unit>
+            <trans-unit id="37">
+                <source>Start</source>
+                <target>Эхлэх</target>
+            </trans-unit>
+            <trans-unit id="38">
+                <source>Already have an account?</source>
+                <target>Бүртгэл байгаа юу?</target>
+            </trans-unit>
+            <trans-unit id="39">
+                <source>Please log in to continue.</source>
+                <target>Үргэлжлүүлэхийн тулд нэвтэрч орно уу.</target>
+            </trans-unit>
+            <trans-unit id="40">
+                <source>I forgot my password</source>
+                <target>Би нууц үгээ мартсан</target>
+            </trans-unit>
+            <trans-unit id="41">
+                <source>Don't have an account?</source>
+                <target>Бүртгэл байдаггүй юу?</target>
+            </trans-unit>
+            <trans-unit id="42">
+                <source>Create Account</source>
+                <target>Бүртгэл Үүсгэх</target>
+            </trans-unit>
+            <trans-unit id="43">
+                <source>Select a Class</source>
+                <target>Анги Сонгох</target>
+            </trans-unit>
+            <trans-unit id="44">
+                <source>total</source>
+                <target>нийт</target>
+            </trans-unit>
+            <trans-unit id="45">
+                <source>No problem</source>
+                <target>Aсуудалгүй</target>
+            </trans-unit>
+            <trans-unit id="46">
+                <source>Register</source>
+                <target>Бүртгүүлэх</target>
+            </trans-unit>
+            <trans-unit id="47">
+                <source>No accounts selected</source>
+                <target>Сонгосон Бүртгэлүүд байхгүй байна</target>
+            </trans-unit>
+            <trans-unit id="48">
+                <source>Hi</source>
+                <target>Сайн уу</target>
+            </trans-unit>
+            <trans-unit id="49">
+                <source>begin</source>
+                <target>эхлэх</target>
+            </trans-unit>
+            <trans-unit id="50">
+                <source>Show/Hide Keyboard Diagram</source>
+                <target>Гарын Зурагийг Нээх/Хаах</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>Start Over</source>
+                <target>Дахин Эхлэх</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>Mongolia Course Overview Statistics</source>
+                <target>Монгол Курс Тойм Статистик</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>English Course Overview Statistics</source>
+                <target>Англи Курс Тойм Статистик</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>View</source>
+                <target>Үзэх</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>Option</source>
+                <target>Сонгол</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>Restart Lesson</source>
+                <target>Хичээл Дахин Эхлэх</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>Are you sure you would like to restart the lesson</source>
+                <target>Хичээлийг дахин эхлүүлэхийг хүсч байгаадаа та итгэлтэй байна уу</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>retake exercise</source>
+                <target>дасгалыг дахин эхлүүлэх</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>continue</source>
+                <target>үргэлжлүүлэх</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>Progress Summary</source>
+                <target>Явцын тойм</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>Time Spent Typing (by day)</source>
+                <target>Хугацаа зарцуулсан Шивэлт (өдрөөр)</target>
+            </trans-unit>
+            <trans-unit id="62">
+                <source>Your Problem Keys</source>
+                <target>Таны Асуудалтай Товчнууд</target>
+            </trans-unit>
+            <trans-unit id="63">
+                <source>Typing Test Results</source>
+                <target>Тэстийн Шивэлтын Дүнгүүд</target>
+            </trans-unit>
+            <trans-unit id="64">
+                <source>wpm</source>
+                <target>мбт</target>
+            </trans-unit>
+            <trans-unit id="65">
+                <source>accuracy</source>
+                <target>чанар</target>
+            </trans-unit>
+            <trans-unit id="66">
+                <source>lesson wpm</source>
+                <target>хичээл мбт</target>
+            </trans-unit>
+            <trans-unit id="67">
+                <source>lesson acc</source>
+                <target>хичээл чанар</target>
+            </trans-unit>
+            <trans-unit id="68">
+                <source>Lesson Averages</source>
+                <target>Хичээл нь дунджаар</target>
+            </trans-unit>
+            <trans-unit id="69">
+                <source>Lesson Progress</source>
+                <target>Хичээлийн Явц</target>
+            </trans-unit>
+            <trans-unit id="70">
+                <source>Net Speed</source>
+                <target>Цэвэр Хурд</target>
+            </trans-unit>
+            <trans-unit id="71">
+                <source>Accuracy</source>
+                <target>Чанар</target>
+            </trans-unit>
+            <trans-unit id="72">
+                <source>complete</source>
+                <target>дууссан</target>
+            </trans-unit>
+            <trans-unit id="73">
+                <source>404 error</source>
+                <target>404 алдаа</target>
+            </trans-unit>
+            <trans-unit id="74">
+                <source>Page not found(404 error)\nSorry, but the page you are looking for has not \nbeen found. Try checking the URL for errors, then \nhit the refresh button on your browser.</source>
+                <target>Хуудас олдоогүй(404 алдаа)\nУучлаарай, гэхдээ таны хайж байгаа хуудас \nолдсонгүй. Алдааны хаягийг шалгаж үзээрэй, дараа \nнь таны браузер дээрх сэргээх товчийг дараарай.</target>
+            </trans-unit>
+            <trans-unit id="75">
+                <source>Page not found</source>
+                <target>Хуудас олдоогүй</target>
+            </trans-unit>
+            <trans-unit id="76">
+                <source>Logout</source>
+                <target>Гарах</target>
+            </trans-unit>
+            <trans-unit id="77">
+                <source>Profile</source>
+                <target>Профайль</target>
+            </trans-unit>
+            <trans-unit id="78">
+                <source>You must be registered and signed in to use this feature.</source>
+                <target>Та энэ боломжийг ашиглахад бүртгүүлж нэвтэрсэн байх хэрэгтэй.</target>
+            </trans-unit>
+            <trans-unit id="79">
+                <source>English Language and Keyboard</source>
+                <target>English Language and Keyboard</target>
+            </trans-unit>
+            <trans-unit id="80">
+                <source>Lessons</source>
+                <target>Дасгалууд</target>
+            </trans-unit>
+            <trans-unit id="81">
+                <source>Progress</source>
+                <target>Явц</target>
+            </trans-unit>
+            <trans-unit id="82">
+                <source>Time Spent</source>
+                <target>Хугацаа зарцуулалт</target>
+            </trans-unit>
+            <trans-unit id="83">
+                <source>Gross Speed</source>
+                <target>Нийт хурд</target>
+            </trans-unit>
+            <trans-unit id="84">
+                <source>Speed (wpm)</source>
+                <target>Хурд (мбт)</target>
+            </trans-unit>
+            <trans-unit id="85">
+                <source>If a student account was created outside of your Portal, you can add it to your portal here by entering the student's username and password below.</source>
+                <target>Оюутны бүртгэл таны портал гадна бий болгосон бол, та үүнийг өөрийн порталд энэ доор оюутны хэрэглэгчийн нэр, нууц үгээ оруулж нэмж болно.</target>
+            </trans-unit>
+            <trans-unit id="86">
+                <source>Yes</source>
+                <target>Тийм</target>
+            </trans-unit>
+            <trans-unit id="87">
+                <source>No</source>
+                <target>Үгүй</target>
+            </trans-unit>
+            <trans-unit id="88">
+                <source>minutes</source>
+                <target>минут</target>
+            </trans-unit>
+            <trans-unit id="89">
+                <source>Minutes Spent Typing</source>
+                <target>Минут Зарцуулсан Шивэлт</target>
+            </trans-unit>
+            <trans-unit id="90">
+                <source>Today</source>
+                <target>Өнөөдөр</target>
+            </trans-unit>
+            <trans-unit id="91">
+                <source>Also check out Fun To Type for Free</source>
+                <target>Үнэгүй бичих боломжийг олгох хөгжилтэй зүйлийг шалгаад үзээрэй</target>
+            </trans-unit>
+            <trans-unit id="92">
+                <source>EDUCATION</source>
+                <target>БОЛОВСРОЛ</target>
+            </trans-unit>
+            <trans-unit id="93">
+                <source>Personal Information</source>
+                <target>Хувийн мэдээлэл</target>
+            </trans-unit>
+            <trans-unit id="94">
+                <source>Options</source>
+                <target>Тохиргоо</target>
+            </trans-unit>
+            <trans-unit id="95">
+                <source>Measure speed</source>
+                <target>Хурдны хэмжүүр</target>
+            </trans-unit>
+            <trans-unit id="96">
+                <source>Enable sound</source>
+                <target>Дуу оруулах</target>
+            </trans-unit>
+            <trans-unit id="97">
+                <source>First Name</source>
+                <target>Өөрийн Нэр</target>
+            </trans-unit>
+            <trans-unit id="98">
+                <source>Last Name</source>
+                <target>Эцгийн Нэр</target>
+            </trans-unit>
+            <trans-unit id="99">
+                <source>Save changes »</source>
+                <target>Өөрчилөлтийг хадгалах »</target>
+            </trans-unit>
+            <trans-unit id="100">
+                <source>Username</source>
+                <target>Хэрэглэгчийн нэр</target>
+            </trans-unit>
+            <trans-unit id="101">
+                <source>Password</source>
+                <target>Нууц үг</target>
+            </trans-unit>
+            <trans-unit id="102">
+                <source>Repeat password</source>
+                <target>Нууц үг давтах</target>
+            </trans-unit>
+            <trans-unit id="103">
+                <source>Lesson</source>
+                <target>Хичээл</target>
+            </trans-unit>
+            <trans-unit id="104">
+                <source>lifetime</source>
+                <target>насан туршдаа</target>
+            </trans-unit>
+            <trans-unit id="105">
+                <source>Name</source>
+                <target>Нэр</target>
+            </trans-unit>
+            <trans-unit id="106">
+                <source>Email</source>
+                <target>И-мэйл</target>
+            </trans-unit>
+            <trans-unit id="107">
+                <source>Message</source>
+                <target>Мессеж</target>
+            </trans-unit>
+            <trans-unit id="108">
+                <source>Send Message</source>
+                <target>Мессеж Илгээх</target>
+            </trans-unit>
+            <trans-unit id="109">
+                <source>year</source>
+                <target>жил</target>
+            </trans-unit>
+            <trans-unit id="110">
+                <source>Upgrade Now</source>
+                <target>Сайжруулах</target>
+            </trans-unit>
+            <trans-unit id="111">
+                <source>Sign up</source>
+                <target>Бүртгүүлэх</target>
+            </trans-unit>
+            <trans-unit id="112">
+                <source>Coming soon</source>
+                <target>Тун удахгүй</target>
+            </trans-unit>
+            <trans-unit id="113">
+                <source>Payment Information</source>
+                <target>Төлбөрийн Мэдээлэл</target>
+            </trans-unit>
+            <trans-unit id="114">
+                <source>Total Price</source>
+                <target>Нийт Үнэ</target>
+            </trans-unit>
+            <trans-unit id="115">
+                <source>Membership</source>
+                <target>Гишүүнчлэл</target>
+            </trans-unit>
+            <trans-unit id="116">
+                <source>This is a one time fee. You will not be charged again unless initiated by you.</source>
+                <target>Энэ нь нэг удаагийн хураамж юм. Та нээсэн бол та дахин цэнэглэгдсэн байх болно.</target>
+            </trans-unit>
+            <trans-unit id="117">
+                <source>Unlock Your Full Typing Potential</source>
+                <target>Таны Бүрэн Шивэх Боломжийг Нээх үү</target>
+            </trans-unit>
+            <trans-unit id="118">
+                <source>Get the most out of your time on Bicheech. For a small fee you can unlock extra premium lessons.</source>
+                <target>Бичээч дээр та цагийг үр дүнтэй өнгөрүүлэх болно. Бага төлбөртэй учир та илүү нэмэгдэл хичээлийг авч болно.</target>
+            </trans-unit>
+            <trans-unit id="119">
+                <source>Purchase »</source>
+                <target>Худалдан авах »</target>
+            </trans-unit>
+            <trans-unit id="120">
+                <source>Download</source>
+                <target>Татаж авах</target>
+            </trans-unit>
+            <trans-unit id="121">
+                <source>Forgot password</source>
+                <target>Нууц үгээ мартсан</target>
+            </trans-unit>
+            <trans-unit id="122">
+                <source>Your Email Address</source>
+                <target>Таны И-мэйл хаяг</target>
+            </trans-unit>
+            <trans-unit id="123">
+                <source>Find My Password</source>
+                <target>Миний Нууц үг хайх</target>
+            </trans-unit>
+            <trans-unit id="124">
+                <source>Frequently Asked Questions</source>
+                <target>Түгээмэл Асуултууд</target>
+            </trans-unit>
+            <trans-unit id="125">
+                <source>Bicheech.com is free</source>
+                <target>Бичээч.ком бол үнэгүй</target>
+            </trans-unit>
+            <trans-unit id="126">
+                <source>Import Multiple Student Accounts</source>
+                <target>Олон Оюутны бүртгэл Импортлох</target>
+            </trans-unit>
+            <trans-unit id="127">
+                <source>Bicheech.com's full typing curriculum</source>
+                <target>Бичээч.ком бол бүрэн бичиж хөтөлбөр</target>
+            </trans-unit>
+            <trans-unit id="128">
+                <source>Create Individual Student Accounts</source>
+                <target>Хувь хүний Оюутны бүртгэлүүдийг үүсгэх</target>
+            </trans-unit>
+            <trans-unit id="129">
+                <source>Please log in to continue.</source>
+                <target>Үргэлжлүүлэхийн тулд нэвтэрч орно уу.</target>
+            </trans-unit>
+            <trans-unit id="130">
+                <source>No Download, Just type</source>
+                <target>Татахгүй, Зүгээр бич</target>
+            </trans-unit>
+            <trans-unit id="131">
+                <source>Sign Up Now</source>
+                <target>Одоо Бүртгүүлэх</target>
+            </trans-unit>
+            <trans-unit id="132">
+                <source>Create Account</source>
+                <target>Бүртгэл Үүсгэх</target>
+            </trans-unit>
+            <trans-unit id="133">
+                <source>Premium Account</source>
+                <target>Нэмэлт бүртгэл</target>
+            </trans-unit>
+            <trans-unit id="134">
+                <source>Unlock Your Full Typing Potential!</source>
+                <target>Таны бүрэн Шивэх боломжийг нээнэ үү!</target>
+            </trans-unit>
+            <trans-unit id="135">
+                <source>What are Premium Lessons?</source>
+                <target>Нэмэгдэл хичээлүүд гэж юу вэ?</target>
+            </trans-unit>
+            <trans-unit id="136">
+                <source>What is Priority Email Support?</source>
+                <target>И-мэйл дэмжилэгийн давуу эрх гэж юу вэ?</target>
+            </trans-unit>
+            <trans-unit id="137">
+                <source>Recommended for anyone truly interested in getting the most out of Bicheech, we offer 16 extra premium lessons including individual finger exercises, common medical terms, numeric data entry, as well as fun and interesting facts to keep your learning time fresh and fun.</source>
+                <target>Бичээчийн гаргасан ихэнхдээ авч болох сонирхолтой хэн бүхэнд санал болгож буй, бид цэвэр, хөгжилтэй таны суралцах цаг байлгах нь хувь хүний хурууны дасгал, нийтийн эрүүл мэндийн нэр томъёо, тоон өгөгдөл оруулах, түүнчлэн хөгжилтэй, сонирхолтой баримтыг багтаасан 16 нэмэлт хураамж хичээл санал болгож байна.</target>
+            </trans-unit>
+            <trans-unit id="138">
+                <source>Have a question about your account, or about getting the most out of Bicheech? Premium members are guaranteed a fast response from our team of experts.</source>
+                <target>Have a question about your account, or about getting the most out of Bicheech? Premium members are guaranteed a fast response from our team of experts.</target>
+            </trans-unit>
+            <trans-unit id="139">
+                <source>Are Yearly Charges Auto-Recurring?</source>
+                <target>Жилийн хураамж автоматаар олон удаа давтагдаж байна уу?</target>
+            </trans-unit>
+            <trans-unit id="140">
+                <source>No, charges are never auto-recurring. For yearly membership types, we will only charge you once. When your membership expires you can optionally choose to renew.</source>
+                <target>Үгүй, төлбөр хэзээ ч автоматаар олон удаа давтагдаж байгаагүй. Жилийн гишүүнчлэл төрлийн хувьд, бид нэг л удаа таныг цэнэглэх болно. Таны гишүүний хугацаа нь дуусах үед та нэмэлтээр шинэчлэхийг сонгож болно.</target>
+            </trans-unit>
+            <trans-unit id="141">
+                <source>preview lesson</source>
+                <target>үзүүлбэр хичээл</target>
+            </trans-unit>
+            <trans-unit id="142">
+                <source>That was a short preview of this premium lesson.</source>
+                <target>Энэ бол нэмэлт хичээлийн богино үзүүлбэр байсан юм.</target>
+            </trans-unit>
+            <trans-unit id="143">
+                <source>UPGRADE ACCOUNT</source>
+                <target>ЭРХИЙН САЙЖРАЛТ</target>
+            </trans-unit>
+            <trans-unit id="144">
+                <source>The full lesson is much longer and more comprehensive.</source>
+                <target>Бүх хичээл нь илүү урт ба илүү цогц юм.</target>
+            </trans-unit>
+            <trans-unit id="145">
+                <source>Upgrading to a Gold Membership</source>
+                <target>Алтан гишүүнээр шинэчилж сайжруулах нь</target>
+            </trans-unit>
+            <trans-unit id="146">
+                <source>will unlock all premium content, and allow for priority email support.</source>
+                <target>бүх нэмэлт агуулгыг нээх ба нэн тэргүүнд и-мэйл дэмжлэг авах боломжийг танд олгоно.</target>
+            </trans-unit>
+            <trans-unit id="147">
+                <source>Save &amp; Continue</source>
+                <target>Хадгалах &amp; Үргэлжлүүлэх</target>
+            </trans-unit>
+            <trans-unit id="148">
+                <source>Back to All Posts</source>
+                <target>Бүх Постууд руу Буцах</target>
+            </trans-unit>
+            <trans-unit id="149">
+                <source>Bicheech.com Blog</source>
+                <target>Бичээч.ком Блог</target>
+            </trans-unit>
+            <trans-unit id="150">
+                <source>Keep up with Bicheech.com features, industry news, educational musings and more.</source>
+                <target>Бичээч.ком-ын онцлог, салбарын мэдээ, боловсролын бодлууд ба илүү мэдээл мэдээлэлтэй хамт байгаарай.</target>
+            </trans-unit>
+            <trans-unit id="151">
+                <source>Post Topics</source>
+                <target>Бичлэгийн Сэдвүүд</target>
+            </trans-unit>
+            <trans-unit id="152">
+                <source>Read More</source>
+                <target>Цааш Унших</target>
+            </trans-unit>
+            <trans-unit id="153">
+                <source>Preferences</source>
+                <target>Тохиргоо</target>
+            </trans-unit>
+            <trans-unit id="154">
+                <source>Change password</source>
+                <target>Нууц үг солих</target>
+            </trans-unit>
+            <trans-unit id="155">
+                <source>Change username</source>
+                <target>Хэрэглэгчийн нэр солих</target>
+            </trans-unit>
+            <trans-unit id="156">
+                <source>Delete account</source>
+                <target>Бүртгэлийг устгах</target>
+            </trans-unit>
+            <trans-unit id="157">
+                <source>Delete your account</source>
+                <target>Таны бүртгэлийг устгах</target>
+            </trans-unit>
+            <trans-unit id="158">
+                <source>Once you delete your account, there is no going back. Please be certain.</source>
+                <target>Хэрэв та өөрийн бүртгэлийг устгасаны дараа буцах боломжгүй. Итгэлтэй байна уу.</target>
+            </trans-unit>
+            <trans-unit id="159">
+                <source>Update password</source>
+                <target>Нууц үг шинэчлэх</target>
+            </trans-unit>
+            <trans-unit id="160">
+                <source>Old password</source>
+                <target>Хуучин нууц үг</target>
+            </trans-unit>
+            <trans-unit id="161">
+                <source>Repeat Password</source>
+                <target>Нууц үгээ дахин оруулах</target>
+            </trans-unit>
+            <trans-unit id="162">
+                <source>Account Settings</source>
+                <target>Бүртгэлийн Тохиргоо</target>
+            </trans-unit>
+            <trans-unit id="163">
+                <source>Billing</source>
+                <target>Нэхэмжлэх</target>
+            </trans-unit>
+            <trans-unit id="164">
+                <source>Account Information</source>
+                <target>Бүртгэлийн Мэдээлэл</target>
+            </trans-unit>
+            <trans-unit id="165">
+                <source>Settings</source>
+                <target>Тохиргоо</target>
+            </trans-unit>
+            <trans-unit id="166">
+                <source>Enable sounds</source>
+                <target>Дуу идэвхжүүлэх</target>
+            </trans-unit>
+            <trans-unit id="167">
+                <source>Male</source>
+                <target>Эрэгтэй</target>
+            </trans-unit>
+            <trans-unit id="168">
+                <source>Female</source>
+                <target>Эмэгтэй</target>
+            </trans-unit>
+            <trans-unit id="169">
+                <source>Payment history</source>
+                <target>Төлбөрийн түүх</target>
+            </trans-unit>
+            <trans-unit id="170">
+                <source>Billing overview</source>
+                <target>Нэхэмжлэх танилцуулга</target>
+            </trans-unit>
+            <trans-unit id="171">
+                <source>You have not made any payments.</source>
+                <target>Та ямар ч төлбөр хийгээгүй байна.</target>
+            </trans-unit>
+            <trans-unit id="172">
+                <source>Submit</source>
+                <target>Батлах</target>
+            </trans-unit>
+            <trans-unit id="173">
+                <source>Password reset confirmation sent</source>
+                <target>Нууц үг дахин баталгаажуулах илгээгдсэн</target>
+            </trans-unit>
+            <trans-unit id="174">
+                <source>Password must contain one lowercase letter, one number, and be at least 7 characters long.</source>
+                <target>Нууц үг жижиг үсгүүд, дугаарыг агуулсан, наад зах нь 7-тэмдэгтүүд нь урт байх ёстой.</target>
+            </trans-unit>
+            <trans-unit id="175">
+                <source>We’ve sent you an email containing a link that will allow you to reset your password for the next 24 hours.</source>
+                <target>Бид танд 24 цагийн турш нууц үгээ дахин оруулах боломжтой холбоос агуулсан и-мэйл явуулсан.</target>
+            </trans-unit>
+            <trans-unit id="176">
+                <source>Please check your spam folder if the email doesn’t appear within a few minutes.</source>
+                <target>Хэрэв И-мэйл хэдэн минутын дотор ирээгүй бол та спам хавтасаа шалгана уу.</target>
+            </trans-unit>
+            <trans-unit id="177">
+                <source>Bicheech.com</source>
+                <target>Бичээч.ком</target>
+            </trans-unit>
+            <trans-unit id="178">
+                <source>Learn to Type</source>
+                <target>Шивэхэд суралцах</target>
+            </trans-unit>
+            <trans-unit id="179">
+                <source>Typing Games</source>
+                <target>Шивэлтийн Тоглоомууд</target>
+            </trans-unit>
+            <trans-unit id="180">
+                <source>Tip of the Day</source>
+                <target>Өдрийн зөвлөгөө</target>
+            </trans-unit>
+            <trans-unit id="181">
+                <source>Add Existing Accounts</source>
+                <target>Одоо байгаа бүртгэлүүдийг нэмэх</target>
+            </trans-unit>
+            <trans-unit id="182">
+                <source>Typing speed is calculated in two ways: Gross Speed is your overall words typed per minute. A word is 5 typed characters. Net Speed subtracts one word for each incorrectly typed character.</source>
+                <target>Typing speed is calculated in two ways: Gross Speed is your overall words typed per minute. A word is 5 typed characters. Net Speed subtracts one word for each incorrectly typed character.</target>
+            </trans-unit>
+            <trans-unit id="183">
+                <source>Create Student Account</source>
+                <target>Оюутны бүртгэл үүсгэх</target>
+            </trans-unit>
+            <trans-unit id="184">
+                <source>Have a question about your account, or about getting the most out of Bicheech? Premium members are guaranteed a fast response from our team of experts.</source>
+                <target>Have a question about your account, or about getting the most out of Bicheech? Premium members are guaranteed a fast response from our team of experts.</target>
+            </trans-unit>
+            <trans-unit id="185">
+                <source>Add Student Account</source>
+                <target>Оюутны бүртгэл нэмэх</target>
+            </trans-unit>
+            <trans-unit id="186">
+                <source>Completed</source>
+                <target>Дууссан</target>
+            </trans-unit>
+            <trans-unit id="187">
+                <source>Email address</source>
+                <target>И-мэйл хаяг</target>
+            </trans-unit>
+            <trans-unit id="188">
+                <source>Enter message or comment</source>
+                <target>Мессеж, эсвэл тайлбар оруулна уу</target>
+            </trans-unit>
+            <trans-unit id="189">
+                <source>Captcha</source>
+                <target>Captcha</target>
+            </trans-unit>
+            <trans-unit id="190">
+                <source>Enter catpcha</source>
+                <target>Catpcha оруулна уу</target>
+            </trans-unit>
+            <trans-unit id="191">
+                <source>Bicheech.com's Teacher Portal is free</source>
+                <target>Бичээч.ком-ийн Багшийн хэрэгсэл бол үнэгүй</target>
+            </trans-unit>
+            <trans-unit id="192">
+                <source>Privacy Policy</source>
+                <target>Журам</target>
+            </trans-unit>
+            <trans-unit id="193">
+                <source>Words Per Minute (WPM)</source>
+                <target>Words Per Minute (WPM)</target>
+            </trans-unit>
+            <trans-unit id="194">
+                <source>Characters Per Minute (CPM)</source>
+                <target>Characters Per Minute (CPM)</target>
+            </trans-unit>
+            <trans-unit id="195">
+                <source>Keyboard layout</source>
+                <target>Гарын зохион байгуулалт</target>
+            </trans-unit>
+            <trans-unit id="196">
+                <source>Keyboard Layout</source>
+                <target>Гарын Зохион Байгуулалт</target>
+            </trans-unit>
+            <trans-unit id="197">
+                <source>View in browser</source>
+                <target>Бровзер дээр харах</target>
+            </trans-unit>
+            <trans-unit id="198">
+                <source>Error in loading data.</source>
+                <target>Ачаалах өгөгдлийн алдаа.</target>
+            </trans-unit>
+            <trans-unit id="199">
+                <source>No data to display. You must type more lessons to view statistics.</source>
+                <target>Харуулах мэдээлэл байхгүй байна. Та статистик мэдээллийг үзэхийн тулд илүү их хичээл бичих ёстой.</target>
+            </trans-unit>
+            <trans-unit id="200">
+                <source>Retrieving data. Please wait.</source>
+                <target>Мэдээллийг татаж байна. Түр хүлээнэ үү.</target>
+            </trans-unit>
+            <trans-unit id="201">
+                <source>Please wait</source>
+                <target>Түр хүлээнэ үү</target>
+            </trans-unit>
+            <trans-unit id="202">
+                <source>Clearing statistics</source>
+                <target>Статистик устгаж байна</target>
+            </trans-unit>
+            <trans-unit id="203">
+                <source>Clear Statistics</source>
+                <target>Статистик устгах уу</target>
+            </trans-unit>
+            <trans-unit id="204">
+                <source>Are you sure</source>
+                <target>Та итгэлтэй байна уу</target>
+            </trans-unit>
+            <trans-unit id="205">
+                <source>Teacher Tools</source>
+                <target>Багшийн Хэрэгсэл</target>
+            </trans-unit>
+            <trans-unit id="206">
+                <source>Dashboard</source>
+                <target>Хяналтын самбар</target>
+            </trans-unit>
+            <trans-unit id="207">
+                <source>Classes</source>
+                <target>Ангиуд</target>
+            </trans-unit>
+            <trans-unit id="208">
+                <source>Reports</source>
+                <target>Тайлан</target>
+            </trans-unit>
+            <trans-unit id="209">
+                <source>Upgrade</source>
+                <target>Шинэчлэх</target>
+            </trans-unit>
+            <trans-unit id="210">
+                <source>Students</source>
+                <target>Сурагчид</target>
+            </trans-unit>
+            <trans-unit id="211">
+                <source>Welcome</source>
+                <target>Тавтай морилно уу</target>
+            </trans-unit>
+            <trans-unit id="212">
+                <source>Manage Account</source>
+                <target>Бүртгэлийг Удирдах</target>
+            </trans-unit>
+            <trans-unit id="213">
+                <source>Teacher Portal</source>
+                <target>Багшийн Портал</target>
+            </trans-unit>
+            <trans-unit id="214">
+                <source>Help</source>
+                <target>Тусламж</target>
+            </trans-unit>
+            <trans-unit id="215">
+                <source>Exercise</source>
+                <target>Дасгал</target>
+            </trans-unit>
+            <trans-unit id="216">
+                <source>Introduction Text</source>
+                <target>Танилцуулга Текст</target>
+            </trans-unit>
+            <trans-unit id="217">
+                <source>Help Text</source>
+                <target>Туслах Текст</target>
+            </trans-unit>
+            <trans-unit id="218">
+                <source>organize your students into classes</source>
+                <target>таны сургчидыг анги болгон зохион байгуулах</target>
+            </trans-unit>
+            <trans-unit id="219">
+                <source>Create new Class</source>
+                <target>Шинэ анги үүсгэх</target>
+            </trans-unit>
+            <trans-unit id="220">
+                <source>Create classes to group your students</source>
+                <target>Таны сургчидыг бүлэглэн ангиуд бий болгох</target>
+            </trans-unit>
+            <trans-unit id="221">
+                <source>Add or import students to your classes</source>
+                <target>Таны ангид сургачид нэмэх буюу импортлох</target>
+            </trans-unit>
+            <trans-unit id="222">
+                <source>Create/ Import Student Accounts</source>
+                <target>Сурагчийн Бүртгэл Үүсгэх/ Импорт</target>
+            </trans-unit>
+            <trans-unit id="223">
+                <source>manage your students</source>
+                <target>таны сурагчидыг удирдах хэсэг</target>
+            </trans-unit>
+            <trans-unit id="224">
+                <source>Create / Import Accounts</source>
+                <target>Бүртгэл Үүсгэх/ Импорт</target>
+            </trans-unit>
+            <trans-unit id="225">
+                <source>Add or import student accounts to your classes</source>
+                <target>Таны ангилалд сурагчийн бүртгэлүүд нэмэх эсвэл импортлох</target>
+            </trans-unit>
+            <trans-unit id="226">
+                <source>Export</source>
+                <target>Экспорт</target>
+            </trans-unit>
+            <trans-unit id="227">
+                <source>Export/download your student list to a CSV (comma separated values) file. Note that passwords are encrypted and therefore not exported.</source>
+                <target>Экспорт/ CSV (таслалаар тусгаарлагдсан утга) файлд өөрийн оюутны жагсаалтыг татаж авч болно. Нууц үг шифрлэгдсэн байдаг тул экспортлох боломжгүйг анхаарна уу.</target>
+            </trans-unit>
+            <trans-unit id="228">
+                <source>monitor your students' typing progress</source>
+                <target>Таны сурагчидын шивэх явцыг хянах</target>
+            </trans-unit>
+            <trans-unit id="229">
+                <source>All Students</source>
+                <target>Бүх Сурагчид</target>
+            </trans-unit>
+            <trans-unit id="230">
+                <source>Ungrouped Students</source>
+                <target>Ангилаагүй Сурагчид</target>
+            </trans-unit>
+            <trans-unit id="231">
+                <source>bicheech.com's world class typing curriculum</source>
+                <target>бичээч.ком дэлхийн зэрэглэлийн шивэх сургалтын хөтөлбөртэй</target>
+            </trans-unit>
+            <trans-unit id="232">
+                <source>Yesterday</source>
+                <target>Өчигдөр</target>
+            </trans-unit>
+            <trans-unit id="233">
+                <source>This Week</source>
+                <target>Энэ долоо хоногт</target>
+            </trans-unit>
+            <trans-unit id="234">
+                <source>Last Week</source>
+                <target>Өнгөрсөн Долоо Хоногт</target>
+            </trans-unit>
+            <trans-unit id="235">
+                <source>All Time</source>
+                <target>Бүх Хугацаа</target>
+            </trans-unit>
+            <trans-unit id="236">
+                <source>User</source>
+                <target>Хэрэглэгч</target>
+            </trans-unit>
+            <trans-unit id="237">
+                <source>Day</source>
+                <target>Өдөр</target>
+            </trans-unit>
+            <trans-unit id="238">
+                <source>Week</source>
+                <target>Долоо хоног</target>
+            </trans-unit>
+            <trans-unit id="239">
+                <source>Month</source>
+                <target>Сар</target>
+            </trans-unit>
+            <trans-unit id="240">
+                <source>Custom (Up to Last 40 Days)</source>
+                <target>Custom (40 хоног үргэлжлэх хүртэл)</target>
+            </trans-unit>
+            <trans-unit id="241">
+                <source>Lesson Name</source>
+                <target>Хичээлийн Нэр</target>
+            </trans-unit>
+            <trans-unit id="242">
+                <source>View Lesson</source>
+                <target>Хичээл Харах</target>
+            </trans-unit>
+            <trans-unit id="243">
+                <source>No results to display</source>
+                <target>Харуулах үр дүн байхгүй байна</target>
+            </trans-unit>
+            <trans-unit id="244">
+                <source>unlock your students' full typing potential</source>
+                <target>Таны сурагчидын бүрэн шивэх боломжийг нээхийн тулд</target>
+            </trans-unit>
+            <trans-unit id="245">
+                <source>Grade and track your students</source>
+                <target>Анги болон таны сурагчидыг хянах</target>
+            </trans-unit>
+            <trans-unit id="246">
+                <source>Great for students of all ages</source>
+                <target>Бүх насны сурагчидад зориулсан</target>
+            </trans-unit>
+            <trans-unit id="247">
+                <source>Save your school tons of money</source>
+                <target>Таны сургуулийн маш их мөнгийг хэмнэнэ</target>
+            </trans-unit>
+            <trans-unit id="248">
+                <source>Teacher Login</source>
+                <target>Багш Нэвтрэх</target>
+            </trans-unit>
+            <trans-unit id="249">
+                <source>Class Name</source>
+                <target>Ангийн Нэр</target>
+            </trans-unit>
+            <trans-unit id="250">
+                <source>Students in Class</source>
+                <target>Ангид байгаа сурагчид</target>
+            </trans-unit>
+            <trans-unit id="251">
+                <source>View and manage students in this class</source>
+                <target>Энэ анги дээрх сурагчидыг харах ба удирдах</target>
+            </trans-unit>
+            <trans-unit id="252">
+                <source>Edit class name</source>
+                <target>Ангийн нэр засах</target>
+            </trans-unit>
+            <trans-unit id="253">
+                <source>Delete this class</source>
+                <target>Энэ ангийг устгах</target>
+            </trans-unit>
+            <trans-unit id="254">
+                <source>You have not yet created any classes</source>
+                <target>Та одоогоор ямар ч ангиуд үүсгээгүй байна</target>
+            </trans-unit>
+            <trans-unit id="255">
+                <source>Cancel</source>
+                <target>Болих</target>
+            </trans-unit>
+            <trans-unit id="256">
+                <source>Class</source>
+                <target>Анги</target>
+            </trans-unit>
+            <trans-unit id="257">
+                <source>Last Login</source>
+                <target>Сүүлийн Нэвтрэлт</target>
+            </trans-unit>
+            <trans-unit id="258">
+                <source>Date Enrolled</source>
+                <target>Хамрагдсан Огноо</target>
+            </trans-unit>
+            <trans-unit id="259">
+                <source>Account Type</source>
+                <target>Бүртгэлийн Төрөл</target>
+            </trans-unit>
+            <trans-unit id="260">
+                <source>Never</source>
+                <target>байхгүй</target>
+            </trans-unit>
+            <trans-unit id="261">
+                <source>Standard</source>
+                <target>Стандарт</target>
+            </trans-unit>
+            <trans-unit id="262">
+                <source>View detailed information for this student</source>
+                <target>Энэ сурагчийн дэлгэрэнгүй мэдээллийг харах</target>
+            </trans-unit>
+            <trans-unit id="263">
+                <source>Edit the details for this student</source>
+                <target>Энэ сурагчийн мэдээллийг засварлах</target>
+            </trans-unit>
+            <trans-unit id="264">
+                <source>Edit Class</source>
+                <target>Анги засах</target>
+            </trans-unit>
+            <trans-unit id="265">
+                <source>Save</source>
+                <target>Хадгалах</target>
+            </trans-unit>
+            <trans-unit id="266">
+                <source>Delete Class</source>
+                <target>Анги Устгах</target>
+            </trans-unit>
+            <trans-unit id="267">
+                <source>Deleting Class</source>
+                <target>Ангийг Устгаж байна</target>
+            </trans-unit>
+            <trans-unit id="268">
+                <source>Saving</source>
+                <target>Хадгалж байна</target>
+            </trans-unit>
+            <trans-unit id="269">
+                <source>All students in this class will be moved into the 'Ungrouped Students' class.</source>
+                <target>Энэ ангилал дахь бүх сурагчид 'Ангилаагүй Сурагчид' анги руу орох болно.</target>
+            </trans-unit>
+            <trans-unit id="270">
+                <source>welcome to the teacher portal</source>
+                <target>багшийн порталд тавтай морилно уу</target>
+            </trans-unit>
+            <trans-unit id="271">
+                <source>Welcome back to the Teacher Portal</source>
+                <target>Багш Портал эргээд тавтай морилно уу</target>
+            </trans-unit>
+            <trans-unit id="272">
+                <source>Student Radar</source>
+                <target>Сурагчийн Радар</target>
+            </trans-unit>
+            <trans-unit id="273">
+                <source>Last Action</source>
+                <target>Сүүлийн Үйлдэл</target>
+            </trans-unit>
+            <trans-unit id="274">
+                <source>Include Offline Students</source>
+                <target>Оффлайн сурагчид багтаах</target>
+            </trans-unit>
+            <trans-unit id="275">
+                <source>None of your students are currently using Bicheech.com</source>
+                <target>Одоогийн байдлаар Бичээч.ком ашиглаж байгаа таны сурагчид байхгүй байна.</target>
+            </trans-unit>
+            <trans-unit id="276">
+                <source>Bicheech.com's free Teacher Portal gives you the tools to easily create, track, and manage your students.</source>
+                <target>Бичээч.ком-ийн үнэгүй Багш Портал нь таны сурагчдыг амархан үүсгэх, хянах, удирдах хэрэгсэлийг өгдөг.</target>
+            </trans-unit>
+            <trans-unit id="277">
+                <source>The Student Radar allows you to monitor your students in real time.</source>
+                <target>Сурагчдын радар нь цаг тутамд таны сурагчдын хянах боломжийг олгодог.</target>
+            </trans-unit>
+            <trans-unit id="278">
+                <source>You have not yet added any students to Bicheech.com.</source>
+                <target>Та хараахан Бичээч.ком дээр ямар ч сурагчид нэмээгүй байна.</target>
+            </trans-unit>
+            <trans-unit id="279">
+                <source>Helpful tips</source>
+                <target>Хэрэгтэй зөвлөмж</target>
+            </trans-unit>
+            <trans-unit id="280">
+                <source>There are currently no students in this class.</source>
+                <target>Одоогоор энэ ангилалд ямар ч сурагчид байхгүй байна.</target>
+            </trans-unit>
+            <trans-unit id="281">
+                <source>Create / Add Students</source>
+                <target>Сурагчид Нэмэх / Бүртгэх</target>
+            </trans-unit>
+            <trans-unit id="282">
+                <source>Switch to Class</source>
+                <target>Анги руу шилжих</target>
+            </trans-unit>
+            <trans-unit id="283">
+                <source>Current Progress</source>
+                <target>Одоогийн Явц</target>
+            </trans-unit>
+            <trans-unit id="284">
+                <source>Exercises Completed</source>
+                <target>Дууссан Дасгалууд</target>
+            </trans-unit>
+            <trans-unit id="285">
+                <source>Avg Gross Speed</source>
+                <target>Дундаж Нийт Хурд</target>
+            </trans-unit>
+            <trans-unit id="286">
+                <source>Avg Accuracy</source>
+                <target>Дундаж Чанар</target>
+            </trans-unit>
+            <trans-unit id="287">
+                <source>Avg Net Speed</source>
+                <target>Дундаж Цэвэр Хурд</target>
+            </trans-unit>
+            <trans-unit id="288">
+                <source>Reuse accounts forever</source>
+                <target>Мөнхөд дахин ашиглах бүртгэл</target>
+            </trans-unit>
+            <trans-unit id="289">
+                <source>upgrades never expire</source>
+                <target>сайжруулсан нь хэзээ ч дуусах</target>
+            </trans-unit>
+            <trans-unit id="290">
+                <source>Unlock 16 additional premium typing lessons</source>
+                <target>16 нэмэлт дээд зэргийн шивэх хичээлийг нээнэ</target>
+            </trans-unit>
+            <trans-unit id="291">
+                <source>100% Optional! Bicheech.com is, and always will be, FREE!</source>
+                <target>100% Нэмэлт! Бичээч.ком үргэлж байх болно бас үнэгүй!</target>
+            </trans-unit>
+            <trans-unit id="292">
+                <source>Remove distracting advertisements from student accounts</source>
+                <target>Сурагчийн бүртгэлүүдээс анхаарал татах зар сурталчилгааг арилгах</target>
+            </trans-unit>
+            <trans-unit id="293">
+                <source>Only 50,000₮! 30,000₮ per account when upgrading at least 5 accounts</source>
+                <target>Зөвхөн 50,000 ₮! бүртгэл тутамд 30,000 ₮ 5-аас доошгүй бүртгэл шинэчлэх үед</target>
+            </trans-unit>
+            <trans-unit id="294">
+                <source>Select Accounts To Upgrade</source>
+                <target>Бүртгэлүүдийг Сонгож Шинэчлэх</target>
+            </trans-unit>
+            <trans-unit id="295">
+                <source>Need Support?</source>
+                <target>Дэмжлэг хэрэгтэй байна уу?</target>
+            </trans-unit>
+            <trans-unit id="296">
+                <source>Upgrading costs 50,000₮ per account, however if you upgrade 5 or more accounts it only costs 30,000₮ per account.</source>
+                <target>Сайжруулах нь бүртгэл тутамд 50,000 ₮ үнэтэй, Гэсэн хэдий ч хэрэв та 5 буюу түүнээс дээш бүртгэл шинэчлэх бол бүртгэл тутам нь 30,000 ₮ үнэтэй болно.</target>
+            </trans-unit>
+            <trans-unit id="297">
+                <source>student</source>
+                <target>сурагч</target>
+            </trans-unit>
+            <trans-unit id="298">
+                <source>You must select at least one student to upgrade</source>
+                <target>Та шинэчлэхэд дор хаяж нэг сурагч сонгох ёстой</target>
+            </trans-unit>
+            <trans-unit id="299">
+                <source>retake</source>
+                <target>дахин авах</target>
+            </trans-unit>
+            <trans-unit id="300">
+                <source>First Name:</source>
+                <target>Өөрийн Нэр</target>
+            </trans-unit>
+            <trans-unit id="301">
+                <source>Last Name:</source>
+                <target>Эцгийн Нэр</target>
+            </trans-unit>
+            <trans-unit id="302">
+                <source>Password*:</source>
+                <target>Нууц үг*:</target>
+            </trans-unit>
+            <trans-unit id="303">
+                <source>User Name*:</source>
+                <target>Хэрэглэгчийн Нэр*:</target>
+            </trans-unit>
+            <trans-unit id="304">
+                <source>Add to Class*:</source>
+                <target>Ангид нэмэх*:</target>
+            </trans-unit>
+            <trans-unit id="305">
+                <source>Email:</source>
+                <target>И-мэйл:</target>
+            </trans-unit>
+            <trans-unit id="306">
+                <source>Go to Student Import Tool</source>
+                <target>Сурагч Импортын хэрэгсэл рүү очих</target>
+            </trans-unit>
+            <trans-unit id="307">
+                <source>Learn to Type | Free Typing Tutor | Typing Course</source>
+                <target>Шивэхэд суралцах | Үнэгүй шивэх дасгал | Шивэлтын курс</target>
+            </trans-unit>
+            <trans-unit id="308">
+                <source>Bicheech.com - The Web's Most Popular Typing Tutor</source>
+                <target>Бичээч.ком - Вэб Хамгийн Түгээмэл Шивэх Гэрийн Багш</target>
+            </trans-unit>
+            <trans-unit id="309">
+                <source>Bicheech.com is a free online typing tutor and keyboarding tutorial for typists of all skill levels.</source>
+                <target>Бичээч.ком бол үнэгүй онлайн шивэх далгал ба бүх ур чадваруудын шивэлтэд товчинуудтай ажиллах заавартай.</target>
+            </trans-unit>
+            <trans-unit id="310">
+                <source>Bicheech.com also offers officially sanctioned typing.</source>
+                <target>Бичээч.ком нь албан ёсны зөвшөөрөгдөх бичиж санал болгож байна.</target>
+            </trans-unit>
+            <trans-unit id="311">
+                <source>Bicheech Blog</source>
+                <target>Бичээч блог</target>
+            </trans-unit>
+            <trans-unit id="312">
+                <source>The web's most popular, free online typing tutor</source>
+                <target>Вэбийн хамгийн эрэлттэй, үнэгүй онлайн шивэлтийн дасгал</target>
+            </trans-unit>
+          <trans-unit id="313">
+              <source>Teacher Signup</source>
+              <target>Багшийн бүртгэл</target>
+          </trans-unit>
+          <trans-unit id="314">
+              <source>Manage and grade your students</source>
+              <target>Оюутнуудаа удирдаж, зэрэглээрэй</target>
+          </trans-unit>
+          <trans-unit id="315">
+              <source>School or Organization Name</source>
+              <target>Сургууль эсвэл Байгууллагын нэр</target>
+          </trans-unit>
+          <trans-unit id="316">
+              <source>Sign Up</source>
+              <target>Бүртгүүлэх</target>
+          </trans-unit>
+          <trans-unit id="317">
+              <source>Organization Type</source>
+              <target>Байгууллагын Төрөл</target>
+          </trans-unit>
+          <trans-unit id="318">
+              <source>Your Name</source>
+              <target>Таны Нэр</target>
+          </trans-unit>
+          <trans-unit id="319">
+              <source>Public School</source>
+              <target>Төрийн Сургууль</target>
+          </trans-unit>
+          <trans-unit id="320">
+              <source>Private School</source>
+              <target>Хувийн Сургууль</target>
+          </trans-unit>
+          <trans-unit id="321">
+              <source>College Instructor</source>
+              <target>Коллежийн Багш</target>
+          </trans-unit>
+          <trans-unit id="322">
+              <source>Home School</source>
+              <target>Гэрийн Сургууль</target>
+          </trans-unit>
+          <trans-unit id="323">
+              <source>Corporation/Company</source>
+              <target>Корпорац/Компани</target>
+          </trans-unit>
+          <trans-unit id="324">
+              <source>Government</source>
+              <target>Засгийн Газар</target>
+          </trans-unit>
+          <trans-unit id="325">
+              <source>Other</source>
+              <target>Бусад</target>
+          </trans-unit>
+          <trans-unit id="326">
+              <source>email</source>
+              <target>и-мэйл</target>
+          </trans-unit>
+          <trans-unit id="327">
+              <source>Step #1 - Upload Data</source>
+              <target>Алхам #1 - Өгөгдөл Оруулах</target>
+          </trans-unit>
+          <trans-unit id="328">
+              <source>Select CSV File:</source>
+              <target>CSV файл сонгох:</target>
+          </trans-unit>
+          <trans-unit id="329">
+              <source>Step #2 - Verify Data</source>
+              <target>Алхам #2 - Мэдээллийг Баталгаажуулах</target>
+          </trans-unit>
+          <trans-unit id="330">
+              <source>Begin Import</source>
+              <target>Импортыг Эхлэх</target>
+          </trans-unit>
+          <trans-unit id="331">
+              <source>Import to Class:</source>
+              <target>Ангид оруулах:</target>
+          </trans-unit>
+          <trans-unit id="332">
+              <source>Import Students</source>
+              <target>Сурагчидыг Оруулах</target>
+          </trans-unit>
+          <trans-unit id="333">
+              <source>import your entire student roster</source>
+              <target>өөрийн бүх сурагчийн жагсаалтыг орүүлаарай</target>
+          </trans-unit>
+          <trans-unit id="334">
+              <source>To import your students into Bicheech.com, you must upload a CSV (comma separated format) file in the correct format. To create your file, open a spreadsheet software such as Excel.</source>
+              <target>Өөрийн сурагчидыг Bicheech.com-д оруулахын тулд CSV (таслалаар тусгаарлагдсан формат) файлыг зөв хэлбэрээр оруулах ёстой. Файлаа үүсгэхийн тулд Excel гэх мэт spreadsheet програмыг нээнэ үү.</target>
+          </trans-unit>
+          <trans-unit id="335">
+              <source>Click here for an example file in the correct format.</source>
+              <target>Жишээ файлд зөв форматаар энд дарна уу.</target>
+          </trans-unit>
+          <trans-unit id="336">
+              <source>Column Order: username*, password*, firstname, lastname, email</source>
+              <target>Баганын дараалал: хэрэглэгчийн нэр*, нууц үг*, эхний нэр, сүүлийн нэр, имэйл</target>
+          </trans-unit>
+          <trans-unit id="337">
+              <source>Only username and password are required.</source>
+              <target>Зөвхөн хэрэглэгчийн нэр болон нууц үг заавал байлгана.</target>
+          </trans-unit>
+          <trans-unit id="338">
+              <source>Once your spreadsheet is ready, choose the "Save As..." option, and select "Comma Delimited (CSV)" from the Format options, and upload this new file into the form below.</source>
+              <target>Таны хүснэгт бэлэн болсны дараа "Save As ..." сонголтыг сонгоно, Format сонголтуудаас "Comma Delimited (CSV)" гэж сонгоно, Энэ шинэ файлыг доорх маягт руу оруулна уу.</target>
+          </trans-unit>
+          <trans-unit id="339">
+              <source>Note that the upload should take no more than 60 seconds (often much less). If it takes more, most likely there is a problem with your connection or the file format caused an error, and you should try again.</source>
+              <target>Байршуулалт нь 60 секундээс ихгүй (ихэвчлэн бага байдаг) байх ёстойг анхаарна уу. Хэрэв энээс удвал таны холболтонд алдаа гарах эсвэл файлын формат алдаа гарсныг магадлаад, та дахин оролдох хэрэгтэй.</target>
+          </trans-unit>
+          <trans-unit id="340">
+              <source>Reupload Data File</source>
+              <target>Мэдээллийн Файлыг Дахин Шинэчилэх</target>
+          </trans-unit>
+          <trans-unit id="341">
+              <source>Complete Import</source>
+              <target>Импортоо Дуусгах</target>
+          </trans-unit>
+          <trans-unit id="342">
+              <source>Almost Done!</source>
+              <target>Бараг Дууслаа!</target>
+          </trans-unit>
+          <trans-unit id="343">
+              <source>Validation Error!</source>
+              <target>Баталгаажуулалтын Алдаа!</target>
+          </trans-unit>
+          <trans-unit id="344">
+              <source>Create And Add Accounts</source>
+              <target>Бүртгүүлэх Ба Данс нэмэх</target>
+          </trans-unit>
+          <trans-unit id="345">
+              <source>create or import your student roster</source>
+              <target>оюутны жагсаалтыг үүсгэх буюу импорт хийх</target>
+          </trans-unit>
+          <trans-unit id="346">
+              <source>Deleting Student(s)</source>
+              <target>Сурагч(д) Устгах</target>
+          </trans-unit>
+          <trans-unit id="347">
+              <source>Delete Selected Students</source>
+              <target>Сонгогдсон Сурагчидаас Устгах</target>
+          </trans-unit>
+          <trans-unit id="348">
+              <source>Student(s) and all statistics will be deleted.</source>
+              <target>Сурагч(д) болон бүх статистик мэдээ устах болно.</target>
+          </trans-unit>
+          <trans-unit id="349">
+              <source>No students to display</source>
+              <target>Сурагчид байхгүй байна</target>
+          </trans-unit>
+          <trans-unit id="350">
+              <source>No students selected.  Select students by clicking the checkboxes.</source>
+              <target>Сурагчид сонгогдоогүй байна. Чагт дээр дарж сурагчдыг сонго.</target>
+          </trans-unit>
+          <trans-unit id="351">
+              <source>Change Classes</source>
+              <target>Анги солих</target>
+          </trans-unit>
+          <trans-unit id="352">
+              <source>Move checked students between classes</source>
+              <target>Ангидын хооронд сонгосон сурагчдыг хөдөлгөнө</target>
+          </trans-unit>
+          <trans-unit id="353">
+              <source>Reset Account(s)</source>
+              <target>Бүртгэлийг Шинэчилэх</target>
+          </trans-unit>
+          <trans-unit id="354">
+              <source>Resetting an account permanently deletes all typing progress, statistics, and personal information such as name and email</source>
+              <target>Дахин тохируулаж бүртгэлийн бүх шивэлтийн явц, статистик ба нэр болон имэйл зэрэг хувийн мэдээллийг устгана.</target>
+          </trans-unit>
+          <trans-unit id="355">
+              <source>Reset Password(s)</source>
+              <target>Нууц үг Шинэчилэх</target>
+          </trans-unit>
+          <trans-unit id="356">
+              <source>This allows you to quickly reset passwords for multiple student accounts</source>
+              <target>Энэ нь танд олон сурагчийн бүртгэл дээр нууц үгийг хурдан солих боломжийг олгоно</target>
+          </trans-unit>
+          <trans-unit id="357">
+              <source>Delete Account(s)</source>
+              <target>Бүртгэл Устгах</target>
+          </trans-unit>
+          <trans-unit id="358">
+              <source>Deleting an account will permanently delete the account from Bicheech.com</source>
+              <target>Устгаж байгаа бүртгэл Бичээч.ком-оос бүртгэлийг шууд устгах болно.</target>
+          </trans-unit>
+          <trans-unit id="359">
+              <source>Unlink Account(s)</source>
+              <target>Бүртгэлийг Салгах</target>
+          </trans-unit>
+          <trans-unit id="360">
+              <source>Unlinking an account removes the accounts from your Portal, however the account remains intact and available to the student</source>
+              <target>Салгаж байгаа бүртгэлийг таны Портал-ын бүртгэлээс устгах боловч бүртгэл нь хэвээр байх ба сурагчид хэрэглэх боломжтой байна.</target>
+          </trans-unit>
+          <trans-unit id="361">
+              <source>Moving Student(s)</source>
+              <target>Сурагч(д) Шилжиж байна</target>
+          </trans-unit>
+          <trans-unit id="362">
+              <source>You have not yet created any classes.</source>
+              <target>Та одоогоор ямар ч анги үүсгээгүй байна.</target>
+          </trans-unit>
+          <trans-unit id="363">
+              <source>Create your first class.</source>
+              <target>Анхны ангий үүсгэ.</target>
+          </trans-unit>
+          <trans-unit id="364">
+              <source>Move Successful!</source>
+              <target>Амжилттай Шилжсэн!</target>
+          </trans-unit>
+          <trans-unit id="365">
+              <source>The selected student(s) have been moved between classes.</source>
+              <target>Сонгогдсон сурагч(д) анги хооронд шилжүүлсэн байна.</target>
+          </trans-unit>
+          <trans-unit id="366">
+              <source>There was an error</source>
+              <target>Алдаа гарсан</target>
+          </trans-unit>
+          <trans-unit id="367">
+              <source>Select a class</source>
+              <target>Анги сонгох</target>
+          </trans-unit>
+          <trans-unit id="368">
+              <source>Move Student(s)</source>
+              <target>Сурагч(д) Шилжүүлэх</target>
+          </trans-unit>
+          <trans-unit id="369">
+              <source>Move Students Between Classes</source>
+              <target>Ангийн хооронд сурагчидыг шилжүүлэх</target>
+          </trans-unit>
+          <trans-unit id="370">
+              <source>Resetting Student(s)</source>
+              <target>Сурагчийг шинэчилэж байна</target>
+          </trans-unit>
+          <trans-unit id="371">
+              <source>Reset Selected Students</source>
+              <target>Сонгогдсон Сурагчид Шинэчилэх</target>
+          </trans-unit>
+          <trans-unit id="372">
+              <source>Statistics and personal information will be cleared.</source>
+              <target>Статистик болон хувийн мэдээллийг арилгах болно.</target>
+          </trans-unit>
+          <trans-unit id="373">
+              <source>Permanently clear all typing progress and personal information from the selected accounts</source>
+              <target>Сонгосон бүртгэлээс шивэлтийн явц ба хувийн мэдээллийг шууд цэвэрлэх болно</target>
+          </trans-unit>
+          <trans-unit id="374">
+              <source>Reset Successful</source>
+              <target>Амжилттай Шинэчилэсэн</target>
+          </trans-unit>
+          <trans-unit id="375">
+              <source>Typing data and personal information for the account(s) have been cleared.</source>
+              <target>Бүртгэл дээрээс шивэлтийн өгөгдөл ба хувийн мэдээллийг устгасан.</target>
+          </trans-unit>
+          <trans-unit id="376">
+              <source>Reset Passwords</source>
+              <target>Нууц үг Шинэчлэх</target>
+          </trans-unit>
+          <trans-unit id="377">
+              <source>New password</source>
+              <target>Шинэ нууц үг</target>
+          </trans-unit>
+          <trans-unit id="378">
+              <source>Password Reset Failed</source>
+              <target>Нууц үг шинэчлэлт амжилтгүй боллоо</target>
+          </trans-unit>
+          <trans-unit id="379">
+              <source>You must enter a password.</source>
+              <target>Та нууц үгээ оруулах ёстой.</target>
+          </trans-unit>
+          <trans-unit id="380">
+              <source>Resetting Passwords</source>
+              <target>Нууц үг шинэчилж байна.</target>
+          </trans-unit>
+          <trans-unit id="381">
+              <source>Password Reset Successful</source>
+              <target>Нууц үг шинэчлэлт амжилттай</target>
+          </trans-unit>
+          <trans-unit id="382">
+              <source>The password for the account(s) have been reset.</source>
+              <target>Бүртгэл дээрх нууц үгийг шинэчилэсэн.</target>
+          </trans-unit>
+          <trans-unit id="383">
+              <source>Student(s) Deleted</source>
+              <target>Сурагч(д) Устгасан</target>
+          </trans-unit>
+          <trans-unit id="384">
+              <source>The selected student accounts have been deleted from Bicheech.com.</source>
+              <target>Сонгосон сурагчийн бүртгэлийг Бичээч.ком оос устгасан болно.</target>
+          </trans-unit>
+          <trans-unit id="385">
+              <source>Unlinking Successful</source>
+              <target>Амжилттай Салгаллаа</target>
+          </trans-unit>
+          <trans-unit id="386">
+              <source>The selected student(s) have been unlinked from your teacher Portal.</source>
+              <target>Сонгосон сурагчийг багшийн Порталоосоо салгасан болно.</target>
+          </trans-unit>
+          <trans-unit id="387">
+              <source>Unlinking student accounts</source>
+              <target>Сурагчийн бүртгэл салгаж байна</target>
+          </trans-unit>
+          <trans-unit id="388">
+              <source>Unlink Students</source>
+              <target>Сурагч Салгах</target>
+          </trans-unit>
+          <trans-unit id="389">
+              <source>Unlinking a student account will remove it from your Teacher Portal, however the account will still exist and be accessible by the student.</source>
+              <target>Салгаж байгаа сурагчийн бүртгэлийг таны багшийн Портал-ын бүртгэлээс хасах боловч бүртгэл нь хэвээр байх ба сурагч хандах боломжтой байна.</target>
+          </trans-unit>
+          <trans-unit id="390">
+              <source>Select a Language</source>
+              <target>Хэл сонгох</target>
+          </trans-unit>
+          <trans-unit id="391">
+              <source>Edit Student</source>
+              <target>Сурагч Засварлах</target>
+          </trans-unit>
+          <trans-unit id="392">
+              <source>Account Information</source>
+              <target>Бүртгэлийн Мэдээлэл</target>
+          </trans-unit>
+          <trans-unit id="393">
+              <source>Note: only enter a password to change it</source>
+              <target>Тайлбар: зөвхөн өөрчилөх нууц үг оруулна</target>
+          </trans-unit>
+          <trans-unit id="394">
+              <source>Optional Fields</source>
+              <target>Нэмэлт Талбарууд</target>
+          </trans-unit>
+          <trans-unit id="395">
+              <source>Speed Calculation</source>
+              <target>Хурд Тооцоолол</target>
+          </trans-unit>
+          <trans-unit id="396">
+              <source>Sentence Spaces</source>
+              <target>Өгүүлбэрийн зай</target>
+          </trans-unit>
+          <trans-unit id="397">
+              <source>Typing Sounds</source>
+              <target>Бичих дуу</target>
+          </trans-unit>
+          <trans-unit id="398">
+              <source>Student Account Successfully Updated</source>
+              <target>Сурагчийн Бүртгэл Амжилттай Шинэчлэгдсэн</target>
+          </trans-unit>
+          <trans-unit id="399">
+              <source>Usernames must be between 4 and 30 characters, and can contain only letters, numbers, userscores, and one dot (.)</source>
+              <target>Хэрэглэгчийн нэр нь 4-30 тэмдэгтээс хэтрэхгүй байх ёстой бөгөөд зөвхөн үсэг, тоо, доогуур зураас, нэг цэгийг(.) агуулсан байж болно</target>
+          </trans-unit>
+          <trans-unit id="400">
+              <source>Can't find that email, sorry.</source>
+              <target>Уучлаарай, Энэ имэйлийг олохгүй байна.</target>
+          </trans-unit>
+          <trans-unit id="401">
+              <source>Save Successful</source>
+              <target>Амжилттай Хадгаллаа</target>
+          </trans-unit>
+          <trans-unit id="402">
+              <source>Password change successfully</source>
+              <target>Нууц үг өөрчлөлт амжилттай</target>
+          </trans-unit>
+          <trans-unit id="403">
+              <source>Please reset your password</source>
+              <target>Өөрийн нууц үгээ дахин тохируулна уу</target>
+          </trans-unit>
+          <trans-unit id="404">
+              <source>Your password has changed</source>
+              <target>Таны нууц үг өөрчлөгдсөн</target>
+          </trans-unit>
+          <trans-unit id="405">
+              <source>It looks like you clicked on an invalid password reset link. Please try again.</source>
+              <target>Та буруу нууц үг сэргээх холбоос дээр дарсан бололтой. Дахин оролдоно уу.</target>
+          </trans-unit>
+          <trans-unit id="406">
+              <source>Account information saved successfully</source>
+              <target>Бүртгэлийн мэдээлэл амжилттай хадгалагдсан</target>
+          </trans-unit>
+          <trans-unit id="407">
+              <source>Registration successful</source>
+              <target>Бүртгэл амжилттай болсон</target>
+          </trans-unit>
+          <trans-unit id="408">
+              <source></source>
+              <target></target>
+          </trans-unit>
+          <trans-unit id="409">
+              <source></source>
+              <target></target>
+          </trans-unit>
+        </body>
+    </file>
+</xliff>

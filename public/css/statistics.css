@@ -1,0 +1,109 @@
+a.clear-stats:link, a.clear-stats:visited, a.clear-stats:hover, a.clear-stats:active {
+	color: #F42682;
+	margin-right: 50px;
+}
+
+
+div.stats-header {
+	clear: both;
+	width: 585px;
+	padding-left: 33px;
+	height: 22px;
+	background: white url('../images/arrow-closed.gif') no-repeat 20px 5px;
+	border-left: 1px solid #dadada;
+	border-right: 1px solid #e2e2e2;
+	border-bottom: 1px solid #9dedf2;
+	font: bold 10pt Arial;
+	line-height: 22px;
+	cursor: pointer;
+}
+
+div.text-row { background: none; }
+
+div.beginner { color: #018c0a !important; background-color: white !important; }
+
+div.intermediate { color: #007883 !important; background-color: #d7f5f7 !important; }
+
+div.advanced { color: #f42682 !important; background-color: #fdecf4 !important; }
+
+div.specialty { color: #f42682 !important; background-color: #fdecf4 !important; }
+
+
+div.h-beginner { background-color: #bff8b8 !important; color: #018c0a;}
+
+div.h-intermediate { background-color: #baeff2 !important; color: #007883; }
+
+div.h-advanced { background-color: #fbb5d4 !important; 	color: #f42682;}
+
+div.h-specialty { background-color: #fbb5d4 !important; 	color: #f42682;}
+
+div.h-arrow-open { background-position: 17px 8px !important; background-image: url('../images/arrow-open.gif') !important; }
+
+#graph-template {
+	display: none;
+}
+
+div.stat-container {
+	background: url('/images/popup-bg.gif') repeat;
+	height: 378px;
+	width: 740px;
+	padding: 15px 20px 20px;
+	overflow: hidden;
+}
+
+h1 {
+	font: bold 12pt Arial;
+	color: #10cfcf;
+	margin: 0px;
+}
+
+div.stat-graph {
+	clear: both;
+	width: 700px;
+	height: 285px;
+	border: 1px solid #dddddd;
+}
+
+div.stat-leftbar {
+	margin-top: 10px;
+	float: left;
+	width: 210px;
+	height: 25px;
+	font: 14pt Arial;
+	color: #4a4947;
+	cursor: pointer;
+}
+
+div.stat-rightbar {
+	margin-top: 5px;
+	float: left;
+	width: 480px;
+	height: 25px;
+	font: 8pt Arial;
+	color: #4a4947;
+}
+
+div.reg-close {
+	float: right;
+	width: 15px;
+	cursor: pointer;
+	border: 1px solid #ddd;
+	color: #fd355a;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 2px;
+	height: 15px;
+}
+
+div.stat-header {
+	float: left;
+	margin-bottom: 10px;
+}
+
+div.middle-left {
+	width: 550px;
+}
+
+div.text-row-over {
+	color: black !important;
+}

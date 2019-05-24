@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="my_content">
+    <div class="upgrade_content">
+        <div class="upgrade_head">
+            <div class="upgrade_info">
+                <h1>{%trans%}Premium Account{%endtrans%}</h1>
+                <h2>{%trans%}Unlock Your Full Typing Potential!{%endtrans%}</h2>
+                <p>{%trans%}Get the most out of your time on Bicheech. For a small fee you can unlock extra premium lessons.{%endtrans%}</p>
+            </div>
+        </div>
+        <div class="upgrade_body">
+            <h3 class="titlewithline">
+                <span>{%trans%}Premium Packages{%endtrans%}</span>
+            </h3>
+
+            <div class="dm3-pricing dm3-pricing-2">
+                {% for entity in entities %}
+                    <div class="dm3-pricing-column{% if(entity.featured == 1) %} dm3-pricing-featured{% endif %}">
+                        <div class="dm3-pricing-header">
+                            <h2>{{ entity.id |title |trans }}</h2>
+                        </div>
+                        <div class="dm3-pricing-price">
+                            <span>{{ entity.price }}₮</span>
+                            <i>/ {% if(entity.conditionTerm) %}{{ entity.conditionTerm }} {%trans%}year{%endtrans%}{% else %} {%trans%}lifetime{%endtrans%}{% endif %}</i>
+                        </div>
+                        <div class="dm3-pricing-options">
+                            <ul>
+                                <li>{{ entity.conditionOne |trans }}</li>
+                                <li>{{ entity.conditionTwo |trans }}</li>
+                                <li>{{ entity.conditionThree |trans }}</li>
+                            </ul>
+                        </div>
+                        <div class="dm3-pricing-actions">
+                            <a class="dm3-btn" href="{% if app.user %}{{ path('tutor_upgrade_payment',{'id':entity.id}) }}{% else %}{{ path('student_login') }}{% endif %}">{%trans%}Upgrade Now{%endtrans%}</a>
+                        </div>
+                    </div>
+                {% else %}
+                    No upgrade service have been found.
+                {% endfor %}
+
+            </div>
+            <br/><br/><br/>
+            <h2 class="whatis">{%trans%}Are Yearly Charges Auto-Recurring?{%endtrans%}</h2>
+            <p>{%trans%}No, charges are never auto-recurring. For yearly membership types, we will only charge you once. When your membership expires you can optionally choose to renew.{%endtrans%}</p>
+            <br/><br/><br/>
+            <h2 class="whatis">{%trans%}What are Premium Lessons?{%endtrans%}</h2>
+            <p>{%trans%}Recommended for anyone truly interested in getting the most out of Bicheech, we offer 16 extra premium lessons including individual finger exercises, common medical terms, numeric data entry, as well as fun and interesting facts to keep your learning time fresh and fun.{%endtrans%}</p>
+            <br/><br/><br/>
+            <h2 class="whatis">{%trans%}What is Priority Email Support?{%endtrans%}</h2>
+            <p>{%trans%}Have a question about your account, or about getting the most out of Bicheech? Premium members are guaranteed a fast response from our team of experts.{%endtrans%}</p>
+            <br/><br/><br/>
+        </div>
+    </div>
+</div>
+{% endblock body %}

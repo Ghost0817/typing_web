@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<img src=\"\/tutor\/images\/finger_workout.png\" align=\"right\" \/><p class=\"typinghelp\" \/><br \/><br \/><br \/><br \/>Wow, your fingers are looking pretty ripped.  Again, we will be working the familiar workout routine, but this time with the ring finger, found 3 fingers over from the thumb.  Good luck!<br \/><\/p>";
+		lessonData.congratsText = "<p class=\"typinghelp\">That was a short preview of this premium lesson. The full lesson is much longer and more comprehensive.<\/p>  <p class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\">Upgrading to a Gold Membership<\/a> will remove all advertisements, unlock all premium content, and allow for priority email support.<\/p><br \/><p style=\"text-align:center\" class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\" target=\"_top\">UPGRADE ACCOUNT<\/a><\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"115513","lessonID":"356","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Left hand warmup","exercise":"ssss ssss ssss ssss ssss ssss ssss ssss ssss ssss\r\nwwww wwww wwww wwww wwww wwww wwww wwww wwww wwww","helpText":""},{"lessonExerciseID":"115514","lessonID":"356","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Both hands warmup","exercise":"xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx\r\nllll llll llll llll llll llll llll llll llll llll","helpText":""},{"lessonExerciseID":"115515","lessonID":"356","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115516","lessonID":"356","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115517","lessonID":"356","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115518","lessonID":"356","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115519","lessonID":"356","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115520","lessonID":"356","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115521","lessonID":"356","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115522","lessonID":"356","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115523","lessonID":"356","type":"mixed","displayOrder":"12","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115524","lessonID":"356","type":"mixed","displayOrder":"13","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""}];
+		lessonData.lessonID = '356';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Ring Finger Workout";
+		lessonData.restricted = '1';
+		lessonData.playSounds = true;
+		lessonData.course = 'INTERMEDIATE_COURSE';
+		lessonData.hasTrophy = 0;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =1;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 1;
+			

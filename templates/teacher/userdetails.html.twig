@@ -1,0 +1,143 @@
+{% extends 'teacher.html.twig' %}
+
+{% block title %}{% trans %}Bicheech.com{% endtrans %} {% trans %}Teacher Portal{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+    <h3 class="pageHeader">{% trans %}Students Details{% endtrans %}<small> {{ student.username }}</small></h3>
+
+    <div id="alert-area"></div>
+
+    <table width="100%" cellpadding="0" cellspacing="4">
+        <tbody>
+        <tr valign="top">
+            <td width="50%">
+                <div id="student-info"></div>
+            </td>
+            <td width="50%">
+                <div id="account-details"></div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div id="lesson-progress"></div>
+
+    <div id="typing-test-progress"></div>
+
+    <div id="recent-student-act"></div>
+
+</div>
+
+<select name="speedTypes" id="speedTypes" class="x-hidden">
+    <option value="wpm">Words per Minute</option>
+    <option value="cpm">Characters per Minute</option>
+</select>
+<select name="spaces" id="spaces" class="x-hidden">
+    <option value="1">One Space</option>
+    <option value="2">Two Spaces</option>
+</select>
+<select name="sounds" id="sounds" class="x-hidden">
+    <option value="1">{% trans %}Yes{% endtrans %}</option>
+    <option value="0">{% trans %}No{% endtrans %}</option>
+</select>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('resources/css/ext-all.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('resources/css/xtheme-gray.css') }}" />
+{% endblock stylesheets %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('adapter/ext/ext-base.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/ext-all.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/global.js') }}"></script>
+    <script>
+        var lessonsData = {{ lessonData|raw }};
+        var TestsData = {{ testsData|raw }};
+        var LoginData = {{ loginData|raw }};
+        var languageID = '1';
+        url = {
+        {% if (grade) %}
+            "CLASS_URL": "{{ path('usersgridpage', { 'id': grade.id}) }}",
+        {% else %}
+            "CLASS_URL": "{{ path('usersgridpage', { 'id': 'ungrouped'}) }}",
+        {% endif %}
+            "UPDATE_URL": "{{ path('upgradepage') }}",
+            "LOAD_STUDENT_URL": "{{ path('usersloadpage') }}",
+            "SAVE_STUDENT_URL": "{{ path('usersavepage') }}",
+        };
+        value = {
+            "USERID": "{{ student.id }}",
+            "USERNAME": "{{ student.username }}&nbsp;",
+            "NAME": "{{ student.firstname }}&nbsp;{{ student.lastname }}",
+            {% if (grade) %}
+            "CLASS": "{{ grade.name }}",
+            {% else %}
+            "CLASS": "Ungrouped Students",
+            {% endif %}
+            "EMAIL": "{{ student.email }}",
+            "LASTLOGIN": "{{ student.lastlogin|date("Y-m-d H:i:s") }}",
+            "ACOOUNTTYPE": 'Standard [<a href="' + url.UPDATE_URL + '">Upgrade Premium</a>]',
+            "SPEEDCALCULATION": "{{ student.measureSpeed }}",
+            "SENTENCESPACES": "{{ student.sentenceSpaces }}",};
+        text = {
+            "STUDENTINFORMATION": "{% trans %}Student Information{% endtrans %}",
+            "ACCOUNTDETAILS": "{% trans %}Account Details{% endtrans %}",
+            "LESSONPROGRESS": "{% trans %}Lesson Progress{% endtrans %}",
+            "TYPINGTESTPROGRESS": "{% trans %}Typing Test Progress{% endtrans %}",
+            "RECENTSTUDENTACTIVITY": "{% trans %}Recent Student Activity{% endtrans %}",
+            "USERNAME": "{% trans %}Username{% endtrans %}",
+            "NAME": "{% trans %}Name{% endtrans %}",
+            "FIRST_NAME": "{% trans %}First Name{% endtrans %}",
+            "LAST_NAME": "{% trans %}Last Name{% endtrans %}",
+            "CLASS": "{% trans %}Class{% endtrans %}",
+            "EMAIL": "{% trans %}Email{% endtrans %}",
+            "LASTLOGIN": "{% trans %}Last Login{% endtrans %}",
+            "ACOOUNTTYPE": "{% trans %}Account Type{% endtrans %}",
+            "SPEEDCALCULATION": "{% trans %}Speed Calculation{% endtrans %}",
+            "SENTENCESPACES": "{% trans %}Sentence Spaces{% endtrans %}",
+            "NO_PROGRESS_RESULTS": "{% trans %}There are currently no lesson progresses in this student.{% endtrans %}",
+            "LESSON": "{% trans %}Lesson{% endtrans %}",
+            "CROSSSPEED": "{% trans %}Gross Speed{% endtrans %}",
+            "ACCURACY": "{% trans %}Accuracy{% endtrans %}",
+            "NETSPEED": "{% trans %}Net Speed{% endtrans %}",
+            "SPENTTIME": "{% trans %}Time Spent Typing{% endtrans %}",
+            "PROGRESS": "{% trans %}Progress{% endtrans %}",
+            "LASTTYPED": "{% trans %}Last Typed{% endtrans %}",
+            "NEVER": "{% trans %}Never{% endtrans %}",
+            "EDITSTUDENT": "{% trans %}Edit Student{% endtrans %}",
+            "EXPORT": "{% trans %}Export{% endtrans %}",
+            "PROBLEMKEYSGRAPH": "{% trans %}Problem keys Graph{% endtrans %}",
+            "VIEWSUMMARYGRAPH": "{% trans %}View Summary Graph{% endtrans %}",
+            "VIEWGRAPH": "{% trans %}View Graph{% endtrans %}",
+            "COURSE": "{% trans %}Course{% endtrans %}",
+            "IMPROVEMENT": "{% trans %}Improvement{% endtrans %}",
+            "OVERALLIMPROVEMENT": "{% trans %}Overall Improvement{% endtrans %}",
+            "TESTTIME": "{% trans %}Test Time{% endtrans %}",
+            "EDIT_STUDENT": "{% trans %}Edit Student{% endtrans %}",
+            "ACCOUNT_INFORMATION": "{% trans %}Account Information{% endtrans %}",
+            "PASSWORD": "{% trans %}Password{% endtrans %}",
+            "NOTE_PASSWORD_TIP": "{% trans %}Note: only enter a password to change it{% endtrans %}",
+            "OPTIONAL_FIELDS": "{% trans %}Optional Fields{% endtrans %}",
+            "PREFERENCES": "{% trans %}Preferences{% endtrans %}",
+            "SPEED_CALCULATION": "{% trans %}Speed Calculation{% endtrans %}",
+            "SENTENCE_SPACES": "{% trans %}Sentence Spaces{% endtrans %}",
+            "TYPING_SOUNDS": "{% trans %}Typing Sounds{% endtrans %}",
+            "SAVE": "{% trans %}Save{% endtrans %}",
+            "CANCEL": "{% trans %}Cancel{% endtrans %}",
+            "STUDENT_ACCOUNT_SUCCESSFULLY_UPDATED":"{% trans %}Student Account Successfully Updated{% endtrans %}!",
+            "USERNAME_FIELD_ERROR":"{% trans %}Usernames must be between 4 and 30 characters, and can contain only letters, numbers, userscores, and one dot (.){% endtrans %}!",
+
+            "VALIDATION_ERROR": "Validation Error",
+            "PLEASE_CORRECT": "Please correct invalid fields and values.",
+            "SAVING_STUDENT": "Saving Student",
+            "THERE_WAS_AN_ERROR": "There was an error",
+            "UNKNOWN_ERROR": "Unknown error.  Please contact support.",
+            "LOADING_STUDENT": "Loading Student",
+        };
+    </script>
+    <script type="text/javascript" src="{{ asset('js/edituser.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/userdetails.js') }}"></script>
+{% endblock javascripts %}

@@ -1,0 +1,35 @@
+App\Entity\StudentLogged:
+    type: entity
+    table: student_logged
+    indexes:
+        student_id:
+            columns:
+                - student_id
+    id:
+        sessId:
+            type: string
+            nullable: false
+            length: 128
+            options:
+                fixed: false
+            id: true
+            column: sess_id
+            generator:
+                strategy: IDENTITY
+    fields:
+        sessDate:
+            type: date
+            nullable: false
+            column: sess_date
+    manyToOne:
+        student:
+            targetEntity: Student
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                student_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

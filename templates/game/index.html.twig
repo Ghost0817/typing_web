@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Typing Games{% endtrans %} | Free Typing Tutor{% endblock %}
+
+{% block body %}
+<div class="my_content">
+    <div class="right_ads">
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            {% include 'tipday.html.twig' %}
+        {% else %}
+            {% include 'rec_regbox.html.twig' %}
+        {% endif %}
+        {% include 'levelbox.html.twig' %}
+
+        {% include 'wall_fame.html.twig' %}
+    </div>
+
+    <div class="content">
+        <div class="container">
+            {% set row = 0 %}
+            {% for entity in entities %}
+                {% set row = row + 1 %}
+                <div class="game{%if (row == 4)%} g-last{% endif %}">
+                    <a href="{{path('tutor_gamesinfo',{'id':entity.id})}}">
+                        <img src="/game/{{entity.picture}}" border="0">
+                    </a>
+
+                    <p><a href="{{path('tutor_gamesinfo',{'id':entity.id})}}">
+                        {% if app.request.attributes.get('_locale') == 'mn' %}
+                            {{ entity.mnTitle }}
+                        {% else %}
+                            {{ entity.enTitle|trans }}
+                        {% endif %}
+                        </a><br>
+                        {% if app.request.attributes.get('_locale') == 'mn' %}
+                            {{ entity.mnDiscription }}
+                        {% else %}
+                            {{ entity.enDiscription|trans }}
+                        {% endif %}
+                    </p>
+                </div>
+
+                {%if (row == 4)%}
+                    <div class="clearinghouse"></div>
+                    {% set row = 0 %}
+                {%endif%}
+            {% else %}
+                No games have been found.
+            {% endfor %}
+
+            <p><a style="clear: both; display: block; height: 153px; background:url({{ asset('game/nitro_type.png') }}) no-repeat 10px bottom; text-indent: -1933px; font: bold 100px red; padding-top: 10px; margin-bottom: 5px;" href="http://www.nitrotype.com/" target="_BLANK" title="Free Typing Games"></a></p>
+
+            <p class="text-center">{% trans %}Also check out Fun To Type for Free{% endtrans %} <a href="http://www.funtotype.com">Typing Games</a></p>
+        </div>
+    </div>
+</div>
+{% endblock body %}

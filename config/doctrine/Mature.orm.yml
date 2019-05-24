@@ -1,0 +1,61 @@
+App\Entity\Mature:
+    type: entity
+    table: mature
+    id:
+        id:
+            type: string
+            nullable: false
+            length: 150
+            options:
+                fixed: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        price:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+        conditionOne:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: condition_one
+        conditionTwo:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: condition_two
+        conditionThree:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: condition_three
+        conditionTerm:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: condition_term
+        role:
+            type: string
+            nullable: false
+            length: 150
+            options:
+                fixed: false
+        featured:
+            type: boolean
+            nullable: false
+        softnum:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

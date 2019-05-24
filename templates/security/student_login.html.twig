@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Student Log In{% endblock title %}
+
+{% block body %}
+    <div class="middlebox">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-xs-6">
+                    <div class="row" style="padding-right: 10px;">
+                        <h1 style="text-align:left;">{% trans %}Already have an account?{% endtrans %}</h1>
+                        <p>{%trans%}Please log in to continue.{%endtrans%}</p>
+                        {% if error %}
+                            <div class="msg-error">{{ error.message }}</div>
+                        {% endif %}
+                        <form action="{{ path('student_login_check') }}" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="" title="Please enter you username" placeholder="{%trans%}Username{%endtrans%}">
+                                <span class="help-block"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password" name="_password" value="" required="" title="Please enter your password" placeholder="{%trans%}Password{%endtrans%}">
+                                <span class="help-block"></span>
+                            </div>
+
+                            <!--<input type="hidden" name="_csrf_security_token" value="{{ csrf_token('authenticate') }}" />-->
+                            <input type="hidden" name="_target_path" value="_welcome" />
+
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox" name="_remember_me" id="remember"> Remember my username
+                                </label>
+                            </div>
+                            <input type="submit" name="login" class="btn btn-defualt" value="{%trans%}Login{%endtrans%}"/>
+                            <br /><br />
+                            <a href="{{ path('student_forgot') }}" target="_BLANK" class="sign-up">{%trans%}I forgot my password{%endtrans%}!</a>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-6" style="background-color: #d7d7d7;">
+                    <h1>{% trans %}Don't have an account?{% endtrans %}</h1>
+                    <p class="lead">{%trans%}Bicheech.com is free{%endtrans%}!</p>
+                    <ul class="list-unstyled" style="line-height: 2">
+                        <li><span class="fa fa-check fa-lg" aria-hidden="true"></span> {%trans%}No Download, Just type{%endtrans%}</li>
+                        <li><span class="fa fa-check fa-lg" aria-hidden="true"></span> {%trans%}Perfect for All Ages{%endtrans%}</li>
+                        <li><span class="fa fa-check fa-lg" aria-hidden="true"></span> {%trans%}Bicheech.com's full typing curriculum{%endtrans%}</li>
+                        <li><span class="fa fa-check fa-lg" aria-hidden="true"></span> {%trans%}Lessons for All Skill Levels{%endtrans%}</li>
+                    </ul>
+                    <p><a href="{{ path('tutor_new_register') }}" class="btn btn-info btn-block">{%trans%}Sign Up Now{%endtrans%} »</a></p>
+                </div>
+                {% if app.request.attributes.get('_locale') == 'mn' %}
+                    <div class="teacherCallout">Та <strong>багш</strong> уу? Та одоо манай үнэгүй цоо шинэ <a href="{{ path('teacher_login') }}" target="_BLANK">Багш Портал</a> ашиглан өөрийн бүх ангийг удирдаж болно!</div>
+                {% else %}
+                    <div class="teacherCallout">Are you a <strong>teacher</strong>? You can now manage your entire classroom for free using our brand new <a href="{{ path('teacher_login') }}" target="_BLANK">Teacher Portal</a>!</div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+{% endblock stylesheets %}

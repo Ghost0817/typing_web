@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="littlebox">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+        {%trans%}Password reset confirmation sent{%endtrans%}!
+        </div>
+        <div class="panel-body">
+            <p>{%trans%}We’ve sent you an email containing a link that will allow you to reset your password for the next 24 hours.{%endtrans%}</p>
+            <p>{%trans%}Please check your spam folder if the email doesn’t appear within a few minutes.{%endtrans%}</p>
+            <a href="{{path('student_login')}}" class="btn btn-defualt" >{%trans%}Return to login{%endtrans%} »</a>
+        </div>
+    </div>
+</div>
+{% endblock body %}

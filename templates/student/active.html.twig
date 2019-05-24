@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="littlebox">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                test
+            </div>
+            <div class="panel-body">
+                <p>{%trans%}Password must contain one lowercase letter, one number, and be at least 7 characters long.{%endtrans%}</p>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

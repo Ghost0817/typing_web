@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<img src=\"\/tutor\/images\/aesop.png\" align=\"right\" \/><br \/><br \/><br \/><p class=\"typinghelp\" \/><div align=\"center\"><br \/><strong>By The Almshouse Window (Aesop Fables) <br \/><br \/>by Hans Christian Andersen<br \/><br \/>(1805-1875)<strong><\/p>";
+		lessonData.congratsText = "<p class=\"typinghelp\">That was a short preview of this premium lesson. The full lesson is much longer and more comprehensive.<\/p>  <p class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\">Upgrading to a Gold Membership<\/a> will remove all advertisements, unlock all premium content, and allow for priority email support.<\/p><br \/><p style=\"text-align:center\" class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\" target=\"_top\">UPGRADE ACCOUNT<\/a><\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"115200","lessonID":"344","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Part 1 of 14","exercise":"NEAR the grass-covered rampart which encircles\r\nCopenhagen lies a great red house. Balsams and\r\nother flowers greet us from the long rows of\r\nwindows in the house, whose interior is\r\nsufficiently poverty-stricken; and poor and old\r\nare the people who inhabit it. The building is the\r\nWarton Almshouse.","helpText":""},{"lessonExerciseID":"115201","lessonID":"344","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Part 2 of 14","exercise":"Look! at the window there leans an old maid. She\r\nplucks the withered leaf from the balsam, and\r\nlooks at the grass-covered rampart, on which many\r\nchildren are playing. What is the old maid\r\nthinking of? A whole life drama is unfolding\r\nitself before her inward gaze.","helpText":""},{"lessonExerciseID":"115202","lessonID":"344","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115203","lessonID":"344","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115204","lessonID":"344","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115205","lessonID":"344","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115206","lessonID":"344","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115207","lessonID":"344","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115208","lessonID":"344","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115209","lessonID":"344","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115210","lessonID":"344","type":"mixed","displayOrder":"12","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115211","lessonID":"344","type":"mixed","displayOrder":"13","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115212","lessonID":"344","type":"mixed","displayOrder":"14","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115213","lessonID":"344","type":"mixed","displayOrder":"15","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""}];
+		lessonData.lessonID = '344';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Aesop Fables - By The Almshouse Window";
+		lessonData.restricted = '1';
+		lessonData.playSounds = true;
+		lessonData.course = 'SPECIALTY_COURSE';
+		lessonData.hasTrophy = 0;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =1;
+		lessonData.noKeyboard = 1;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 1;
+			

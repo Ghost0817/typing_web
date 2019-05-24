@@ -1,0 +1,111 @@
+security:
+
+    encoders:
+        App\Entity\Teacher:
+            algorithm:        sha512
+            encode_as_base64: false
+            iterations:       0
+        App\Entity\Student:
+            algorithm: sha512
+            encode_as_base64: false
+            iterations: 0
+
+    # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
+    providers:
+        teacher_db_provider:
+            entity:
+                class: App:Teacher
+                property: username
+        student_db_provider:
+            entity:
+                class: App:Student
+                property: username
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        login_firewall2:
+            pattern:   ^/(en|fr|mn)/student/login$
+            anonymous: ~
+
+        login_firewall:
+            pattern:   ^/(en|fr|mn)/teacher/login$
+            anonymous: true
+
+        regist_firewall:
+            pattern:   ^/(en|fr|mn)/teacher/signup$
+            anonymous: true
+
+        active_firewall:
+            pattern:   ^/(en|fr|mn)/teacher/active/$
+            anonymous: true
+
+        forgot_teacher:
+            pattern:   ^/(en|fr|mn)/teacher/password-reset*
+            anonymous: true
+
+        forgot_student:
+            pattern:   ^/(en|fr|mn)/student/password-reset*
+            anonymous: ~
+
+        teacher_secured_area:
+            pattern:    ^/(en|fr|mn)/teacher/.*|^/teacher/.*
+            provider: teacher_db_provider
+            anonymous: false
+            form_login:
+                login_path: teacher_login
+                check_path: teacher_login_check
+                username_parameter: "_username"
+                password_parameter: "_password"
+            logout:
+                path:   teacher_logout
+                target: tutor_index
+            http_basic: true
+
+        student_secured_area:
+            pattern:    ^/.*
+            provider: student_db_provider
+            anonymous: true
+            form_login:
+                login_path: student_login
+                check_path: student_login_check
+                username_parameter: "_username"
+                password_parameter: "_password"
+            remember_me:
+                secret:   '%kernel.secret%'
+                lifetime: 604800 # 1 week in seconds
+                path:     /
+            logout:
+                path:   student_logout
+                target: tutor_index
+
+            # activate different ways to authenticate
+
+            http_basic: true
+
+        main:
+            anonymous: ~
+            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+
+            #form_login: true
+            # https://symfony.com/doc/current/security/form_login_setup.html
+
+    # Easy way to control access for large sections of your site
+    # Note: Only the *first* access control that matches will be used
+    access_control:
+        # require ROLE_ADMIN for /admin*
+        - { path: ^/%locale%/teacher/login, roles: [IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/%locale%/teacher/login_check, roles: [IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/%locale%/teacher/signup, roles: [IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/%locale%/teacher/active/*, roles: [IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/%locale%/teacher/password-reset, roles: [IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/%locale%/student/login, roles: [IS_AUTHENTICATED_ANONYMOUSLY] }
+        - { path: ^/%locale%/student/login_check, roles: [IS_AUTHENTICATED_ANONYMOUSLY] }
+        # дараах цохнууд заавал багшиийн эрхээр орох цонх юм.
+        - { path: ^/%locale%/teacher/*, roles: ROLE_TEACHER }
+        - { path: ^/teacher/*, roles: ROLE_TEACHER }
+        - { path: ^/%locale%/student/*, roles: [ IS_AUTHENTICATED_ANONYMOUSLY, ROLE_FREE ] }
+        - { path: ^/student/*, roles: [ IS_AUTHENTICATED_ANONYMOUSLY, ROLE_FREE ] }
+        - { path: ^/*, roles: [ IS_AUTHENTICATED_ANONYMOUSLY, ROLE_TEACHER, ROLE_FREE ] }

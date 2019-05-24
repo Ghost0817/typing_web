@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="my_content">
+    <div class="upgrade_content">
+        <div class="upgrade_head">
+            <div class="upgrade_info">
+                <h1>Premium <br/>Account</h1>
+                <h2>{%trans%}Unlock Your Full Typing Potential{%endtrans%}!</h2>
+                <p>{%trans%}Get the most out of your time on Bicheech. For a small fee you can unlock extra premium lessons.{%endtrans%}</p>
+            </div>
+        </div>
+    <div class="upgrade_body">
+        <h3 class="titlewithline">
+            <span>{%trans%}Payment Information{%endtrans%}</span>
+        </h3>
+
+        <h3 class="titlewithline">
+            <span>{%trans%}Total Price{%endtrans%}</span>
+        </h3>
+        <h3 id="total-cost" style="color: #4a4947;">{{ entity.id |title |trans }} {%trans%}Membership{%endtrans%} ({% if(entity.conditionTerm) %}{{ entity.conditionTerm }} {%trans%}year{%endtrans%}{% else %} {%trans%}lifetime{%endtrans%}{% endif %}) - {{ entity.price }}₮ MNT</h3>
+        <p><span class="left">* {%trans%}This is a one time fee. You will not be charged again unless initiated by you.{%endtrans%}</span></p>
+
+        <br/>
+
+        {{ form_start(form) }}
+
+        {{ form_widget(form._token) }}
+        {% if(form._token.vars.errors|length) %}
+            <div class="msg-error">{{ form_errors(form._token) }}</div>
+        {% endif %}
+        {{ form_errors(form) }}
+        {{ form_end(form) }}
+
+        <br/><br/>
+
+        </div>
+    </div>
+</div>
+{% endblock body %}
+
+{% block javascripts %}
+<script async src="{{ asset('bundles/frontend/js/jquery.min.js') }}"></script>
+<script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+{% endblock javascripts %}

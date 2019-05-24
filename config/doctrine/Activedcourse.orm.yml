@@ -1,0 +1,48 @@
+App\Entity\Activedcourse:
+    type: entity
+    table: activedcourse
+    indexes:
+        student:
+            columns:
+                - student
+        category:
+            columns:
+                - category
+        lesson:
+            columns:
+                - lesson
+        lang:
+            columns:
+                - lang
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        lang:
+            type: string
+            nullable: false
+            length: 20
+            options:
+                fixed: false
+        category:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        lesson:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        student:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

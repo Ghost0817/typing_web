@@ -1,0 +1,51 @@
+App\Entity\Banner:
+    type: entity
+    table: banner
+    indexes:
+        placing_id:
+            columns:
+                - placing_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        reclam:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+        viewed:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        clicked:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        fromdate:
+            type: datetime
+            nullable: false
+        todate:
+            type: datetime
+            nullable: false
+        created:
+            type: date
+            nullable: false
+        placingId:
+            type: string
+            nullable: false
+            length: 1
+            options:
+                fixed: true
+                comment: 'Баннер хаана байрлахийг заана.'
+            column: placing_id
+    lifecycleCallbacks: {  }

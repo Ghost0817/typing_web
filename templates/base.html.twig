@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="{{app.request.locale}}" xml:lang="{{app.request.locale}}" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="initial-scale=1">
+        {% include 'facebookhead.html.twig' %}
+
+        {% include 'twitterhead.html.twig' %}
+
+        <title>{% block title %}{% trans %}Learn to Type | Free Typing Tutor | Typing Course{% endtrans %}{% endblock %} - Bicheech.com</title>
+        {% block google %}
+        <meta name="keywords" content="10 хуруугаар хурдан шивэх, арван хуруугаар хурдан шивэх, Арван хуруугаар хурдан шивэж сургах, арван хурууны дасгал, bicheech.com, bicheech, бичээч.ком, бичээч, typing">
+		    <meta name="description" content="Арван хуруугаар хурдан шивэж сургах онлайн програм юм.">
+		    {% endblock %}
+        <link rel="alternate" href="{{ app.request.schemeAndHttpHost }}{% if app.request.attributes.get('_route') =='_welcome' %}{% if app.request.attributes.get('_locale') =='mn' %}{{ path('tutor_index',{'_locale':'en'}) }}{% else%}{{ path('tutor_index',{'_locale':'mn'}) }}{%endif%}{%else%}{% if app.request.attributes.get('_locale') =='mn' %}{{ app.request.requestUri|replace({'/mn/':'/en/'}) }}{% else%}{{ app.request.requestUri|replace({'/en/':'/mn/'}) }}{%endif%}{%endif%}" hreflang="{% if app.request.attributes.get('_locale') =='mn' %}en{% else%}mn{%endif%}" />
+        <meta name="robots" content="index, follow, all">
+        <!--[if gte IE 9]>
+        <style type="text/css">
+            .gradient {
+                filter: none;
+            }
+        </style>
+        <![endif]-->
+        {% block stylesheets %}{% endblock %}
+        <link rel="stylesheet" href="{{ asset('css/main.min.css') }}">
+        <script src="{{ asset('js/jquery.min.js') }}"></script>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <!-- Энд толгой хэсэг нь байна. -->
+        <header class="header">
+            <div class="header-links">
+                <div class="extra_layout">
+                    <div class="extra_box">
+                        <div class="extra_item text pull-left">{% trans %}free online typing tutor.{% endtrans %}</div>
+
+                        <div class="pull-right">
+                            {% if app.user %}
+                                {% if is_granted('ROLE_TEACHER') == 0 %}
+                                    <a href="{{ path('tutor_user_profile_change') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                    <a class="extra_item text">{% trans %}Hi{% endtrans %} {{app.user.username}}</a>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{ path('student_logout') }}" class="extra_item text">{% trans %}Logout{% endtrans %}</a>
+                                {% else %}
+
+                                    <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;
+                                    <a href="{{ path('teacher_login') }}" class="extra_item text">{% trans %}Teacher Tools{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Login{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{ path('tutor_new_register') }}" class="extra_item text">{% trans %}Sign up{% endtrans %}</a>
+
+                                {% endif %}
+
+                            {% else %}
+
+                                <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;
+                                <a href="{{ path('teacher_login') }}" class="extra_item text">{% trans %}Teacher Tools{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Login{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                <a href="{{ path('tutor_new_register') }}" class="extra_item text">{% trans %}Sign up{% endtrans %}</a>
+
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu">
+                <div class="menu_layout">
+                    <div class="menu-box">
+
+                        <div class="logo-box">
+
+				                    <a href="{{ path('_welcome') }}" title="Bicheech"><div class="logo"></div></a>
+
+                            <div class="sf-menu">
+                                <ul>
+                                {% if app.user %}
+                                    {% if is_granted('ROLE_TEACHER') == 0 %}
+
+                                        <li{% if menu == 1 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('tutor_index') }}">{% trans %}Course{% endtrans %}</a>
+                                        </li>
+                                        <li{% if menu == 2 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('tutor_games') }}">{% trans %}Games{% endtrans %}</a>
+                                        </li>
+                                        <li{% if menu == 3 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('tutor_test') }}">{% trans %}Test{% endtrans %}</a></li>
+                                        <li{% if menu == 4 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('tutor_statistics') }}">{% trans %}Statistics{% endtrans %}</a>
+                                        </li>
+                                        <li{% if menu == 5 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('blog_index') }}">{% trans %}Blog{% endtrans %}</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ path('tutor_upgrade') }}" title="Remove ads" class="removezar{{app.request.locale}}"></a>
+                                        </li>
+
+                                    {% else %}
+                                        <li{% if menu == 1 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('tutor_index') }}">{% trans %}Course{% endtrans %}</a>
+                                        </li>
+                                        <li{% if menu == 2 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('tutor_games') }}">{% trans %}Games{% endtrans %}</a>
+                                        </li>
+                                        <li{% if menu == 3 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('tutor_test') }}">{% trans %}Test{% endtrans %}</a></li>
+                                        <li{% if menu == 4 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('student_login') }}">{% trans %}Statistics{% endtrans %}</a>
+                                        </li>
+                                        <li{% if menu == 5 %} class="current-menu-item"{% endif %}>
+                                            <a href="{{ path('blog_index') }}">{% trans %}Blog{% endtrans %}</a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ path('tutor_upgrade') }}" title="Remove ads" class="removezar{{app.request.locale}}"></a>
+                                        </li>
+                                    {% endif %}
+                                {% else %}
+                                    <li{% if menu == 1 %} class="current-menu-item"{% endif %}>
+                                        <a href="{{ path('tutor_index') }}">{% trans %}Course{% endtrans %}</a>
+                                    </li>
+                                    <li{% if menu == 2 %} class="current-menu-item"{% endif %}>
+                                        <a href="{{ path('tutor_games') }}">{% trans %}Games{% endtrans %}</a>
+                                    </li>
+                                    <li{% if menu == 3 %} class="current-menu-item"{% endif %}>
+                                        <a href="{{ path('tutor_test') }}">{% trans %}Test{% endtrans %}</a></li>
+                                    <li{% if menu == 4 %} class="current-menu-item"{% endif %}>
+                                        <a href="{{ path('student_login') }}">{% trans %}Statistics{% endtrans %}</a>
+                                    </li>
+                                    <li{% if menu == 5 %} class="current-menu-item"{% endif %}>
+                                        <a href="{{ path('blog_index') }}">{% trans %}Blog{% endtrans %}</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('tutor_upgrade') }}" title="Remove ads" class="removezar{{app.request.locale}}"></a>
+                                    </li>
+                                {% endif %}
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Энд боди хэсэг нь байна. -->
+        <div class="sf_content">
+            {% block body %}{% endblock %}
+        </div>
+        {% block javascripts %}{% endblock %}
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-28558881-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

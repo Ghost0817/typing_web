@@ -1,0 +1,9 @@
+<div class="top-ads">
+    <div>
+        {% if( banner ) %}
+            {{ banner.reclam | raw }}
+        {% else %}
+            <img src="{{ asset('Reclam/banner2.png') }}" alt="780 X 90 Empty Banner" />
+        {% endif %}
+    </div>
+</div>

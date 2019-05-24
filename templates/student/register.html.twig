@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Student Log Up{% endblock title %}
+
+{% block body %}
+<div class="littlebox">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <h4>{% trans %}Don't have an account?{% endtrans %}</h4>
+            <p class="lead">{%trans%}No problem{%endtrans%}! <strong>{%trans%}Bicheech.com is free{%endtrans%}!</strong></p>
+            {{ form_start(form, {'action': path('tutor_new_register'), 'method': 'POST', 'id': 'form_register', 'autocomplete': 'off'}) }}
+                <div class="form-group">
+                    {{ form_widget(form.username, {'attr': {'class':'form-control','placeholder': 'Username', 'maxlength':'30'}}) }}
+                    {% if(form.username.vars.errors|length) %}
+                        <div class="msg-error">{{ form_errors(form.username) }}</div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form_widget(form.password.first, {'attr': {'class':'form-control','placeholder': 'Password', 'maxlength':'30'}}) }}
+                    {% if(form.password.first.vars.errors|length) %}
+                        <div class="msg-error">{{ form_errors(form.password.first) }}</div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form_widget(form.password.second, {'attr': {'class':'form-control','placeholder': 'Repeat password', 'maxlength':'30'}}) }}
+                    {% if(form.password.second.vars.errors|length) %}
+                        <div class="msg-error">{{ form_errors(form.password.second) }}</div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+                    {{ form_widget(form.email, {'attr': {'class':'form-control','placeholder': 'email', 'maxlength':'30'}}) }}
+                    {% if(form.email.vars.errors|length) %}
+                        <div class="msg-error">{{ form_errors(form.email) }}</div>
+                    {% endif %}
+                    {{ form_widget(form._token) }}
+                    {% if(form._token.vars.errors|length) %}
+                        <div class="msg-error">{{ form_errors(form._token) }}</div>
+                    {% endif %}
+                </div>
+                <div class="form-group">
+
+                    {% for flash_message in app.session.flashbag.get('success') %}
+                        <div class="msg-success">
+                            {{ flash_message }}
+                        </div>
+                    {% endfor %}
+                </div>
+
+                {{ form_widget(form.save) }}
+
+                <!--<a href="#" class="policy" target="_blank">{%trans%}Privacy Policy{%endtrans%}</a>-->
+            {{ form_end(form) }}
+        </div>
+    </div>
+</div>
+{% endblock %}

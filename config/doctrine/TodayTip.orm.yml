@@ -1,0 +1,26 @@
+App\Entity\TodayTip:
+    type: entity
+    table: today_tip
+    indexes:
+        tip:
+            columns:
+                - tip
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        date:
+            type: date
+            nullable: false
+        tip:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<p class=\"typinghelp\">And last but not least, the bottom row!  We're now going to move onto words whose first letter originates on the bottom row, then branches out.  These words may be a little... funky!<\/p><p class=\"typinghelp\">Make sure your fingers are on the home row before you type each word.  Refer to the onscreen keyboard and hands if you are unsure as to which finger should press the key.  Try to keep your eyes off your hands as much as possible.  Good luck!<\/p>";
+		lessonData.congratsText = "<img src=\"\/tutor\/images\/congrats_1.png\" alt=\"\" align=\"right\" \/><p class=\"typinghelp\">Saaawwweeeeettt!!!  You're now ready for the beginner wrap up!  Go shake your hands out, drink a fruit smoothie, and get ready for a big'n!<\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"114798","lessonID":"321","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Z is for Zippy","exercise":"zigzag zebra zero zucchini zipper zinnia zoo zithe\r\nzan zala zalad zajar zahag zaddy zamono zakk zah\r\nzomo zanby zachory zabba zamna zaxy zavvy zamn","helpText":""},{"lessonExerciseID":"114799","lessonID":"321","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"X is for Xylophone","exercise":"xenops xiphias xerox xenon xylem xylophone xerxes\r\nxavier xaks xader xalmo xaghij xalfo xadino xan\r\nxemop xenox xemnob xazer xaverbon xab xzv xamno","helpText":""},{"lessonExerciseID":"114800","lessonID":"321","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"C is for Clap","exercise":"cow corn cup cone crony code cola coal cent cen\r\ncar can camel carrot cake cat carp cart card carl\r\ncab cabby cammie candy carny cennel camel candy","helpText":""},{"lessonExerciseID":"114801","lessonID":"321","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"V is for Valley","exercise":"vest volcano vote vegetables vulture violin vowels\r\nvacuum vat van valley velvet vaccine vacation\r\nvagabond vagrant valeric vale vase vasiform","helpText":""},{"lessonExerciseID":"114802","lessonID":"321","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"B is for Ballroom","exercise":"bee bird broom bus butterfly booths benzine\r\nbat balloon bag banana ball ballroom bathroom\r\nbavarian banned barracuda banner bammy bax","helpText":""},{"lessonExerciseID":"114803","lessonID":"321","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"N is for Nicknacks","exercise":"net nose nest notes nine numbers notebook nuts\r\nnail nair navel nan nap nah nacks naffer nal\r\nnavigation navigator navizon nam nab nax","helpText":""},{"lessonExerciseID":"114804","lessonID":"321","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"M is for Madre","exercise":"milk mouse mitten moth mop moon monkey moons moop\r\nman mask mail mable maple mandy man male mail\r\nmonday montel mack maverick mabby maze maps","helpText":""}];
+		lessonData.lessonID = '321';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Easy Bottom Row Words";
+		lessonData.restricted = '';
+		lessonData.playSounds = true;
+		lessonData.course = 'BEGINNER_COURSE';
+		lessonData.hasTrophy = 1;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+			

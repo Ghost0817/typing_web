@@ -1,0 +1,25 @@
+<div id="graph-TYPING_TEST"></div>
+<script src="{{ asset('fusioncharts/fusioncharts.js') }}"></script>
+<script>
+text = {
+"GRAPH_NO_DATA": "{% trans %}No data to display. You must type more lessons to view statistics.{% endtrans %}",
+"GRAPH_NO_DATA_ERROR": "{% trans %}Error in loading data.{% endtrans %}",
+"LOAD_MESSAGE":"{% trans %}Retrieving data. Please wait.{% endtrans %}"
+};
+FusionCharts.ready(function () {
+    var revenueChart = new FusionCharts({
+        type: 'StackedColumn3DLineDY',
+        loadMessage: text.LOAD_MESSAGE,
+        renderAt: 'graph-TYPING_TEST',
+        width: '560',
+        height: '240',
+        dataFormat: 'jsonurl',
+        dataSource: "/tutor/statistics/{{ lang }}/graph/id/TYPING_TEST/lid/"
+    });
+    revenueChart.configure({
+        'ChartNoDataText': text.GRAPH_NO_DATA,
+        "LoadDataErrorText": text.GRAPH_NO_DATA_ERROR
+    });
+    revenueChart.render();
+});
+</script>

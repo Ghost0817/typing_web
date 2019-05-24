@@ -1,0 +1,120 @@
+App\Entity\Statustyping:
+    type: entity
+    table: statustyping
+    indexes:
+        keyboard:
+            columns:
+                - keyboard
+        fk_statustyping_exercise1_idx:
+            columns:
+                - exercise_id
+        sess_id:
+            columns:
+                - sess_id
+        student_id:
+            columns:
+                - student_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        time:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        acc:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+        problemkey:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+        correcthit:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        mistakehit:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        errorKeys:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: error_keys
+        allKeys:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: all_keys
+        lastlogin:
+            type: datetime
+            nullable: false
+            column: lastLogin
+        createdAt:
+            type: datetime
+            nullable: false
+            column: created_at
+        modifierAt:
+            type: datetime
+            nullable: false
+            column: modifier_at
+    manyToOne:
+        exercise:
+            targetEntity: Exercise
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                exercise_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        keyboard:
+            targetEntity: MyKeybroard
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                keyboard:
+                    referencedColumnName: id
+            orphanRemoval: false
+        sess:
+            targetEntity: StudentLogged
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                sess_id:
+                    referencedColumnName: sess_id
+            orphanRemoval: false
+        student:
+            targetEntity: Student
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                student_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

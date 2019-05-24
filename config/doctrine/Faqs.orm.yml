@@ -1,0 +1,47 @@
+App\Entity\Faqs:
+    type: entity
+    table: faqs
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        mnTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: mn_title
+        enTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: en_title
+        mnBody:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: mn_body
+        enBody:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: en_body
+        sortnum:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

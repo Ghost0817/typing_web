@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<img src=\"\/tutor\/images\/medical_terms.png\" align=\"right\" \/><p class=\"typinghelp\" \/><br \/><br \/><br \/><br \/><br \/>This lesson features very long and difficult to type medical terms to help strengthen your ability to remember the keyboard and not just typing common words.  This lesson is also great for medical transcriptionists as you will be seeing these terms very often!<br \/><\/p>";
+		lessonData.congratsText = "<p class=\"typinghelp\">That was a short preview of this premium lesson. The full lesson is much longer and more comprehensive.<\/p>  <p class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\">Upgrading to a Gold Membership<\/a> will remove all advertisements, unlock all premium content, and allow for priority email support.<\/p><br \/><p style=\"text-align:center\" class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\" target=\"_top\">UPGRADE ACCOUNT<\/a><\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"115301","lessonID":"348","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"A","exercise":"Abasia Abatement Ablation Acampsia Acanthesthsia\r\nAcroagnosis Acronesthesia Acrocyanosis Acroedema\r\nAcrohyperhydrosis Acrotic Actinocymography\r\nAcupuncture Acute Adrenergic Afebrile Aglutition","helpText":""},{"lessonExerciseID":"115302","lessonID":"348","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"A","exercise":"Agony Algesic Algology Alkaloid Allodynia\r\nAmbulatory Amputation Amyotonia Analgesia Anemia\r\nAnesthesia Anesthesiologist Angina Ankylosis\r\nAntagonist Anodyne Antidepressant Apnea Arrhythmia","helpText":""},{"lessonExerciseID":"115303","lessonID":"348","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115304","lessonID":"348","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115305","lessonID":"348","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115306","lessonID":"348","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115307","lessonID":"348","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115308","lessonID":"348","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115309","lessonID":"348","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115310","lessonID":"348","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115311","lessonID":"348","type":"mixed","displayOrder":"12","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115312","lessonID":"348","type":"mixed","displayOrder":"13","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115313","lessonID":"348","type":"mixed","displayOrder":"14","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115314","lessonID":"348","type":"mixed","displayOrder":"15","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115315","lessonID":"348","type":"mixed","displayOrder":"16","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115316","lessonID":"348","type":"mixed","displayOrder":"17","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115317","lessonID":"348","type":"mixed","displayOrder":"18","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""}];
+		lessonData.lessonID = '348';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Common Medical Terms";
+		lessonData.restricted = '1';
+		lessonData.playSounds = true;
+		lessonData.course = 'SPECIALTY_COURSE';
+		lessonData.hasTrophy = 0;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =1;
+		lessonData.noKeyboard = 1;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 1;
+			

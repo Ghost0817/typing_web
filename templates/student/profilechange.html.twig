@@ -1,0 +1,209 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="my_content">
+
+    <div class="right_ads">
+        {% if (app.user)%}
+            {% include 'tipday.html.twig' %}
+        {% else %}
+            {% include 'rec_regbox.html.twig' %}
+        {% endif %}
+        {% include 'levelbox.html.twig' %}
+
+        {% include 'wall_fame.html.twig' %}
+    </div>
+
+    <div class="content">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">{%trans%}Profile{%endtrans%}</div>
+          <div class="panel-body">
+
+          {{ form_start(form, {'action': path('tutor_user_profile_change'), 'method': 'POST', 'id': 'form_register', 'autocomplete': 'off'}) }}
+              <div class="form-group">
+                {{ form_label(form.firstname) }}
+                {{ form_widget(form.firstname, {'attr': {'class': 'form-control'}}) }}
+                {% if(form.firstname.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(form.firstname) }}</div>
+                {% endif %}
+              </div>
+
+              <div class="form-group">
+                {{ form_label(form.lastname) }}
+                {{ form_widget(form.lastname, {'attr': {'class': 'form-control'}}) }}
+                {% if(form.lastname.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(form.lastname) }}</div>
+                {% endif %}
+              </div>
+
+              <div class="form-group">
+                {{ form_label(form.username) }}
+                {{ form_widget(form.username, {'attr': {'class': 'form-control'}}) }}
+                {% if(form.username.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(form.username) }}</div>
+                {% endif %}
+              </div>
+
+              <div class="form-group">
+                {{ form_label(form.email) }}
+                {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                {% if(form.email.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(form.email) }}</div>
+                {% endif %}
+              </div>
+
+              <div class="checkbox">
+                {{ form_widget(form.gender) }}
+                {% if(form.gender.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(form.gender) }}</div>
+                {% endif %}
+              </div>
+
+              {{ form_errors(form) }}
+              {% for flash_message in app.session.flashbag.get('success') %}
+                <div class="msg-success">
+                  {{ flash_message }}
+                </div>
+              {% endfor %}
+
+              {{ form_widget(form._token) }}
+              <br/>
+              {{ form_widget(form.save) }}
+              <!--<a href="#" class="policy" target="_blank">{%trans%}Privacy Policy{%endtrans%}</a>-->
+              {{ form_end(form) }}
+
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">{%trans%}Options{%endtrans%}</div>
+          <div class="panel-body">
+
+          {{ form_start(o_form, {'action': path('tutor_user_profile_change'), 'method': 'POST', 'id': 'form_register', 'autocomplete': 'off'}) }}
+
+            <div class="radio">
+              {{ form_label(o_form.measureSpeed) }}
+              <label>
+                {{ form_widget(o_form.measureSpeed) }}
+                {{ o_form.measureSpeed.vars.label|trans }}
+                {% if(o_form.measureSpeed.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(o_form.measureSpeed) }}</div>
+                {% endif %}
+              </label>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                {{ form_widget(o_form.enableSounds) }} {{ o_form.enableSounds.vars.label|trans }}
+              </label>
+
+              {% if(o_form.enableSounds.vars.errors|length) %}
+                <div class="msg-error">{{ form_errors(o_form.enableSounds) }}</div>
+              {% endif %}
+            </div>
+
+            {{ form_errors(o_form) }}
+            {% for flash_message in app.session.flashbag.get('o_success') %}
+              <div class="msg-success">
+                {{ flash_message }}
+              </div>
+            {% endfor %}
+
+            {{ form_widget(o_form._token) }}
+            <br/>
+            {{ form_widget(o_form.save) }}
+            {{ form_end(o_form) }}
+
+          </div>
+        </div>
+
+        <div class="panel panel-default">
+          <div class="panel-heading">{%trans%}Keyboard layout{%endtrans%}</div>
+          <div class="panel-body">
+
+          {{ form_start(kb_form, {'action': path('tutor_user_profile_change'), 'method': 'POST', 'id': 'form_register', 'autocomplete': 'off'}) }}
+
+              <div class="form-group">
+                {{ form_label(kb_form.mykb) }}
+                {{ form_widget(kb_form.mykb, {'attr': {'class': 'form-control'}}) }}
+                {% if(kb_form.mykb.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(kb_form.mykb) }}</div>
+                {% endif %}
+              </div>
+
+            <img src="/tutor/keybr/1.gif" id="keyboard_layout" class="" />
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script>
+
+                $(window).load(function() {
+                  $('#student_keyboard_change_mykb').on('change', function() {
+                      //alert( this.value ); // or $(this).val()
+                      $('#keyboard_layout').attr('src','/tutor/keybr/'+ this.value +'.gif');
+                  });
+
+              });
+            </script>
+
+            {{ form_errors(kb_form) }}
+            {% for flash_message in app.session.flashbag.get('kb_success') %}
+              <div class="msg-success">
+                {{ flash_message }}
+              </div>
+            {% endfor %}
+
+            {{ form_widget(kb_form._token) }}
+            <br/>
+            {{ form_widget(kb_form.save) }}
+            {{ form_end(kb_form) }}
+
+
+          </div>
+        </div>
+    <br/><br/>
+    <div class="panel panel-default">
+      <div class="panel-heading">{%trans%}Change password{%endtrans%}</div>
+      <div class="panel-body">
+        {{ form_start(pass_form, {'action': path('tutor_user_profile_change'), 'method': 'POST', 'autocomplete': 'off'}) }}
+          <div class="form-group">
+            {{ form_label(pass_form.oldPassword) }}
+            {{ form_widget(pass_form.oldPassword, {'attr': {'class': 'form-control'}}) }}
+            {% if(pass_form.oldPassword.vars.errors|length) %}
+                <div class="msg-error">{{ form_errors(pass_form.oldPassword) }}</div>
+            {% endif %}
+          </div>
+
+          <div class="form-group">
+            {{ form_label(pass_form.password.first) }}
+            {{ form_widget(pass_form.password.first, {'attr': {'class': 'form-control'}}) }}
+            {% if(pass_form.password.first.vars.errors|length) %}
+                <div class="msg-error">{{ form_errors(pass_form.password.first) }}</div>
+            {% endif %}
+          </div>
+
+          <div class="form-group">
+            {{ form_label(pass_form.password.second) }}
+            {{ form_widget(pass_form.password.second, {'attr': {'class': 'form-control'}}) }}
+            {% if(pass_form.password.second.vars.errors|length) %}
+                <div class="msg-error">{{ form_errors(pass_form.password.second) }}</div>
+            {% endif %}
+          </div>
+
+          {% for flash_message in app.session.flashbag.get('pass_success') %}
+            <div class="msg-success">
+              {{ flash_message }}
+            </div>
+          {% endfor %}
+
+
+          {{ form_widget(pass_form._token) }}
+          {{ form_widget(pass_form.save) }}
+        {{ form_end(form) }}
+      </div>
+    </div>
+
+
+
+    </div>
+</div>
+{% endblock %}

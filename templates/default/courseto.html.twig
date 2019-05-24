@@ -1,0 +1,236 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="my_content">
+
+        <div class="right_ads">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                {% include 'tipday.html.twig' %}
+            {% else %}
+                {% include 'rec_regbox.html.twig' %}
+            {% endif %}
+
+            {% include 'levelbox.html.twig' %}
+
+            {% include 'wall_fame.html.twig' %}
+        </div>
+
+        <div class="content">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}{% else %}
+                <div class="login_warring"><a class="close" onclick="jQuery(this).parent().hide()">x</a>{% trans %}You are not logged in. Typing progress will not be saved.{% endtrans %}</div>
+            {% endif %}
+            <div class="container">
+                <section class="widget_accordion">
+                    <ul>
+                        {% set accordion_active = 1 %}
+                        {% for entity in entities %}
+                            <li>
+                                <article>
+                                    <div id="accordion-item">
+                                        <div class="button{% if(slug == entity.slug) %} active{% else %}{% endif %}" >
+                                            <span>+</span>
+                                            <span>-</span>
+                                        </div>
+                                        <header>
+                                            <h2 class="tran03slinear">
+                                            {% if app.request.attributes.get('_locale') == 'mn' %}{{ entity.mnTitle }}{% endif %}
+                                            {% if app.request.attributes.get('_locale') == 'en' %}{{ entity.enTitle }}{% endif %}
+                                            <a href="#" class="start-link">{% trans %}Start{% endtrans %} »</a>
+                                            {% if ( entity.te != 0 and entity.te <= entity.ae ) %}
+                                            <span class="course-status">{{ ((entity.te / entity.ae) * 100)|round }}% {% trans %}Completed{% endtrans %}</span>
+                                            {% endif %}
+                                            </h2>
+                                        </header>
+                                    </div>
+                                    <div class="item-container" style="display: {% if(slug == entity.slug) %}block{% else %}none{% endif %};">
+                                        <ul>
+                                            {% set condetion = 0 %}
+                                            {% set first = 1 %}
+
+                                            {% for subentity in subentities %}
+                                            {% if (subentity.cate == entity.id and subentity.isShow)%}
+                                              {% if(first == 1) %}
+                                                <li class="active">
+                                                  <a {% if (subentity.ae == subentity.te) %}
+                                                      href="#" onclick="return reTyping('{{ path('tutor_retyping',{"lang": lang,"category":entity.id,'lesson':subentity.id}) }}')"
+                                                  {% else %}
+                                                      href="{{ path('tutor_typing',{"lang": lang,"category":entity.id,'lesson':subentity.id}) }}"
+                                                  {% endif %}
+                                                  >
+                                                    {% if app.request.attributes.get('_locale') == 'mn' %}
+                                                        {{ subentity.mnTitle }}
+                                                    {% endif %}
+                                                    {% if app.request.attributes.get('_locale') == 'en' %}
+                                                        {{ subentity.enTitle }}
+                                                    {% endif %}
+
+                                                    {% if(subentity.isPremium) %}
+                                                        <img src="{{ asset('css/images/medal_gold.png') }}"/>
+                                                    {% endif %}
+
+                                                    <span class="start-btn">
+                                                        {% if (entity.slug == 'premium_lessons') %}
+                                                            {% if app.user %}
+                                                                {% if is_granted('ROLE_FREE') %}
+                                                                    {% trans %}preview lesson{% endtrans %}
+                                                                {% else %}
+                                                                    {% trans %}begin{% endtrans %}
+                                                                {% endif %}
+                                                            {% else %}
+                                                                {% trans %}preview lesson{% endtrans %}
+                                                            {% endif %}
+                                                        {% else %}
+                                                            {% if ( subentity.te != 0 and subentity.te != subentity.ae ) %}
+                                                                {% trans %}continue{% endtrans %}
+                                                            {% elseif (subentity.ae == subentity.te) %}
+                                                                {% trans %}retake{% endtrans %}
+                                                            {% else %}
+                                                                {% trans %}begin{% endtrans %}
+                                                            {% endif %}
+                                                        {% endif %} »
+                                                    </span>
+
+                                                    {% if ( subentity.te != 0 and subentity.te != subentity.ae ) %}
+                                                        <span class="lesson-status">{{ ((subentity.te / subentity.ae) * 100)|round }}% {% trans %}Completed{% endtrans %}</span>
+                                                    {% endif %}
+                                                    {% if (subentity.ae == subentity.te) %}
+                                                        <span>
+                                                          <span class="lesson-status">
+                                                            <b>{% trans %}Completed{% endtrans %}!</b>
+                                                            {{ subentity.netSpeed }}
+                                                            {{ app.user.measureSpeed|upper }} / {{ subentity.accuracy|round }}% {% trans %}Accuracy{% endtrans %}
+                                                          </span>
+                                                        </span>
+                                                    {% endif %}
+                                                  </a>
+                                                </li>
+                                                {% set first = 0 %}
+                                              {% else %}
+                                                <li>
+                                                  <a {% if (subentity.ae == subentity.te) %}
+                                                      href="#" onclick="return reTyping('{{ path('tutor_retyping',{"lang": lang,"category":entity.id,'lesson':subentity.id}) }}')"
+                                                  {% else %}
+                                                      href="{{ path('tutor_typing',{"lang": lang,"category":entity.id,'lesson':subentity.id}) }}"
+                                                  {% endif %}
+                                                  >
+                                                    {% if app.request.attributes.get('_locale') == 'mn' %}
+                                                        {{ subentity.mnTitle }}
+                                                    {% endif %}
+                                                    {% if app.request.attributes.get('_locale') == 'en' %}
+                                                        {{ subentity.enTitle }}
+                                                    {% endif %}
+
+                                                    {% if(subentity.isPremium) %}
+                                                        <img src="{{ asset('css/images/medal_gold.png') }}"/>
+                                                    {% endif %}
+
+                                                    <span class="start-btn">
+                                                        {% if (entity.slug == 'premium_lessons') %}
+                                                            {% if app.user %}
+                                                                {% if is_granted('ROLE_FREE') %}
+                                                                    {% trans %}preview lesson{% endtrans %}
+                                                                {% else %}
+                                                                    {% trans %}begin{% endtrans %}
+                                                                {% endif %}
+                                                            {% else %}
+                                                                {% trans %}preview lesson{% endtrans %}
+                                                            {% endif %}
+                                                        {% else %}
+                                                            {% if ( subentity.te != 0 and subentity.te != subentity.ae ) %}
+                                                                {% trans %}continue{% endtrans %}
+                                                            {% elseif (subentity.ae == subentity.te) %}
+                                                                {% trans %}retake{% endtrans %}
+                                                            {% else %}
+                                                                {% trans %}begin{% endtrans %}
+                                                            {% endif %}
+                                                        {% endif %} »
+                                                    </span>
+
+                                                    {% if ( subentity.te != 0 and subentity.te != subentity.ae ) %}
+                                                        <span class="lesson-status">{{ ((subentity.te / subentity.ae) * 100)|round }}% {% trans %}Completed{% endtrans %}</span>
+                                                    {% endif %}
+                                                    {% if (subentity.ae == subentity.te) %}
+                                                        <span>
+                                                          <span class="lesson-status">
+                                                            <b>{% trans %}Completed{% endtrans %}!</b>
+                                                            {{ subentity.netSpeed }}
+                                                            {{ app.user.measureSpeed|upper }} / {{ subentity.accuracy|round }}% {% trans %}Accuracy{% endtrans %}
+                                                          </span>
+                                                        </span>
+                                                    {% endif %}
+                                                  </a>
+                                                </li>
+                                              {% endif %}
+                                            {% endif %}
+                                          {% endfor %}
+                                        </ul>
+                                    </div>
+                                </article>
+                            </li>
+                        {% else %}
+                            No Data have been found.
+                        {% endfor %}
+                    </ul>
+
+                    <script src="{{ asset('js/wsadapter.js') }}"></script>
+                    <script src="{{ asset('js/wslightbox.js') }}"></script>
+
+                    <script type="application/javascript">
+                        $('* #accordion-item').click(function(){
+                            if($(this).parent().children('.item-container').css('display') == 'none')
+                            {
+                                $(this).children('.button').addClass('active');
+                                $(this).parent().children('.item-container').css('display','block');
+                            }
+                            else
+                            {
+                                $(this).children('.button').removeClass('active');
+                                $(this).parent().children('.item-container').css('display','none');
+                            }
+                        });
+
+                        function reTyping(url) {
+                            lightbox = new ws_lightbox({text: '<div class="x-window"><div class="x-win-title"><div class="x-window-header-text">{% trans %}Restart Lesson{% endtrans %}?</div> <div class="x-window-header-close" id="close_btn">×</div></div><div class="x-win-desc"><div class="q_icon"></div><p>{% trans %}Are you sure you would like to restart the lesson{% endtrans %}?</p></div><div class="x-win-results"><a onclick="" class="x-win-yes" id="accept_btn">Yes</a><a onclick="" class="x-win-no" id="close_btn">No</a></div></div>',
+                                closebtn: true, closeid: 'close_btn',acceptbtn: true, acceptid:'accept_btn',width:345,height:70});
+
+                            $('* #' + _defaultOption.acceptid).click(function() {
+                                alert(url);
+                            });
+                            return false;
+                        }
+                    </script>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="x-window">
+                    <div class="x-win-title">
+                        <div class="x-window-header-text">{% trans %}Restart Lesson{% endtrans %}?</div>
+                        <div class="x-window-header-close" data-dismiss="modal" aria-label="Close" id="close_btn">×</div>
+                    </div>
+                    <div class="x-win-desc">
+                        <div class="q_icon"></div>
+                        <p>{% trans %}Are you sure you would like to restart the lesson{% endtrans %}?</p>
+                    </div>
+                    <div class="x-win-results">
+                        <a class="x-win-yes" id="accept_btn">{% trans %}Yes{% endtrans %}</a>
+                        <a class="x-win-no" data-dismiss="modal">{% trans %}No{% endtrans %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+
+{% block stylesheets %}
+{% endblock stylesheets %}
+
+{% block javascripts %}
+    <script async src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
+{% endblock javascripts %}

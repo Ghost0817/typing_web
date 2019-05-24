@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% trans %}Contact Us{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+
+    <div class="right_ads">
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            {% include 'tipday.html.twig' %}
+        {% else %}
+            {% include 'rec_regbox.html.twig' %}
+        {% endif %}
+        {% include 'levelbox.html.twig' %}
+
+        {% include 'wall_fame.html.twig' %}
+    </div>
+
+    <div>
+
+        <div class="content">
+
+
+            <h1 style="font-size:24px;">{% trans %}Contact Us{% endtrans %}</h1>
+            <!-- Contact Form -->
+            <div class="contactcontent">
+                <div id="contact-form">
+                    {{ form_start(form, {'action': path('contactus_index'), 'method': 'POST', 'id': 'contactform', 'autocomplete': 'off'}) }}
+                        <div class="formrow">
+                            <div class="one_half">
+                                <div class="form-group">
+                                    {{ form_label(form.name) }}
+                                    {% if app.user %}
+                                        {{ form_widget(form.name, {'attr': { 'value':app.user.username, 'class': 'form-control'}}) }}
+                                    {% else %}
+                                        {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+                                    {% endif %}
+                                    {% if(form.name.vars.errors|length) %}
+                                        <div class="msg-error">{{ form_errors(form.name) }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="one_half column-last">
+                                <div class="form-group">
+                                    {{ form_label(form.email) }}
+                                    {% if app.user %}
+                                        {{ form_widget(form.email, {'attr': { 'value':app.user.email, 'class': 'form-control'}}) }}
+                                    {% else %}
+                                        {{ form_widget(form.email, {'attr': {'class': 'form-control'}}) }}
+                                    {% endif %}
+                                    {% if(form.email.vars.errors|length) %}
+                                        <div class="msg-error">{{ form_errors(form.email) }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            {{ form_label(form.body) }}
+                            {{ form_widget(form.body, {'attr': {'class': 'form-control'}}) }}
+                            {% if(form.body.vars.errors|length) %}
+                                <div class="msg-error">{{ form_errors(form.body) }}</div>
+                            {% endif %}
+                        </div>
+
+                        {{ form_row(form._token) }}
+
+                        {{ form_errors(form) }}
+
+                        {% for flash_message in app.session.flashbag.get('success') %}
+                            <div class="msg-success">
+                                {{ flash_message }}
+                            </div>
+                        {% endfor %}
+
+                        <p>
+                            {{ form_widget(form.save) }}
+                        </p>
+                    {{ form_end(form) }}
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- END Contact Form -->
+
+            <hr>
+
+            <h2>{% trans %}Frequently Asked Questions{% endtrans %}</h2>
+
+            {% for faq in faqs %}
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      {% if app.request.attributes.get('_locale') == 'mn' %}{{ faq.mnTitle }}{% endif %}
+                      {% if app.request.attributes.get('_locale') == 'en' %}{{ faq.enTitle }}{% endif %}
+                  </div>
+                  <div class="panel-body">
+                    {% if app.request.attributes.get('_locale') == 'mn' %}{{ faq.mnBody }}{% endif %}
+                    {% if app.request.attributes.get('_locale') == 'en' %}{{ faq.enBody }}{% endif %}
+                  </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+    <script>
+    function DisableButton(b)
+    {
+        b.disabled = true;
+        b.value = 'Submitting';
+        b.form.submit();
+    }
+    </script>
+    {% endblock body %}
+
+    {% block javascripts %}
+    <script async src="{{ asset('bundles/frontend/js/jquery.min.js') }}"></script>
+
+{% endblock javascripts %}

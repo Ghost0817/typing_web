@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<p class=\"typinghelp\">Now that you've got a feel for shifting individual letters, lets move into typing words that start with a capital letter.  You may find this lesson challenging, but always remember proper form, keeping your hands on the home row, and to shift with the opposite hand.<\/p><p class=\"typinghelp\">While typing this lesson, do your best to keep your eyes on the screen and off of your hands.  If you can't remember where a key is, use the onscreen keyboard and hands to help you type it.  Your key to typing fast is remembering where the keys are without looking!<\/p>";
+		lessonData.congratsText = "<img src=\"\/tutor\/images\/congrats_3.png\" alt=\"\" align=\"right\" \/><p class=\"typinghelp\">That was just amazing!  Now you can finally YELL AT PEOPLE OVER CHAT!<\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"114813","lessonID":"323","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Starting with E","exercise":"even Even big Big such Such follow Follow act Act\r\nwhy Why ask Ask change Change went Went try Try\r\nagain Again animal Animal world World build Build","helpText":""},{"lessonExerciseID":"114814","lessonID":"323","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"And now S","exercise":"self Self earth Earth father Father head Head\r\nstand Stand should Should country Country\r\nfound Found answer Answer school School grow Grow","helpText":""},{"lessonExerciseID":"114815","lessonID":"323","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"What about the P?","exercise":"point Point mother Mother near Near own Own\r\npage Page learn Learn plant Plant let Let\r\nkeep Keep last Last hard Hard might Might","helpText":"Now to shift with the left hand!"},{"lessonExerciseID":"114816","lessonID":"323","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"I've gotta L","exercise":"late Late left Left press Press night Night\r\nlife Life have Have or Or had Had hot Hot out Out\r\nother Other your Your up Up use Use how How if If","helpText":""},{"lessonExerciseID":"114817","lessonID":"323","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Oh snap","exercise":"study Study still Still cover Cover food Food\r\nmany Many like Like her Her long Long make Make\r\nsun Sun four Four thought Thought eye Eye\r\nhim Him has Has look Look more More my My no No","helpText":"Now we're going to mix it up on each line."},{"lessonExerciseID":"114818","lessonID":"323","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"NMT!!!","exercise":"never Never door Door between Between city City\r\nmost Most number Number over Over know Know\r\ntree Tree cross Cross since Since start Start\r\npeople People may May now Now new New more More","helpText":""},{"lessonExerciseID":"114819","lessonID":"323","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"You won't believe it..","exercise":"story Story saw Saw far Far sea Sea draw Draw\r\nopen Open next Next paper Paper often Often\r\nrun Run while While close Close real Real\r\nmusic Music mark Mark until Until mile Mile","helpText":""},{"lessonExerciseID":"114820","lessonID":"323","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"V-V-V-VROOM!","exercise":"very Very through Through form Form great Great\r\nname Name just Just much Much help Help low Low\r\nthink Think say Say before Before turn Turn\r\nline Line move Move right Right boy Boy old Old","helpText":"Now every other word will mix it up."},{"lessonExerciseID":"114821","lessonID":"323","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Don't ask","exercise":"cause Cause play Play same Same put Put mean Mean\r\nhome Home differ Differ hand Hand too Too\r\nport Port does Does large Large sentence Sentence\r\nland Land set Set here Here three Three must Must","helpText":""},{"lessonExerciseID":"114822","lessonID":"323","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Ah, finally sentences!","exercise":"Thank you for your help Ron\r\nI love the new tree you planted Paul\r\nThat would be great if I could jump that high\r\nWe are cooking Bacon and Eggs","helpText":"Now some sentences"},{"lessonExerciseID":"114823","lessonID":"323","type":"mixed","displayOrder":"12","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"James Mark and Hormuzd","exercise":"James and Mark hung out with their good friend\r\nHormuzd is known to play Volleyball with James\r\nOn occasion they go swimming at the beach\r\nWhat good fun it is under the sunny noon sun","helpText":""}];
+		lessonData.lessonID = '323';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Learn to Bust a Capital Word";
+		lessonData.restricted = '';
+		lessonData.playSounds = true;
+		lessonData.course = 'INTERMEDIATE_COURSE';
+		lessonData.hasTrophy = 1;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+			

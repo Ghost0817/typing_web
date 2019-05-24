@@ -1,0 +1,87 @@
+App\Entity\Exercise:
+    type: entity
+    table: exercise
+    indexes:
+        lesson:
+            columns:
+                - lesson
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        mnTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: mn_title
+        enTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: en_title
+        mnBody:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: mn_body
+        enBody:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: en_body
+        tutor:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+        examtime:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                comment: 'Хэрвээ шалгалт биш бол 0 байна. Шалгал гэж бодож байвал шалгалт авах хугацаагаа оруулна.'
+        permissiblepercent:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: PermissiblePercent
+        sortnum:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        isPremiun:
+            type: boolean
+            nullable: false
+            column: is_premiun
+        created:
+            type: datetime
+            nullable: false
+    manyToOne:
+        lesson:
+            targetEntity: Lesson
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                lesson:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

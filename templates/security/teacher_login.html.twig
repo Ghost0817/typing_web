@@ -1,0 +1,66 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Welcome | Teacher Portal{% endblock %}
+
+{% block body %}
+    <div class="middlebox">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="col-xs-6">
+                    <div class="row" style="padding-right: 10px;">
+                        <h1 style="font-size: 24px;">{% trans %}Teacher Login{% endtrans %}</h1>
+                        <p>{% trans %}Please log in to continue.{% endtrans %}</p>
+                        {% if error %}
+                            <div class="msg-error">{{ error.message }}</div>
+                        {% endif %}
+                        <form action="{{ path('teacher_login_check') }}" method="post" id="portal_login_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="" title="Please enter you username" placeholder="{%trans%}Username{%endtrans%}">
+                                <span class="help-block"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password" name="_password" value="" required="" title="{%trans%}Password{%endtrans%}" placeholder="{%trans%}Password{%endtrans%}">
+                                <span class="help-block"></span>
+                            </div>
+
+                            <!--<input type="hidden" name="_csrf_security_token" value="{{ csrf_token('authenticate') }}" />-->
+                            <input type="hidden" name="_target_path" value="teacherpage" />
+
+                            <input type="submit" name="login" id="login-btn" class="btn btn-defualt" value="{%trans%}Login{%endtrans%}"/>
+                            <br>
+                            <br>
+                            <a href="{{ path('teacher_forgot') }}" target="_BLANK" class="sign-up">{%trans%}I forgot my password{%endtrans%}!</a>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-6" style="background-color: #d7d7d7;">
+                    <h1>{% trans %}Don't have an account?{% endtrans %}</h1>
+                    <p>{% trans %}Bicheech.com's Teacher Portal is free{% endtrans %}!</p>
+                    <ul class="list-unstyled" style="line-height: 2">
+                        <li><span class="fa fa-check fa-lg" aria-hidden="true"></span> {% trans %}Grade and track your students{% endtrans %}</li>
+                        <li><span class="fa fa-check fa-lg" aria-hidden="true"></span> {% trans %}Bicheech.com's full typing curriculum{% endtrans %}</li>
+                        <li><span class="fa fa-check fa-lg" aria-hidden="true"></span> {% trans %}Great for students of all ages{% endtrans %}</li>
+                        <li><span class="fa fa-check fa-lg" aria-hidden="true"></span> {% trans %}Save your school tons of money{% endtrans %}</li>
+                    </ul>
+                    <p><a href="{{ path('teacher_register') }}" class="btn btn-info btn-block">{% trans %}Sign Up Now{% endtrans %} »</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+{% endblock stylesheets %}
+
+{% block javascripts %}
+    <script>
+        $("#login-btn").click(function(){
+            $("#login-btn").attr('value','{%trans%}Please wait{%endtrans%}...');
+            $("#login-btn").attr('disabled','disabled');
+            $("#portal_login_form").submit();
+        });
+    </script>
+{% endblock javascripts %}

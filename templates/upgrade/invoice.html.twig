@@ -1,0 +1,114 @@
+{% extends "Invoice.html.twig"%}
+
+{% block title %}Bicheech.com - Нэхэмжлэхийн дугаар {{ entities.invoiceNumber }}{% endblock title %}
+
+{% block stylesheets %}
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<link rel="stylesheet" href="{{ asset('css/invoice.min.css') }}">
+{% endblock stylesheets %}
+
+{% block body %}
+    <div class="wrapper">
+
+
+        <table class="header">
+            <tbody>
+            <tr>
+                <td width="50%" nowrap="">
+                    <p><img src="{{ asset('css/images/logo.png') }}" title="Bicheech.com"></p>
+                </td>
+                <td width="50%" align="center">
+
+                    <font class="unpaid">{% if(entities.isPaid == 0) %}Төлөгдөөгүй{% else %}Төлсөн{% endif %}</font><br>
+
+                    <p>Голомт банк: 2705104084 (төгрөг)<br>Гүйлгээний утганд бичих дугаар:: {{ entities.invoiceNumber }}</p>
+
+                </td></tr>
+            </tbody>
+        </table>
+
+
+
+        <table class="items">
+            <tbody>
+            <tr>
+                <td width="50%">
+                    <div class="addressbox">
+                        <strong>Төлөгч</strong><br>
+                        {{ entities.student.username }}<br>
+                        {{ entities.student.firstname }} {{ entities.student.lastname }}<br>
+                        {{ entities.student.email }}<br>
+                    </div>
+                </td>
+                <td width="50%">
+                    <div class="addressbox">
+                        <strong>Нэхэмжлэгч</strong><br>
+                        САЙНЗАЯА Б<br>
+                        Хаяг: Монгол улс, Улаанбаатар хот,<br>
+                        Баянзүрх дүүрэг, 14-р хороо,80 байр<br>
+                        Утас: 8002-0255<br>
+                        И-мэйл: sainzaya.b@gmail.com<br>
+                        Дансны дугаарууд: <br>
+                        Голомт банк: 2705104084 (төгрөг)<br>
+                    </div>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+        <div class="row">
+            <span class="title">Нэхэмжлэхийн дугаар {{ entities.invoiceNumber }}</span><br>
+            Нэхэмжилсэн огноо: {{ entities.tranDate |date("Y-m-d") }}<br>
+            Төлбөр хийх сүүлийн хугацаа: {{ entities.tranDate |date("Y-m-d") }}
+        </div>
+
+        <table class="items">
+            <tbody><tr class="title textcenter">
+                <td width="70%">Нэр</td>
+                <td width="30%">Үнэ</td>
+            </tr>
+            <tr>
+                <td>
+                    {{ mature.id |title |trans }} {%trans%}Membership{%endtrans%}  ({% if(mature.conditionTerm) %}{{ mature.conditionTerm }} {%trans%}year{%endtrans%}{% else %} {%trans%}lifetime{%endtrans%}{% endif %}) -
+                    ({{ entities.tranDate |date("Y-m-d") }} - {{ entities.expDate |date("Y-m-d") }})</td>
+                <td class="textcenter">{{ mature.price|number_format(2, '.', ',') }}₮</td>
+            </tr>
+            <tr class="title">
+                <td class="textright">Нийт:</td>
+                <td class="textcenter">{{ mature.price|number_format(2, '.', ',') }}₮</td>
+            </tr>
+            </tbody></table>
+
+    </div>
+
+    <p align="center"><a href="{{ path('_welcome') }}">« {% trans %}Course{% endtrans %}</a> | <a id="cmd" href="#">{% trans %}Download{% endtrans %}</a> | <a href="javascript:window.close()">Цонхыг хаах</a></p>
+
+    <script type="text/javascript" charset="utf-8">
+        $('#cmd').click(function () {
+            html2canvas($('.wrapper'), {
+                onrendered: function(canvas) {
+                    var imgData = canvas.toDataURL('image/JPEG');
+                    var doc = new jsPDF('p', 'pt', 'a4');
+                    doc.addImage(imgData, 'JPEG', 10, 10);
+                    doc.save('bicheech{{ entities.invoiceNumber }}.pdf');
+                }
+            });
+        });
+    </script>
+
+{% endblock body %}
+
+
+{% block javascripts %}
+    <script async type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+
+    <script type="text/javascript" src="{{ asset('js/jspdf.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/html2canvas.min.js') }}"></script>
+{% endblock javascripts %}

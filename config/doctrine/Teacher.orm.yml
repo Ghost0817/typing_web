@@ -1,0 +1,110 @@
+App\Entity\Teacher:
+    type: entity
+    table: teacher
+    indexes:
+        org_type:
+            columns:
+                - org_type
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+        lastname:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        email:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        password:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        salt:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        activationkey:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+            column: activationKey
+        organization:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+                comment: 'School or Organization Name'
+        orgType:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: org_type
+        language:
+            type: string
+            nullable: false
+            length: 2
+            options:
+                fixed: true
+        country:
+            type: string
+            nullable: false
+            length: 2
+            options:
+                fixed: true
+        state:
+            type: string
+            nullable: false
+            length: 2
+            options:
+                fixed: true
+        city:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        scoreboard:
+            type: boolean
+            nullable: false
+        isActive:
+            type: boolean
+            nullable: false
+            column: is_active
+        lastlogin:
+            type: datetime
+            nullable: false
+            column: lastLogin
+        created:
+            type: datetime
+            nullable: false
+        updated:
+            type: datetime
+            nullable: false
+    lifecycleCallbacks: {  }

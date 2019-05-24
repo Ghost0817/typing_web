@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<p class=\"typinghelp\">This one should be fun.  This exercise is a run down of the 300 most used English words. These are words that you will be typing very often during your typing career.  It is recommended you practice this lesson many times!<\/p><p class=\"typinghelp\">Don't forget to keep your eyes off your keyboard!<\/p>";
+		lessonData.congratsText = "<img src=\"\/tutor\/images\/congrats_2.png\" alt=\"\" align=\"right\" \/><p class=\"typinghelp\">So that was confusing! I promise not to make more sense in the next lesson!<\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"114877","lessonID":"328","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"the of to??","exercise":"the of to and a in is it you that he was for on\r\nare with as I his they be at one have this from\r\nor had by hot but some what there we can out\r\nother were all your when up use word how said an","helpText":""},{"lessonExerciseID":"114878","lessonID":"328","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Which way?","exercise":"each she which do their time if will way about\r\nmany then them would write like so these her long\r\nmake thing see him two has look more day could go\r\ncome did my sound no most number who over know","helpText":""},{"lessonExerciseID":"114879","lessonID":"328","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Little round man","exercise":"water than call first people may down side been\r\nnow find any new work part take get place made\r\nlive where after back little only round man year\r\ncame show every good me give our under name very","helpText":""},{"lessonExerciseID":"114880","lessonID":"328","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Ahmen!","exercise":"through just form much great think say help low\r\nline before turn cause same mean differ move right\r\nboy old too does tell sentence set three want air\r\nwell also play small end put home read hand port","helpText":""},{"lessonExerciseID":"114881","lessonID":"328","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Picture this..","exercise":"large spell add even land here must big high such\r\nfollow act why ask men change went light kind off\r\nneed house picture try us again animal point\r\nmother world near build self earth father head","helpText":""},{"lessonExerciseID":"114882","lessonID":"328","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"School rocks!","exercise":"stand own page should country found answer school\r\ngrow study still learn plant cover food sun four\r\nthought let keep eye never last door between city\r\ntree cross since hard start might story saw far","helpText":""},{"lessonExerciseID":"114883","lessonID":"328","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Don't turn too late!","exercise":"sea draw left late urn don't while press close\r\nnight real life few stop open seem together\r\nnext white children begin got walk example ease\r\npaper often always music those both mark book","helpText":""},{"lessonExerciseID":"114884","lessonID":"328","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Later I'll mail a letter.","exercise":"letter until mile river car feet care second\r\ngroup carry took rain eat room friend began idea\r\nfish mountain north once base hear horse cut sure\r\nwatch color face wood main enough plain girl usual","helpText":""},{"lessonExerciseID":"114885","lessonID":"328","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Decipher this one!","exercise":"The simple name just makes me beg to differ about\r\nthe pattern in the center of the map. Science can\r\ngovern the pull of the voice, but does have three\r\nfine common possible units.","helpText":"We're now going to move into sentences using the most commonly used english words.  "},{"lessonExerciseID":"114886","lessonID":"328","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Don't even try this one","exercise":"The voice falls down the field and is able to rest\r\neven where the land is said to carry a pound of\r\nbeauty. To drive would be a box of nouns.","helpText":""},{"lessonExerciseID":"114887","lessonID":"328","type":"mixed","displayOrder":"12","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Yep yep yep","exercise":"You know that water can call first the people who\r\nmay be between city and tree since the hard night\r\nbest heard the king and his force. The object of\r\nsong and foot together will laugh and wonder.","helpText":""},{"lessonExerciseID":"114888","lessonID":"328","type":"mixed","displayOrder":"13","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"That'll do pig","exercise":"Long ago I bought a dry gold coin which I took\r\nwith me on a plane made of wood and in the shape\r\nof a bird. During my trip I found interest in\r\nmy new book perhaps because of its color or name.","helpText":""},{"lessonExerciseID":"114889","lessonID":"328","type":"mixed","displayOrder":"14","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"My spin is heading","exercise":"The hot island breeze flew over the farm bringing\r\nthe heat of a thousand fire piece and rolled down\r\ninto the barren snow land hugging the mountain.\r\nNext thing you know, you are among friends.","helpText":""}];
+		lessonData.lessonID = '328';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Most Common English Words";
+		lessonData.restricted = '';
+		lessonData.playSounds = true;
+		lessonData.course = 'INTERMEDIATE_COURSE';
+		lessonData.hasTrophy = 1;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+			

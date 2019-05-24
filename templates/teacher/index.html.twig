@@ -1,0 +1,125 @@
+{% extends 'teacher.html.twig' %}
+
+{% block title %}{% trans %}Bicheech.com{% endtrans %} {% trans %}Teacher Portal{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+    <div class="welcome">
+        <h1>{% trans %}Welcome back to the Teacher Portal{% endtrans %}, {{ app.user.username }}!</h1>
+        <p>{% trans %}Bicheech.com's free Teacher Portal gives you the tools to easily create, track, and manage your students.{% endtrans %}<br>
+        {% trans %}Helpful tips{% endtrans %}:</p>
+        <ol>
+            <li>Visit the <a href="{{ path('userspage') }}">Manage Students Page</a> to create and manage your students</li>
+            <li>Send your students to <a href="http://www.bicheech.com/mn/student/start" target="_BLANK">bicheech.com/mn/student/start</a> to access Bicheech.com</li>
+        </ol>
+    </div>
+    <h3 class="pageHeader">{% trans %}Dashboard{% endtrans %}<small> {% trans %}welcome to the teacher portal{% endtrans %}</small></h3>
+    <div id="alert-area"></div>
+
+    <div class="radar">
+<h2 class="sectionHeader" style="position: relative; top: 10px">{% trans %}Student Radar{% endtrans %}</h2>
+<table cellspacing="0" id="usertrackTable">
+<thead>
+<tr>
+<th width="115">{% trans %}Username{% endtrans %}</th>
+<th width="130">{% trans %}Name{% endtrans %}</th>
+<th>{% trans %}Last Action{% endtrans %}</th>
+<th>
+<span class="school-dropdown">{% trans %}Class{% endtrans %}:
+<select name="groupID" id="groupID">
+<option value="all">{% trans %}All Students{% endtrans %}</option>
+<option value="ungrouped">{% trans %}Ungrouped Students{% endtrans %}</option>
+{% for class in classes %}
+<option value="{{ class.id }}">{{ class.name }}</option>
+{% endfor %}
+</select> <br>
+<label for="includeOffline">{% trans %}Include Offline Students{% endtrans %}:</label> <input type="checkbox" id="includeOffline">
+</span>
+</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+<script type="text/javascript" src="{{ asset('js/jquery.tmpl.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.timeago.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/underscore-min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/backbone-min.js') }}"></script>
+
+<script>
+	USERS_DATA = {{ students|raw }};
+	LESSONS = {"3":{"lessonID":"3","course":"ADVANCED_COURSE","name":"Accuracy Drills","totalExercises":"42","premium":"0","version":"1"},"26":{"lessonID":"26","course":"ADVANCED_COURSE","name":"Keyboard Quadrants","totalExercises":"20","premium":"0","version":"1"},"28":{"lessonID":"28","course":"ADVANCED_COURSE","name":"Skill Builder Drills","totalExercises":"29","premium":"0","version":"1"},"4":{"lessonID":"4","course":"ADVANCED_COURSE","name":"The Numeric Keypad","totalExercises":"36","premium":"0","version":"1"},"302":{"lessonID":"302","course":"ADVANCED_COURSE","name":"Precision Drills","totalExercises":"52","premium":"0","version":"1"},"36":{"lessonID":"36","course":"BEGINNER_COURSE","name":"The Home Row Keys","totalExercises":"13","premium":"0","version":"1"},"37":{"lessonID":"37","course":"BEGINNER_COURSE","name":"The Top Row Keys","totalExercises":"13","premium":"0","version":"1"},"38":{"lessonID":"38","course":"BEGINNER_COURSE","name":"The Bottom Row Keys","totalExercises":"13","premium":"0","version":"1"},"1":{"lessonID":"1","course":"BEGINNER_COURSE","name":"Punctuation Station","totalExercises":"49","premium":"0","version":"1"},"25":{"lessonID":"25","course":"BEGINNER_COURSE","name":"Learn to Bust a Cap","totalExercises":"24","premium":"0","version":"1"},"19":{"lessonID":"19","course":"BEGINNER_COURSE","name":"Beginner Wrap-up","totalExercises":"50","premium":"0","version":"1"},"354":{"lessonID":"354","course":"BEGINNER_COURSE","name":"Index Finger Workout","totalExercises":"12","premium":"1","version":"2"},"355":{"lessonID":"355","course":"BEGINNER_COURSE","name":"Middle Finger Workout","totalExercises":"13","premium":"1","version":"2"},"314":{"lessonID":"314","course":"CERTIFICATION","name":"General Certification","totalExercises":"5","premium":"0","version":"1"},"315":{"lessonID":"315","course":"CERTIFICATION","name":"10 Key Certification","totalExercises":"10","premium":"0","version":"1"},"21":{"lessonID":"21","course":"INTERMEDIATE_COURSE","name":"Alphabet Soup","totalExercises":"26","premium":"0","version":"1"},"23":{"lessonID":"23","course":"INTERMEDIATE_COURSE","name":"Letters and Numbers","totalExercises":"23","premium":"0","version":"1"},"5":{"lessonID":"5","course":"INTERMEDIATE_COURSE","name":"Speed Drills","totalExercises":"44","premium":"0","version":"1"},"22":{"lessonID":"22","course":"INTERMEDIATE_COURSE","name":"Common Errors","totalExercises":"47","premium":"0","version":"1"},"27":{"lessonID":"27","course":"INTERMEDIATE_COURSE","name":"Intermediate Wrap-up","totalExercises":"29","premium":"0","version":"1"},"356":{"lessonID":"356","course":"INTERMEDIATE_COURSE","name":"Ring Finger Workout","totalExercises":"12","premium":"1","version":"2"},"357":{"lessonID":"357","course":"INTERMEDIATE_COURSE","name":"Pinky Finger Workout","totalExercises":"13","premium":"1","version":"2"},"31":{"lessonID":"31","course":"SPECIALTY_COURSE","name":"The Californians Tale","totalExercises":"40","premium":"0","version":"1"},"30":{"lessonID":"30","course":"SPECIALTY_COURSE","name":"The Childs Story","totalExercises":"21","premium":"0","version":"1"},"33":{"lessonID":"33","course":"SPECIALTY_COURSE","name":"20,000 Leagues Under the Sea","totalExercises":"44","premium":"0","version":"1"},"34":{"lessonID":"34","course":"SPECIALTY_COURSE","name":"Babes in the Jungle","totalExercises":"28","premium":"0","version":"1"},"32":{"lessonID":"32","course":"SPECIALTY_COURSE","name":"The Devil in the Belfry","totalExercises":"43","premium":"0","version":"1"},"7":{"lessonID":"7","course":"SPECIALTY_COURSE","name":"Romeo & Juliet Act 1, Scene 1","totalExercises":"52","premium":"0","version":"1"},"6":{"lessonID":"6","course":"SPECIALTY_COURSE","name":"Dvorak Keyboard","totalExercises":"103","premium":"0","version":"1"},"348":{"lessonID":"348","course":"SPECIALTY_COURSE","name":"Common Medical Terms","totalExercises":"17","premium":"1","version":"2"},"351":{"lessonID":"351","course":"SPECIALTY_COURSE","name":"Numeric Data Entry","totalExercises":"30","premium":"1","version":"2"},"352":{"lessonID":"352","course":"SPECIALTY_COURSE","name":"Alpha Data Entry","totalExercises":"26","premium":"1","version":"2"},"353":{"lessonID":"353","course":"SPECIALTY_COURSE","name":"Alphanumeric Data Entry","totalExercises":"27","premium":"1","version":"2"},"346":{"lessonID":"346","course":"SPECIALTY_COURSE","name":"Jokes and Laughs","totalExercises":"33","premium":"1","version":"2"},"349":{"lessonID":"349","course":"SPECIALTY_COURSE","name":"Interesting Facts","totalExercises":"48","premium":"1","version":"2"},"350":{"lessonID":"350","course":"SPECIALTY_COURSE","name":"Strange Laws","totalExercises":"39","premium":"1","version":"2"},"342":{"lessonID":"342","course":"SPECIALTY_COURSE","name":"Aesop Fables - The Butterfly","totalExercises":"22","premium":"1","version":"2"},"343":{"lessonID":"343","course":"SPECIALTY_COURSE","name":"Aesop Fables - The Buckwheat","totalExercises":"13","premium":"1","version":"2"},"344":{"lessonID":"344","course":"SPECIALTY_COURSE","name":"Aesop Fables - By The Almshouse Window","totalExercises":"14","premium":"1","version":"2"},"345":{"lessonID":"345","course":"SPECIALTY_COURSE","name":"Aesop Fables - In a Thousand Years","totalExercises":"15","premium":"1","version":"2"},"347":{"lessonID":"347","course":"SPECIALTY_COURSE","name":"Aesop Fables - Short Stories","totalExercises":"39","premium":"1","version":"2"},"301":{"lessonID":"301","course":"TEST","name":"News Headline Exercises","totalExercises":"0","premium":"0","version":"1"},"35":{"lessonID":"35","course":"TEST","name":"Typing Test","totalExercises":"3","premium":"0","version":"1"},"332":{"lessonID":"332","course":"ADVANCED_COURSE","name":"Keyboard Quadrants","totalExercises":"16","premium":"0","version":"2"},"333":{"lessonID":"333","course":"ADVANCED_COURSE","name":"Skill Builder Drills","totalExercises":"15","premium":"0","version":"2"},"334":{"lessonID":"334","course":"ADVANCED_COURSE","name":"Symbols and Advanced Punctuation","totalExercises":"9","premium":"0","version":"2"},"335":{"lessonID":"335","course":"ADVANCED_COURSE","name":"Accuracy Drills","totalExercises":"25","premium":"0","version":"2"},"336":{"lessonID":"336","course":"ADVANCED_COURSE","name":"The Numeric Keypad","totalExercises":"35","premium":"0","version":"2"},"337":{"lessonID":"337","course":"ADVANCED_COURSE","name":"Advanced Wrap Up","totalExercises":"52","premium":"0","version":"2"},"316":{"lessonID":"316","course":"BEGINNER_COURSE","name":"The Home Row Keys","totalExercises":"13","premium":"0","version":"2"},"317":{"lessonID":"317","course":"BEGINNER_COURSE","name":"The Top Row Keys","totalExercises":"13","premium":"0","version":"2"},"318":{"lessonID":"318","course":"BEGINNER_COURSE","name":"The Bottom Row Keys","totalExercises":"13","premium":"0","version":"2"},"338":{"lessonID":"338","course":"BEGINNER_COURSE","name":"Homerow and Beyond","totalExercises":"24","premium":"0","version":"2"},"340":{"lessonID":"340","course":"BEGINNER_COURSE","name":"Venturing Out","totalExercises":"22","premium":"0","version":"2"},"319":{"lessonID":"319","course":"BEGINNER_COURSE","name":"Easy Home Row Words","totalExercises":"9","premium":"0","version":"2"},"320":{"lessonID":"320","course":"BEGINNER_COURSE","name":"Easy Top Row Words","totalExercises":"10","premium":"0","version":"2"},"321":{"lessonID":"321","course":"BEGINNER_COURSE","name":"Easy Bottom Row Words","totalExercises":"7","premium":"0","version":"2"},"324":{"lessonID":"324","course":"BEGINNER_COURSE","name":"Beginner Wrap Up","totalExercises":"12","premium":"0","version":"2"},"325":{"lessonID":"325","course":"INTERMEDIATE_COURSE","name":"Alphabet Soup (A-M)","totalExercises":"13","premium":"0","version":"2"},"326":{"lessonID":"326","course":"INTERMEDIATE_COURSE","name":"Alphabet Soup (N-Z)","totalExercises":"13","premium":"0","version":"2"},"322":{"lessonID":"322","course":"INTERMEDIATE_COURSE","name":"Learn to Bust a Capital Letter","totalExercises":"8","premium":"0","version":"2"},"323":{"lessonID":"323","course":"INTERMEDIATE_COURSE","name":"Learn to Bust a Capital Word","totalExercises":"11","premium":"0","version":"2"},"327":{"lessonID":"327","course":"INTERMEDIATE_COURSE","name":"Basic Punctuation","totalExercises":"10","premium":"0","version":"2"},"328":{"lessonID":"328","course":"INTERMEDIATE_COURSE","name":"Most Common English Words","totalExercises":"13","premium":"0","version":"2"},"330":{"lessonID":"330","course":"INTERMEDIATE_COURSE","name":"Numbers Letters Numbers","totalExercises":"16","premium":"0","version":"2"},"329":{"lessonID":"329","course":"INTERMEDIATE_COURSE","name":"Speed Drills","totalExercises":"33","premium":"0","version":"2"},"331":{"lessonID":"331","course":"INTERMEDIATE_COURSE","name":"Intermediate Wrap Up","totalExercises":"13","premium":"0","version":"2"}};
+	GAMES = {"1":"Air Typer","2":"Typing Ghosts","3":"Type Revolution","4":"Cup Stacking","5":"Krazy Keys","6":"Breakout","7":"Raiden","8":"4x4 Rally","9":"Battle Tanks","10":"Frogger","11":"Konnectors","12":"Triple Tetris","13":"Typing Monster","14":"Cosmic Crush","15":"Fracture 2","16":"Go Go Plant","17":"Redshift","18":"Treasure Seas Inc","19":"Wings of Glory","20":"wOne 2","21":"Magic Library","22":"Keyboard Ninja","23":"Tommy Q","24":"Baron Typesfast","25":"Type-a-Balloon","26":"Type Toss","27":"Fire Typer"};
+	PAGE_DESCRIPTIONS = {"COURSE":"Viewing Courses page","COMPLETETEST":"Completed the Typing Test","TEST":"Started the Typing Test","PROBLEMKEYS":"Practicing Problem Keys","LESSON":"Started Lesson '%s'","NEWSLESSON":"Typing News Lessons","PLAYGAME":"Playing Game '%s'","GAMES":"Viewing Games page","CERTS":"Viewing Certificates page","STATS":"Viewing Statistics page","PREFS":"Viewing Preferences page","SKINS":"Viewing Skins page","KEYBOARD":"Viewing Keyboard Settings page","HOF":"Viewing Hall of Fame","TYPEDPAGE":"Progressed on '%s'","LOGGEDOUT":"Logged out of Bicheech.com","OFFLINE":"Offline"};
+	COURSES = {"BEGINNER_COURSE":"beginner","INTERMEDIATE_COURSE":"intermediate","ADVANCED_COURSE":"advanced","SPECIALTY_COURSE":"specialty","PREMIUM_LESSONS":"premium","CERTIFICATION":"certification","PROBLEM_KEYS":"problemkeys"};
+	PORTAL_ID = {{ app.user.id}};
+	STUDENT_FETCH_URL = "{{ path('radarfetchpage') }}"
+</script>
+
+{% verbatim %}
+<script type="text/template" id="blogViewTmpl">
+	{{if data.length}}
+		{{each data}}
+		<div class="entry">
+			<p class="content title"><a href="${permalink}" target="_BLANK">${title}</a></p>
+			<p class="content">${excerpt.substr(0,90)}...</p>
+			<p class="actions">${date.getMonth()}/${date.getDate()}/${date.getFullYear()} &middot; <a href="${permalink}" target="_BLANK">read full article &raquo;</a></p>
+		</div>
+		{{/each}}
+	{{else}}
+		<div class="entry">No blog posts found!</div>
+	{{/if}}
+
+</script>
+<script id="userViewTmpl" type="text/template">
+	{{if data.length}}
+		{{each data}}
+		<tr class="{{if $index%2 == 0}}alt-row{{/if}}">
+			<td><a href="/teacher/userdetails/index/id/${id}">${username}</a></td>
+			<td>${firstname} ${lastname}</td>
+			<td colspan="2">
+				${page}<br />
+				<i>
+				{{if extra.speed}}${extra.speed} wpm, {{/if}}
+				{{if extra.progress}}${Math.round((extra.progress/LESSONS[extra.lessonID].totalExercises)*100)}% complete, {{/if}}
+				</i>
+				{{if !extra.offline}}<i class="timeago" title="${isoStamp}">${prettyStamp}</i>{{/if}}
+			</td>
+		</tr>
+		{{/each}}
+	{{else}}
+		<tr class="alt-row">
+			<td colspan="4">
+				{{if _.size(USERS_DATA) > 0}}{% endverbatim %}
+					{% trans %}None of your students are currently using Bicheech.com{% endtrans %}{% verbatim %}
+				{{else}}{% endverbatim %}
+					<p>{% trans %}The Student Radar allows you to monitor your students in real time.{% endtrans %}</p>
+					<br />
+					<p>{% trans %}You have not yet added any students to Bicheech.com.{% endtrans %}
+          {% if app.request.attributes.get('_locale') == 'mn' %}
+          Бид энэ удаад Бичээч.ком нь <a href="{{ path('classespage') }}">Таны ангиуд бий болгох</a> ба <a href="{{ path('usercreatepage') }}">Таны сурагчдын нэмэх</a> санал болгож байна.
+          {% else %}
+          We suggest <a href="{{ path('classespage') }}">setting up your classes</a> and <a href="{{ path('usercreatepage') }}">adding your students</a> to Bicheech.com at this time.</p>
+          {% endif %}
+          {% verbatim %}
+				{{/if}}
+			</td>
+		</tr>
+	{{/if}}
+</script>
+{% endverbatim %}
+
+
+<script type="text/javascript" src="{{ asset('js/main.js') }}"></script>
+
+{% endblock javascripts %}

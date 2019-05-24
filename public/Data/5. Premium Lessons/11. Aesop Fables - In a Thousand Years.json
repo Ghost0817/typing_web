@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<img src=\"\/tutor\/images\/aesop.png\" align=\"right\" \/><br \/><br \/><br \/><p class=\"typinghelp\" \/><div align=\"center\"><br \/><strong>In a Thousand Years (Aesop Fables) <br \/><br \/>by Hans Christian Andersen<br \/><br \/>(1805-1875)<strong><\/p>";
+		lessonData.congratsText = "<p class=\"typinghelp\">That was a short preview of this premium lesson. The full lesson is much longer and more comprehensive.<\/p>  <p class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\">Upgrading to a Gold Membership<\/a> will remove all advertisements, unlock all premium content, and allow for priority email support.<\/p><br \/><p style=\"text-align:center\" class=\"typinghelp\"><a href=\"https:\/\/www.bicheech.com\/upgrade\/membership\/\" target=\"_top\">UPGRADE ACCOUNT<\/a><\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"115214","lessonID":"345","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Part 1 of 15","exercise":"YES, in a thousand years people will fly on the\r\nwings of steam through the air, over the ocean!\r\nThe young inhabitants of America will become\r\nvisitors of old Europe. They will come over to see\r\nthe monuments and the great cities, which will\r\nthen be in ruins, just as we in our time make\r\npilgrimages to the tottering splendors of Southern\r\nAsia. In a thousand years they will come!","helpText":""},{"lessonExerciseID":"115215","lessonID":"345","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Part 2 of 15","exercise":"The Thames, the Danube, and the Rhine still roll\r\ntheir course, Mont Blanc stands firm with its\r\nsnow-capped summit, and the Northern Lights gleam\r\nover the land of the North;","helpText":""},{"lessonExerciseID":"115216","lessonID":"345","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115217","lessonID":"345","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115218","lessonID":"345","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115219","lessonID":"345","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115220","lessonID":"345","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115221","lessonID":"345","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115222","lessonID":"345","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115223","lessonID":"345","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115224","lessonID":"345","type":"mixed","displayOrder":"12","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115225","lessonID":"345","type":"mixed","displayOrder":"13","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115226","lessonID":"345","type":"mixed","displayOrder":"14","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115227","lessonID":"345","type":"mixed","displayOrder":"15","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""},{"lessonExerciseID":"115228","lessonID":"345","type":"mixed","displayOrder":"16","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"restricted","exercise":"restricted","helpText":""}];
+		lessonData.lessonID = '345';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Aesop Fables - In a Thousand Years";
+		lessonData.restricted = '1';
+		lessonData.playSounds = true;
+		lessonData.course = 'SPECIALTY_COURSE';
+		lessonData.hasTrophy = 0;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =1;
+		lessonData.noKeyboard = 1;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 1;
+			

@@ -1,0 +1,73 @@
+{% extends 'blogbase.html.twig' %}
+
+{% block title %}{% trans %}Blog{% endtrans %} | {{ mytag|trans|title }}{% endblock %}
+
+{% block metas %}
+
+
+<!--<link rel="prev" href="https://blog.typing.com/">-->
+<!--<link rel="next" href="https://blog.typing.com/page/2/">-->
+
+<link rel="canonical" href="{{ app.request.uri }}">
+{% if app.request.attributes.get('_locale') == 'mn' %}
+    <meta property="og:locale" content="mn_MN">
+{% else %}
+    <meta property="og:locale" content="en_US">
+{% endif %}
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% trans %}Bicheech Blog{% endtrans %} - Bicheech.com">
+<meta property="og:description" content="{% trans %}The web's most popular, free online typing tutor{% endtrans %}">
+<meta property="og:url" content="{{ app.request.uri }}">
+<meta property="og:site_name" content="{% trans %}Bicheech Blog{% endtrans %}">
+
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="{% trans %}The web's most popular, free online typing tutor{% endtrans %}">
+<meta name="twitter:title" content="{% trans %}Bicheech Blog{% endtrans %} - Bicheech.com">
+<meta name="twitter:site" content="@Bicheech_com">
+
+
+{% endblock %}
+
+{% block body %}
+<div class="page-blog">
+        <div class="row">
+            <div class="span-9 pull-left">
+
+                {% for blog in blogs %}
+
+                    <div class="blog-post">
+                        {% for tag in blog.tag %}
+                            <p class="post-tag"><a href="{{ path('blog_tag',{ 'tag':tag.name})}}">{{ tag.name|trans }}</a></p>
+                        {% endfor %}
+
+                        <h1 class="post-title"><a href="{{ path('blog_read', { 'slug' : blog.slug } ) }}">{% if app.request.attributes.get('_locale') == 'mn' %}{{ blog.mnTitle }}{% else %}{{ blog.enTitle }}{% endif %}</a></h1>
+                        <p class="posted-by">{{ blog.createdAt|date("F d\\, Y") }} by {{ blog.user.username }}
+                        </p>
+
+                        <div class="post-content">
+                            <p class="center"><a href="{{ path('blog_read', { 'slug' : blog.slug } ) }}"><img src="{{ asset('/uploads/' ~ blog.image ) }}" alt="{% if app.request.attributes.get('_locale') == 'mn' %}{{ blog.mnTitle }}{% else %}{{ blog.enTitle }}{% endif %}" /></a></p>
+                            <p>{% if app.request.attributes.get('_locale') == 'mn' %}{{ blog.mnDiscription|raw }}{% else %}{{ blog.enDiscription|raw }}{% endif %}</p>
+                        </div>
+
+                        <a href="{{ path('blog_read', { 'slug' : blog.slug } ) }}" role="button" class="btn btn-defualt">{% trans %}Read More{% endtrans %}</a>
+                    </div>
+                {% else %}
+
+                {% endfor %}
+
+            </div>
+            <div class="span-3 side-bar">
+                <h1>{% trans %}Bicheech.com Blog{% endtrans %}</h1>
+                <p>{% trans %}Keep up with Bicheech.com features, industry news, educational musings and more.{% endtrans %}</p>
+                <hr>
+                <h1>{% trans %}Post Topics{% endtrans %}</h1>
+                <ul>
+                    {% for tag in tags %}
+                    <li><a href="{{ path('blog_tag',{ 'tag':tag.slug})}}">{{tag.name|trans|capitalize}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

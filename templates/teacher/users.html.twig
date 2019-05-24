@@ -1,0 +1,227 @@
+{% extends 'teacher.html.twig' %}
+
+{% block title %}{% trans %}Bicheech.com{% endtrans %} {% trans %}Teacher Portal{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+    <h3 class="pageHeader">{% trans %}Students{% endtrans %}<small> {% trans %}manage your students{% endtrans %}</small></h3>
+
+    <div class="alter-nsg" id="alert-area">
+    </div>
+
+    <div class="iconBox">
+    	<a href="{{ path('usercreatepage') }}" class="btn btn-defualt" title="{% trans %}Add or import student accounts to your classes{% endtrans %}"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i>  {% trans %}Create / Import Accounts{% endtrans %}</a>
+      <a href="#" id="export-list-button" class="btn btn-defualt pull-right" title="{% trans %}Export/download your student list to a CSV (comma separated values) file. Note that passwords are encrypted and therefore not exported.{% endtrans %}"><i class="fa fa-file-excel-o fa-lg" aria-hidden="true"></i>  {% trans %}Export{% endtrans %}</a>
+	</div>
+<select name="groups" id="groups" class="x-hidden">
+<option value="all">{% trans %}All Students{% endtrans %}</option>
+<option value="ungrouped"{% if(id == 'ungrouped') %} selected{% endif %}>{% trans %}Ungrouped Students{% endtrans %}</option>
+{% for class in classes %}
+<option value="{{ class.id }}"{% if(id == class.id) %} selected{% endif %}>{{ class.name }}</option>
+{% endfor %}
+</select>
+<select name="groups2" id="groups2" class="x-hidden">
+<option value="ungrouped"{% if(id == 'ungrouped') %} selected{% endif %}>{% trans %}Ungrouped Students{% endtrans %}</option>
+{% for class in classes %}
+<option value="{{ class.id }}"{% if(id == class.id) %} selected{% endif %}>{{ class.name }}</option>
+{% endfor %}
+</select>
+<select name="groups3" id="groups3" class="x-hidden">
+<option value="ungrouped"{% if(id == 'ungrouped') %} selected{% endif %}>{% trans %}Ungrouped Students{% endtrans %}</option>
+{% for class in classes %}
+<option value="{{ class.id }}"{% if(id == class.id) %} selected{% endif %}>{{ class.name }}</option>
+{% endfor %}
+</select>
+<select name="speedTypes" id="speedTypes" class="x-hidden">
+<option value="wpm">Words per Minute</option>
+<option value="cpm">Characters per Minute</option>
+</select>
+<select name="spaces" id="spaces" class="x-hidden">
+<option value="1">One Space</option>
+<option value="2">Two Spaces</option>
+</select>
+<select name="sounds" id="sounds" class="x-hidden">
+<option value="1">{% trans %}Yes{% endtrans %}</option>
+<option value="0">{% trans %}No{% endtrans %}</option>
+</select>
+
+	<div id="grid"></div>
+  {% if app.request.attributes.get('_locale') == 'mn' %}
+  <div class="grid-info">Сурагчийн дэлгэрэнгүйг харахын тулд <i class="fa fa-search" aria-hidden="true"></i> дээр дарах эсвэл мөрийг хоёр дарна уу.</div>
+  {% else %}
+  <div class="grid-info">Click the <i class="fa fa-search" aria-hidden="true"></i> or double click a row to view student details.</div>
+  {% endif %}
+
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('resources/css/ext-all.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('resources/css/xtheme-gray.css') }}" />
+{% endblock %}
+
+{% block javascripts %}
+<script src="https://js-agent.newrelic.com/nr-918.min.js"></script>
+<script type="text/javascript" src="{{ asset('adapter/ext/ext-base.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/ext-all.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/global.js') }}"></script>
+<script>
+url = {
+
+    "GRID_USERS_URL": "{{ path('usersjsonpage') }}",
+    "CREATE_CLASSES_URL": "{{ path('classespage') }}",
+    "MOVE_STUDENT_URL": "{{ path('usermovepage') }}",
+    "RESET_STUDENT_URL": "{{ path('usersresetpage') }}",
+    "PASSWORD_STUDENT_URL": "{{ path('userspasswordpage') }}",
+    "DELETE_STUDENT_URL": "{{ path('usersdeletepage') }}",
+    "UNLINK_STUDENT_URL": "{{ path('usersunlinkpage') }}",
+    "LOAD_STUDENT_URL": "{{ path('usersloadpage') }}",
+    "SAVE_STUDENT_URL": "{{ path('usersavepage') }}",
+    "ADD_STUDENT_URL": "{{ path('usercreatepage') }}",
+    "DETAILS_STUDENT_URL": "{{ path('userdetailspage', { 'id':'_sid'}) }}",
+    "EXPORT_STUDENT_URL": "{{ path('usersexportpage', { 'clss':'_sid'}) }}",
+};
+text = {
+    "NO": "{% trans %}No{% endtrans %}",
+    "YES": "{% trans %}Yes{% endtrans %}",
+    "USERNAME": "{% trans %}Username{% endtrans %}",
+    "FIRST_NAME": "{% trans %}First Name{% endtrans %}",
+    "LAST_NAME": "{% trans %}Last Name{% endtrans %}",
+    "CLASS": "{% trans %}Class{% endtrans %}",
+    "EMAIL": "{% trans %}Email{% endtrans %}",
+    "LAST_LOGIN": "{% trans %}Last Login{% endtrans %}",
+    "DATE_ENROLLED": "{% trans %}Date Enrolled{% endtrans %}",
+    "ACCOUNT_TYPE": "{% trans %}Account Type{% endtrans %}",
+    "NEVER": "{% trans %}Never{% endtrans %}",
+    "VIEW_STUDENT": "{% trans %}View detailed information for this student{% endtrans %}",
+    "EDIT_STUDENT_TIP": "{% trans %}Edit the details for this student{% endtrans %}",
+    "NO_RESULTS": "{% trans %}There are currently no students in this class.{% endtrans %}",
+    "STUDENT_CREATE": "{% trans %}Create / Add Students{% endtrans %}",
+    "SWITCH_CLASS": "{% trans %}Switch to Class{% endtrans %}",
+    "NO_STUDENTS_TO_DISPLAY": "{% trans %}No students to display{% endtrans %}",
+    "NO_STUDENT_SELECTED":"{% trans %}No students selected.  Select students by clicking the checkboxes.{% endtrans %}",
+    "CHANGE_CLESSES":"{% trans %}Change Classes{% endtrans %}",
+    "MOVE_CHECKED_STUDENTS":"{% trans %}Move checked students between classes{% endtrans %}",
+    "RESET_ACCOUNTS":"{% trans %}Reset Account(s){% endtrans %}",
+    "RESETTING_AN_ACCOUNT":"{% trans %}Resetting an account permanently deletes all typing progress, statistics, and personal information such as name and email{% endtrans %}",
+    "RESET_PASSWORD":"{% trans %}Reset Password(s){% endtrans %}",
+    "RESET_PASSWORD_TIP":"{% trans %}This allows you to quickly reset passwords for multiple student accounts{% endtrans %}",
+    "DELETE_ACCOUNT":"{% trans %}Delete Account(s){% endtrans %}",
+    "DELETE_ACCOUNT_TIP":"{% trans %}Deleting an account will permanently delete the account from Bicheech.com{% endtrans %}",
+    "UNLINK_ACCOUNT":"{% trans %}Unlink Account(s){% endtrans %}",
+    "UNLINK_ACCOUNT_TIP":"{% trans %}Unlinking an account removes the accounts from your Portal, however the account remains intact and available to the student{% endtrans %}",
+    "PLEASE_WAIT":"{% trans %}Please wait{% endtrans %}",
+    "MOVING_STUDENT":"{% trans %}Moving Student(s){% endtrans %}",
+    "YOU_HAVE_NOT_YET":"{% trans %}You have not yet created any classes.{% endtrans %}",
+    "CREATE_YOUR_FIRST_CLASS":"{% trans %}Create your first class.{% endtrans %}",
+    "MOVE_SUCCESSFUL":"{% trans %}Move Successful!{% endtrans %}",
+    "MOVE_SUCCESSFUL_DESC":"{% trans %}The selected student(s) have been moved between classes.{% endtrans %}",
+    "THERE_WAS_AN_ERROR":"{% trans %}There was an error{% endtrans %}",
+    "MOVE_STUDENTS_BETWEEN_CLASSES":"{% trans %}Move Students Between Classes{% endtrans %}",
+    "SELECT_A_CLASS":"{% trans %}Select a class{% endtrans %}:",
+    "MOVE_STUDENT": "{% trans %}Move Student(s){% endtrans %}",
+
+    "RESETTING_STUDENTS": "{% trans %}Resetting Student(s){% endtrans %}",
+    "RESET_STUDENTS": "{% trans %}Reset Selected Students{% endtrans %}",
+    "RESET_WARNING_TEXT":"{% trans %}Permanently clear all typing progress and personal information from the selected accounts{% endtrans %}?",
+    "RESET_TEXT": "{% trans %}Statistics and personal information will be cleared.{% endtrans %}",
+    "RESET_SUCCESSFUL":"{% trans %}Reset Successful{% endtrans %}!",
+    "RESET_SUCCESSFUL_TEXT":"{% trans %}Typing data and personal information for the account(s) have been cleared.{% endtrans %}",
+
+    "DELETE_CONFIRM": "{% trans %}Student(s) and all statistics will be deleted.{% endtrans %}",
+    "DELETE_STUDENTS": "{% trans %}Delete Selected Students{% endtrans %}",
+    "DELETING_STUDENTS": "{% trans %}Deleting Student(s){% endtrans %}",
+    "UNLINKING_STUDENTS": "{% trans %}Unlinking student accounts{% endtrans %}",
+    "UNLINK_CONFIRM": "{% trans %}Unlinking a student account will remove it from your Teacher Portal, however the account will still exist and be accessible by the student.{% endtrans %}",
+    "UNLINK_STUDENTS": "{% trans %}Unlink Students{% endtrans %}",
+
+    "NEW_PASSWORD":"{% trans %}New password{% endtrans %}",
+    "PASSWORD_RESET_FAILED":"{% trans %}Password Reset Failed{% endtrans %}",
+    "YOU_MUST_ENTER_A_PASSWORD.":"{% trans %}You must enter a password.{% endtrans %}",
+    "RESETTING_PASSWORDS":"{% trans %}Resetting Passwords{% endtrans %}",
+    "PASSWORD_RESET_SUCCESSFUL":"{% trans %}Password Reset Successful{% endtrans %}!",
+    "PASSWORD_RESET_SUCCESSFUL_TEXT":"{% trans %}The password for the account(s) have been reset.{% endtrans %}",
+    "STUDENT_DELETED":"{% trans %}Student(s) Deleted{% endtrans %}!",
+    "STUDENT_DELETED_TEXT":"{% trans %}The selected student accounts have been deleted from Bicheech.com.{% endtrans %}",
+    "UNLINKING_SUCCESSFUL":"{% trans %}Unlinking Successful{% endtrans %}",
+    "UNLINKING_SUCCESSFUL_TEXT":"{% trans %}The selected student(s) have been unlinked from your teacher Portal.{% endtrans %}",
+
+    "EDIT_STUDENT": "{% trans %}Edit Student{% endtrans %}",
+    "ACCOUNT_INFORMATION": "{% trans %}Account Information{% endtrans %}",
+    "PASSWORD": "{% trans %}Password{% endtrans %}",
+    "NOTE_PASSWORD_TIP": "{% trans %}Note: only enter a password to change it{% endtrans %}",
+    "OPTIONAL_FIELDS": "{% trans %}Optional Fields{% endtrans %}",
+    "PREFERENCES": "{% trans %}Preferences{% endtrans %}",
+    "SPEED_CALCULATION": "{% trans %}Speed Calculation{% endtrans %}",
+    "SENTENCE_SPACES": "{% trans %}Sentence Spaces{% endtrans %}",
+    "TYPING_SOUNDS": "{% trans %}Typing Sounds{% endtrans %}",
+    "SAVE": "{% trans %}Save{% endtrans %}",
+    "CANCEL": "{% trans %}Cancel{% endtrans %}",
+    "STUDENT_ACCOUNT_SUCCESSFULLY_UPDATED":"{% trans %}Student Account Successfully Updated{% endtrans %}!",
+    "USERNAME_FIELD_ERROR":"{% trans %}Usernames must be between 4 and 30 characters, and can contain only letters, numbers, userscores, and one dot (.){% endtrans %}!",
+
+
+    "ACCURACY": "Accuracy",
+    "ADVANCED_COURSE": "Advanced",
+    "BEGINNER_COURSE": "Beginner",
+    "CERTIFICATION": "Certifications",
+    "COURSE": "Course",
+    "CPM": "Characters per Minute",
+    "GROSS_SPEED": "Gross Speed",
+    "HEADLINE_EXERCISES": "Headlines",
+    "INTERMEDIATE_COURSE": "Intermediate",
+    "LESSON": "Lesson",
+    "LESSONS": "Lessons",
+    "LOADING_STUDENT": "Loading Student",
+    "LOG_OUT": "Log Out",
+    "NAME": "Name",
+    "NAV_CLASSES": "Classes",
+    "NAV_HELP": "Help",
+    "NAV_HOME": "Home",
+    "NAV_LESSONS": "Lessons",
+    "NAV_MY_ACCOUNT": "Account",
+    "NAV_REPORTS": "Reports",
+    "NAV_SCORES": "Scores",
+    "NAV_STUDENTS": "Students",
+    "NET_SPEED": "Net Speed",
+    "ONE_SPACE": "One Space",
+    "PLEASE_CORRECT": "Please correct invalid fields and values.",
+    "SAVING_STUDENT": "Saving Student",
+    "SPECIALTY_COURSE": "Specialty",
+    "TEACHER_PORTAL": "Teacher Portal",
+    "TEST": "Typing Test",
+    "TIME_SPENT": "Time Spent",
+    "TWO_SPACES": "Two Spaces",
+    "UNKNOWN_ERROR": "Unknown error.  Please contact support.",
+    "VALIDATION_ERROR": "Validation Error",
+    "WELCOME": "Welcome",
+    "WPM": "Words per Minute",
+    "ACCOUNT_CREATED": "Student Account Created!",
+    "CREATE_ANOTHER": "Would you like to create another student?",
+    "CREATE_NEW_STUDENT": "Create New Student",
+    "CREATING_STUDENT": "Creating Student Account",
+    "ENTER_USER_AND_PASS": "Enter the username and password of an existing Bicheech.com account to link it to your Portal.",
+    "ERROR_CREATING_ACCOUNT": "Error Creating Student Account",
+    "FREE": "Free",
+    "LINK_ANOTHER": "Would you like to link another student?",
+    "LINK_EXISTING": "Link Existing Student",
+    "LINK_TO_EXISTING": "'Link to Existing Student Account",
+    "MANAGE_STUDENTS": "Manage Students",
+    //"NO_STUDENT_SELECTED": "No students selected!",
+    "PREMIUM": "Premium",
+    "SEARCHING_STUDENTS": "Searching Student Accounts",
+    "STUDENTS_CREATED": "Student accounts can be created one at a time.<br />Only the username and password are required.",
+    "STUDENT_DETAILS": "Student Details",
+    "STUDENT_LINKED": "Student Account Linked!",
+};
+</script>
+
+<script>
+	var languageID = "1";
+	var groupID = "all";
+	var totalGroups = 3;
+</script>
+<script type="text/javascript" src="{{ asset('js/users.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/edituser.js') }}"></script>
+{% endblock javascripts %}

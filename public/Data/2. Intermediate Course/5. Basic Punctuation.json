@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<p class=\"typinghelp\">You are now ready to move into basic punctuation.  This lesson will introduce you to punctuation that, depending on your keyboard format, does not require you to hit the shift key.<\/p><p class=\"typinghelp\">You will be doing a lot of typing with your right hand, so make sure to stretch it out first!<\/p><p class=\"typinghelp\">Good luck, and have fun!<\/p>";
+		lessonData.congratsText = "<img src=\"\/tutor\/images\/congrats_4.png\" alt=\"\" align=\"right\" \/><p class=\"typinghelp\">You, my friend, are; amazing, awesome, fast.  Keep up the great work!<\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"114867","lessonID":"327","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"''' \/\/\/","exercise":"''' \/\/\/ ''' \/\/\/ ''' \/\/\/ ''' \/\/\/ ''\/ \/\/' '\/' \/'\/\r\n\/\/\/ ''' \/\/\/ ''' \/\/\/ ''' \/\/\/ ''' \/\/' ''\/ \/'\/ '\/'","helpText":""},{"lessonExerciseID":"114868","lessonID":"327","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Lobster + Apostrophe  = Lobpostrophe","exercise":"isn't typing with apostrophes great\r\nbefore this exercise you couldn't type with them\r\nbut now there's nothin' that can hold you back\r\nyou're the best apostrophe typist in the world\r\n","helpText":""},{"lessonExerciseID":"114869","lessonID":"327","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Boys\/girls","exercise":"it's fun to type\/keyboard when on your pc\/mac\r\nmany boys\/girls have found that to be true\r\nwhat do you think\/believe about touch typing\r\ni'm pretty sure\/convinced it's an awesome skill","helpText":""},{"lessonExerciseID":"114870","lessonID":"327","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"... ;;;","exercise":"... ;;; ... ;;; ... ;;; ... ;;; ..; ;;. .;. ;.;\r\n;;; ... ;;; ... ;;; ... ;;; ... ;;. ..; ;.; .;.","helpText":""},{"lessonExerciseID":"114871","lessonID":"327","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"I know...","exercise":"I'm going to walk\/run all the way to the store.\r\nthough who knows how long I will run for...\r\nI guess we will find out soon.\r\nI really need water when I get to the store.","helpText":""},{"lessonExerciseID":"114872","lessonID":"327","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"You; me","exercise":"Three typists started typing; only 2 remain.\r\nI went to Los Angeles, California; and Boston, MA.\r\nWatch for grammar errors; such as semicolons.\r\nI am a messy eater; but that's not the worst part.","helpText":""},{"lessonExerciseID":"114873","lessonID":"327","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":",,, ...","exercise":",,, ... ,,, ... ,,, ... ,,, ... ,,. .., ,., .,.\r\n... ,,, ... ,,, ... ,,, ... ,,, .., ,,. .,. ,.,","helpText":""},{"lessonExerciseID":"114874","lessonID":"327","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Typing, Fun, Good.","exercise":"I love bacon, cheese, potatoes, and broccoli.\r\nWho knows when, if ever, we will be finished.\r\nTyping, much like bicycling, is a learned skill.\r\nShe asked if she could have two, three, or four.","helpText":""},{"lessonExerciseID":"114875","lessonID":"327","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Finish it!","exercise":"Punctuation, commas, periods, and all that fun.\r\nLearning to type is fun AND useful, so long as you\r\naren't typing by hunting and pecking. You must\r\nlearn where the keys are without looking.","helpText":""},{"lessonExerciseID":"114876","lessonID":"327","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"That's all folks!","exercise":"Now, I'm not a man\/person who is immune to grammar\r\nerrors; such as semicolons, but I love using them\r\nanyway. It's just an old habit, much like\r\nchewing my nails. So hopefully you learn better.","helpText":""}];
+		lessonData.lessonID = '327';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Basic Punctuation";
+		lessonData.restricted = '';
+		lessonData.playSounds = true;
+		lessonData.course = 'INTERMEDIATE_COURSE';
+		lessonData.hasTrophy = 1;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+			

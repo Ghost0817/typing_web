@@ -1,0 +1,95 @@
+{% extends 'teacher.html.twig' %}
+
+{% block title %}{% trans %}Bicheech.com{% endtrans %} {% trans %}Teacher Portal{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+<select name="dateRanges" id="dateRanges" class="x-hidden">
+<option value="custom" selected="selected">{% trans %}Custom (Up to Last 40 Days){% endtrans %}</option>
+<option value="today">{% trans %}Today{% endtrans %}</option>
+<option value="yesterday">{% trans %}Yesterday{% endtrans %}</option>
+<option value="thisweek">{% trans %}This Week{% endtrans %}</option>
+<option value="lastweek">{% trans %}Last Week{% endtrans %}</option>
+<option value="overall">{% trans %}All Time{% endtrans %}</option>
+</select>
+
+
+<select name="language" id="language" class="x-hidden">
+{% for lang in langs %}
+<option value="{{ lang.id }}">
+{% if app.request.locale == 'mn' %}{{ lang.mnTitle }}{% endif %}
+{% if app.request.locale == 'en' %}{{ lang.enTitle }}{% endif %}
+</option>
+{% endfor %}
+</select>
+
+
+<select name="groupBys" id="groupBys" class="x-hidden">
+<option value="user" selected="selected">{% trans %}User{% endtrans %}</option>
+<option value="day">{% trans %}Day{% endtrans %}</option>
+<option value="week">{% trans %}Week{% endtrans %}</option>
+<option value="month">{% trans %}Month{% endtrans %}</option>
+</select>
+
+
+<select name="reports" id="reports" class="x-hidden">
+<option value="exercises" selected="selected">{% trans %}Student Progress Overview{% endtrans %}</option>
+<option value="detailed">{% trans %}Detailed by Lesson{% endtrans %}</option>
+<option value="typingtests">{% trans %}Typing Tests{% endtrans %}</option>
+<option value="scoreboard">{% trans %}Class Scoreboard{% endtrans %} ({% trans %}This Week{% endtrans %})</option>
+</select>
+
+
+<select name="groups" id="groups" class="x-hidden">
+<option value="all">{% trans %}All Students{% endtrans %}</option>
+<option value="ungrouped">{% trans %}Ungrouped Students{% endtrans %}</option>
+{% for class in classes %}
+<option value="{{ class.id }}">{{ class.name }}</option>
+{% endfor %}
+</select>
+
+
+    <h3 class="pageHeader">{% trans %}Reports{% endtrans %}<small> {% trans %}monitor your students' typing progress{% endtrans %}</small></h3>
+    <div id="reports-container"></div>
+    <div id="reports-grid"></div>
+
+</div>
+{% endblock body %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('resources/css/ext-all.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('resources/css/xtheme-gray.css') }}" />
+{% endblock %}
+
+{% block javascripts %}
+<script type="text/javascript" src="{{ asset('adapter/ext/ext-base.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/ext-all.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/global.js') }}"></script>
+<script>
+    url = {
+        "REPORT_URL":"{{ path('reportrunpage') }}",
+        "REPORT_EXPORT_URL":"{{ path('reportexportpage',{'date':'_date','dateRange':'_dateRange','endDate':'_endDate','startDate':'_startDate','GroupID':'_GroupID','lang':'_lang','report':'_report'}) }}"
+    }
+text = {
+    "NO_RESULTS": "{% trans %}No results to display{% endtrans %}",
+    "PLEASE_WAIT": "{% trans %}Please wait{% endtrans %}...",
+    "THERE_WAS_AN_ERROR": "There was an error",
+    "TOO_MANY_RESULTS": "Too Many Results",
+    "TOO_MANY_RESULTS_TEXT": "The full resultset contains more than %1 records, however only %2 are shown.<br /><br />To view the full results you must export the report.",
+    "GENERATING_REPORT": "Generating Report",
+    "REPORT_DATA": "Report Data",
+    "RUN_REPORT": "{% trans %}Run Report{% endtrans %}",
+    "EXPORT": "{% trans %}Export{% endtrans %}",
+    "PRINT": "{% trans %}Print{% endtrans %}",
+    "SELECT_DATE_RANGE": "{% trans %}Select a Date Range{% endtrans %}",
+    "SELECT_REPORT": "{% trans %}Select a Report{% endtrans %}",
+    "SELECT_CLASS": "{% trans %}Select a Class{% endtrans %}",
+    "SELECT_LANG": "{% trans %}Select a Language{% endtrans %}"
+};
+</script>
+<script>
+	var speedType = 'wpm';
+</script>
+<script type="text/javascript" src="{{ asset('js/reports.js') }}"></script>
+{% endblock javascripts %}

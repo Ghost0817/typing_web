@@ -1,0 +1,137 @@
+App\Entity\Student:
+    type: entity
+    table: student
+    indexes:
+        mykb:
+            columns:
+                - mykb
+        role:
+            columns:
+                - role
+                - mykb
+    uniqueConstraints:
+        email_idx:
+            columns:
+                - email
+        username_idx:
+            columns:
+                - username
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+        email:
+            type: string
+            nullable: true
+            length: 255
+            options:
+                fixed: false
+        firstname:
+            type: string
+            nullable: true
+            length: 55
+            options:
+                fixed: false
+        lastname:
+            type: string
+            nullable: true
+            length: 55
+            options:
+                fixed: false
+        gender:
+            type: string
+            nullable: false
+            length: 1
+            options:
+                fixed: false
+        password:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        salt:
+            type: string
+            nullable: true
+            length: 100
+            options:
+                fixed: false
+        activationkey:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+            column: activationKey
+        isActive:
+            type: boolean
+            nullable: false
+            column: is_active
+        measureSpeed:
+            type: string
+            nullable: false
+            length: 3
+            options:
+                fixed: false
+            column: measure_speed
+        enableSounds:
+            type: boolean
+            nullable: false
+            column: enable_sounds
+        role:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        mykb:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        lastAction:
+            type: string
+            nullable: true
+            length: 25
+            options:
+                fixed: false
+            column: last_action
+        lastActivityAt:
+            type: datetime
+            nullable: true
+            column: last_activity_at
+        lastlogin:
+            type: datetime
+            nullable: true
+            column: lastLogin
+        created:
+            type: datetime
+            nullable: false
+        updated:
+            type: datetime
+            nullable: false
+        gradeId:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: grade_id
+        sentenceSpaces:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: sentence_spaces
+    lifecycleCallbacks: {  }

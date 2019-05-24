@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Шивэхэд суралцах | Үнэгүй шивэх дасгал | Шивэлтын курс{% endblock %}</title>
+        <link rel="alternate" href="{{ app.request.getSchemeAndHttpHost() }}" hreflang="{{ app.request.attributes.get('_locale') }}" />
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% block javascripts %}{% endblock %}
+    </head>
+    <body>
+
+        {% block body %}{% endblock %}
+    </body>
+</html>

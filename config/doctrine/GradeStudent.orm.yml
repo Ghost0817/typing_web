@@ -1,0 +1,58 @@
+App\Entity\GradeStudent:
+    type: entity
+    table: grade_student
+    indexes:
+        grade_id:
+            columns:
+                - grade_id
+        teacher_id:
+            columns:
+                - teacher_id
+        student:
+            columns:
+                - student
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        created:
+            type: datetime
+            nullable: false
+    manyToOne:
+        student:
+            targetEntity: Student
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                student:
+                    referencedColumnName: id
+            orphanRemoval: false
+        grade:
+            targetEntity: Grade
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                grade_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        teacher:
+            targetEntity: Teacher
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                teacher_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

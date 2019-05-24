@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block google %}
+<meta name="keywords" content="bicheech.com, bicheech, бичээч.ком, бичээч, typing, арван хуруугаар хурдан шивэх, Арван хуруугаар хурдан шивэж сургах">
+<meta name="description" content="Арван хуруугаар хурдан шивэж сургах онлайн програм юм.">
+{% endblock google %}
+
+{% block body %}
+<div class="my_content">
+
+    <div class="right_ads">
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+            {% include 'tipday.html.twig' %}
+        {% else %}
+            {% include 'rec_regbox.html.twig' %}
+        {% endif %}
+
+        {% include 'levelbox.html.twig' %}
+
+        {% include 'wall_fame.html.twig' %}
+    </div>
+
+    <div class="content">
+        {% if is_granted('IS_AUTHENTICATED_FULLY') %}{% else %}
+            <div class="login_warring"><a class="close" onclick="jQuery(this).parent().hide()">x</a>{% trans %}You are not logged in. Typing progress will not be saved.{% endtrans %}</div>
+        {% endif %}
+            <div class="container">
+                <section class="widget_accordion">
+                    <ul>
+                        {% for entity in entities %}
+                            <li>
+                                <article>
+                                    <div class="button">
+                                        <span>+</span>
+                                        <span>-</span>
+                                    </div>
+                                    <header>
+                                        <a class="lang-course" href="{{ path('tutor_course',{"lang":entity.id}) }}">
+                                        {% if app.request.locale == 'mn' %}{{ entity.mnTitle }}{% endif %}
+                                        {% if app.request.locale == 'en' %}{{ entity.enTitle }}{% endif %}
+                                        <span class="start-link">{% trans %}Start{% endtrans %} »</span></a>
+                                    </header>
+                                </article>
+                            </li>
+                        {% else %}
+                            No users have been found.
+                        {% endfor %}
+                    </ul>
+                </section>
+            </div>
+    </div>
+</div>
+{% endblock body %}
+
+{% block stylesheets %}
+{% endblock stylesheets %}
+
+{% block javascripts %}
+
+{% endblock javascripts %}

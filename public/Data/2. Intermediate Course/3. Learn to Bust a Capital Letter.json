@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<p class=\"typinghelp\">It's time to <strong>shift<\/strong> things into gear.  This lesson is going to teach you to capitalize letters on your keyboard.  To make a letter uppercase, hold down the SHIFT key while pressing the letter key.  It's that simple!<\/p><p class=\"typinghelp\">The tip of the day is to shift with the hand opposite of the hand that is typing the uppercase letter.  So if you type an uppercase <key>F<\/key>, you should use your right hand shift.<\/p><br \/><center><img src=\"\/tutor\/images\/intros\/shift_keys.png\" alt=\"Home row Finger Position\" \/><\/center>";
+		lessonData.congratsText = "<img src=\"\/tutor\/images\/congrats_1.png\" alt=\"\" align=\"right\" \/><p class=\"typinghelp\">Well then, that was fun!  The next lesson we're going to move into typing words that start with a capital letter.<\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"114805","lessonID":"322","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Right Hand Shift","exercise":"aaa Aaa aaa Aaa aaa Aaa aaa Aaa aaa AAA aaa AAA\r\nsss Sss sss Sss sss Sss sss Sss sss SSS sss SSS\r\nddd Ddd ddd Ddd ddd Ddd ddd Ddd ddd DDD ddd DDD\r\nfff Fff fff Fff fff Fff fff Fff fff FFF fff FFF","helpText":""},{"lessonExerciseID":"114806","lessonID":"322","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Left Hand Shift","exercise":"jjj Jjj jjj Jjj jjj Jjj jjj Jjj jjj JJJ jjj JJJ\r\nkkk Kkk kkk Kkk kkk Kkk kkk Kkk kkk KKK kkk KKK\r\nlll Lll lll Lll lll Lll lll Lll lll LLL lll LLL\r\njkl Jkl jkl Jkl jkl Jkl jkl Jkl jkl JKL jkl JKL","helpText":"We're now going to move into the opposite side of the keyboard.  Use your <strong>left hand<\/strong> pinky finger to hold down the shift key."},{"lessonExerciseID":"114807","lessonID":"322","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"And Back to Right...","exercise":"qqq Qqq qqq Qqq qqq Qqq qqq Qqq qqq QQQ qqq QQQ\r\nwww Www www Www www Www www Www www WWW www WWW\r\neee Eee eee Eee eee Eee eee Eee eee EEE eee EEE\r\nrrr Rrr rrr Rrr rrr Rrr rrr Rrr rrr RRR rrr RRR","helpText":""},{"lessonExerciseID":"114808","lessonID":"322","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"And Back to Left!","exercise":"uuu Uuu uuu Uuu uuu Uuu uuu Uuu uuu UUU uuu UUU\r\niii Iii iii Iii iii Iii iii Iii iii Iii iii Iii\r\nooo Ooo ooo Ooo ooo Ooo ooo Ooo ooo Ooo ooo Ooo\r\nppp Ppp ppp Ppp ppp Ppp ppp Ppp ppp Ppp ppp Ppp","helpText":""},{"lessonExerciseID":"114809","lessonID":"322","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Pattern forming... Now!","exercise":"zzz Zzz zzz Zzz zzz Zzz zzz Zzz zzz ZZZ zzz ZZZ\r\nxxx Xxx xxx Xxx xxx Xxx xxx Xxx xxx XXX xxx XXX\r\nccc Ccc ccc Ccc ccc Ccc ccc Ccc ccc CCC ccc CCC\r\nvvv Vvv vvv Vvv vvv Vvv vvv Vvv vvv VVV vvv VVV","helpText":""},{"lessonExerciseID":"114810","lessonID":"322","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Back and Forth","exercise":"ttt Ttt ttt Ttt ttt Ttt ttt Ttt ttt TTT ttt TTT\r\nyyy Yyy yyy Yyy yyy Yyy yyy Yyy yyy YYY yyy YYY\r\nggg Ggg ggg Ggg ggg Ggg ggg Ggg ggg GGG ggg GGG\r\nhhh Hhh hhh Hhh hhh Hhh hhh Hhh hhh HHH hhh HHH","helpText":"We're going to mix this one up a little bit!  For your <key>T<\/key> and <key>G<\/key> keys make sure you use your right pinky to shift and for your <key>Y<\/key> and <key>H<\/key> keys, use your left hand pinky to shift."},{"lessonExerciseID":"114811","lessonID":"322","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"And again!","exercise":"bbb Bbb bbb Bbb bbb Bbb bbb Bbb bbb BBB bbb BBB\r\nnnn Nnn nnn Nnn nnn Nnn nnn Nnn nnn NNN nnn NNN\r\nmmm Mmm mmm Mmm mmm Mmm mmm Mmm mmm MMM mmm MMM\r\nbnm Bnm bnm Bnm bnm Bnm bnm Bnm bnm BNM bnm BNM","helpText":""},{"lessonExerciseID":"114812","lessonID":"322","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Gettin' Fancy","exercise":"aaa Aaa jjj Jjj sss Sss kkk Kkk ddd Ddd lll Lll\r\nqqq Qqq uuu Uuu www Www iii Iii eee Eee ooo Ooo\r\nzzz Zzz xxx Xxx nnn Nnn mmm Mmm ccc Ccc vvv Vvv\r\nabc Def ghi Jkl mno Pqr stu Vwx yz","helpText":"Now we're going to get crazy here and start shifting those shift keys back and forth!  Make sure you pay attention to using the proper hand to shift."}];
+		lessonData.lessonID = '322';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Learn to Bust a Capital Letter";
+		lessonData.restricted = '';
+		lessonData.playSounds = true;
+		lessonData.course = 'INTERMEDIATE_COURSE';
+		lessonData.hasTrophy = 1;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+			

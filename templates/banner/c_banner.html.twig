@@ -1,0 +1,8 @@
+<div class="left_ads">
+    {% if( banner ) %}
+        {{ banner.reclam | raw }}
+    {% else %}
+        <img src="{{ asset('Reclam/banner3.png') }}" alt="160 X 250 Empty Banner" />
+    {% endif %}
+
+</div>

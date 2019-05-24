@@ -1,0 +1,117 @@
+App\Entity\Blog:
+    type: entity
+    table: blog
+    indexes:
+        user:
+            columns:
+                - user
+    uniqueConstraints:
+        slug:
+            columns:
+                - slug
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        mnTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: mn_title
+        enTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: en_title
+        mnDiscription:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: mn_discription
+        enDiscription:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: en_discription
+        mnBody:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: mn_body
+        enBody:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: en_body
+        sortnum:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        isShow:
+            type: boolean
+            nullable: false
+            column: is_show
+        createdAt:
+            type: datetime
+            nullable: false
+            column: created_at
+        slug:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        image:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        imageEn:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: image_en
+        mwidth:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        mheight:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    manyToOne:
+        user:
+            targetEntity: Admin
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                user:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

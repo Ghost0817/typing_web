@@ -1,0 +1,153 @@
+<html><head>
+ <meta charset="UTF-8" />
+ <title></title>
+ <style type="text/css">
+
+ .spacer {
+         margin: 15px;
+         }
+
+ .spacer-sidebar
+		{
+         margin: 20px 0px 10px 0px;
+         }
+
+ #content {
+         font-family: verdana, arial, helvetica, sans-serif;
+         line-height: 20px;
+         font-size: 10pt;
+         color: #111;
+         }
+
+ #sidebar {
+         font-family: verdana, arial, helvetica, sans-serif;
+         color: #414141;
+         font-size: 12px;
+         }
+
+ #content p {
+         margin: 0;
+         padding: 5px 0;
+         }
+
+ ul {
+         padding: 0 0 0 16px;
+         margin: 0;
+         list-style: square;
+         }
+
+ li {
+         margin: 0;
+         padding: 5px 0;
+         }
+
+ #sidebar li {
+         padding: 2px 0;
+         margin: 0;
+         font-size: 12px;
+         }
+
+ #sidebar li a {
+         color: #f04704;
+         text-decoration: underline;
+         }
+
+ #sidebar li a:hover {
+         color: #f04704;
+         text-decoration: none;
+         }
+
+ #content h2 {
+         font-family: verdana, arial, helvetica, sans-serif;
+         font-size: 21px;
+         color: #cc3300;
+         font-weight: normal;
+         margin: 0;
+         padding: 5px 0;
+         border-bottom: 1px solid #cc3300;
+         }
+
+ #content h3 {
+         font-family: verdana, arial, helvetica, sans-serif;
+         font-size: 18px;
+         color: #cc3300;
+         font-weight: normal;
+         margin: 0;
+         padding: 5px 0;
+         border-bottom: 1px solid #cc3300;
+ }
+
+ #content h4 {
+         font-size: 15px;
+         color: #cc3300;
+         font-weight: bold;
+         margin: 0;
+         padding: 5px 0;
+         border-bottom: 1px solid #cc3300;
+ }
+
+ .block-heading {
+         font-size: 12px;
+         font-weight: bold;
+         color: #fff;
+         height: 24px;
+         padding: 5px 0 0 5px;
+         }
+
+ .block-content {
+         padding-left: 5px;
+         color: #555;
+         }
+
+ #footer-links {
+         background: #d1d1d1;
+         font-size: 11px;
+         font-weight: bold;
+         font-family: arial, sans-serif;
+         }
+
+ #footer-links p a {
+         color: #666;
+         }
+
+ #smallprint {
+         background: #e1e1e1;
+         font-size: 11px;
+         font-family: arial;
+         color: #666;
+         }
+
+ </style>
+
+ </head><body>
+
+ <p><br></p>
+
+ <table width="660" align="center" border="0" cellpadding="0" cellspacing="0">
+
+ <tbody>
+    <tr>
+        <td id="content" style="padding: 0pt 12px;" valign="top" width="450">
+           <div id="main">
+               <p>Хүндэт {% if name is defined %}{{ name }}{% endif %},</p>
+              <p>Та бүртгэсэн бүртгэлээ идвэхжүүлэхийн тулд доорх холбоосоор орж идвэхжүүлнэ үү.</p>
+              <a href="http://www.bicheech.com{{path('tutor_active',{'key':key})}}">http://www.bicheech.com{{path('tutor_active',{'key':key})}}</a>
+           </div>
+        </td>
+    </tr>
+ </tbody></table>
+ <br/>
+ <table id="table2" width="660" align="center" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+       <tr>
+           <td id="smallprint" bgcolor="#e1e1e1">
+               <div class="spacer">
+                   <strong>Тайлбар:</strong><br>
+Ийм тохиолдолд та өөрийн бус, хог / Spam гэж И-мэйл тэмдэглэж, эсвэл Аюулгүй илгээгчийн жагсаалт нэмэх таны Junk-mail/Spam манай и-мэйл хүлээн авах болно.
+               </div>
+           </td>
+       </tr>
+    </tbody>
+ </table>
+
+ </body></html>

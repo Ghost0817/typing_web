@@ -1,0 +1,83 @@
+App\Entity\Lesson:
+    type: entity
+    table: lesson
+    indexes:
+        cate:
+            columns:
+                - cate
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        mnTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: mn_title
+        enTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: en_title
+        mnIntro:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: mn_intro
+        enIntro:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+            column: en_intro
+        keyLayout:
+            type: string
+            nullable: false
+            length: 10
+            options:
+                fixed: false
+            column: key_layout
+        sortnum:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+        isPremium:
+            type: boolean
+            nullable: false
+            column: is_premium
+        isShow:
+            type: boolean
+            nullable: false
+            options:
+                comment: 'Харагдах эсхийг шийдэнэ.'
+            column: is_show
+        isshowkeys:
+            type: boolean
+            nullable: false
+            column: IsShowKeys
+    manyToOne:
+        cate:
+            targetEntity: Category
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                cate:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

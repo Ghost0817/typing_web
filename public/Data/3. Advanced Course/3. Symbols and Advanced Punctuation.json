@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<p class=\"typinghelp\">Now that you've mastered the standard keyboard, lets move into advanced punctuation!<\/p><p class=\"typinghelp\">This lesson features punctuation that requires you to the shift key both on the standard rows as well as on the numbers above.<\/p><p class=\"typinghelp\">Good luck, and have fun!<\/p>";
+		lessonData.congratsText = "<img src=\"\/tutor\/images\/congrats_4.png\" alt=\"\" align=\"right\" \/><p class=\"typinghelp\">You, my friend, are; amazing, awesome, fast.  Keep up the great work!<\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"114983","lessonID":"334","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"!! @@ ## $$","exercise":"!!! @@@ !!! @@@ !!! @@@ !!! @@@ !!@ @@! !@! @!@\r\n### $$$ ### $$$ ### $$$ ### $$$ ##$ $$# #$# $#$\r\n!@#$ $#@! !#@$ @$!# !!@@ ##$$ @@## !!$$ !@#$ $#","helpText":""},{"lessonExerciseID":"114984","lessonID":"334","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Lets try this out","exercise":"Bill #14 for your @example.com email cost $42.94!\r\nThat's amazing!! Email me that to me@example.com\r\nAttention order #493, your item is ready!\r\nYou owe us $35.94 of which $.94 is tax!","helpText":""},{"lessonExerciseID":"114985","lessonID":"334","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"% ^ & *","exercise":"%%% ^^^ %%% ^^^ %%% ^^^ %%% ^^^ %%^ ^^% %^% ^%^\r\n&&& *** &&& *** &&& *** &&& *** &&* **& &*& *&*\r\n%^&* *&^% %*^& ^*%& ^&%* ^& %*% ^&^ *% ^&*&^* ^","helpText":""},{"lessonExerciseID":"114986","lessonID":"334","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"This is just plain silly***","exercise":"I'm so happy ^^ You & I are going to make 14% * 5\r\nBacon & Cheese sandwich is 10% off! 14^2 is fun.\r\n**Please note the change of our price above ^^^\r\nSoon as you are done, you & Andy can come help ^^","helpText":""},{"lessonExerciseID":"114987","lessonID":"334","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"I feel sorry for you right now!","exercise":"((( ))) ((( ))) ((( ))) ((( ))) (() ))( ()( )()\r\n--- === --- === --- === --- === --= ==- -=- =-=\r\n___ +++ ___ +++ ___ +++ ___ +++ __+ ++_ _+_ +_+\r\n()-= =-)( =)-( )-(= =-)( ()=- =-=- (-)) )(-= )(\r\n_+())_(+( -=_+ +_ -= -=_+ _-+= +-=-+_ = -+ _+- =","helpText":""},{"lessonExerciseID":"114988","lessonID":"334","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"A little easier..","exercise":"I love vegetables (just kidding) on my sandwich.\r\nBacon + Cheese - Vegetables = Delicious!\r\nYOU_ARE_CORRECT that this is a difficult lesson!\r\nIt's a round-a-bout way of teaching symbols.","helpText":""},{"lessonExerciseID":"114989","lessonID":"334","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Phew, now onto something easy","exercise":"::: \"\"\" ::: \"\"\" ::: \"\"\" ::: \"\"\" ::\" \"\": :\": \":\"\r\n??? ::: \"\"\" ??? ::: \"\"\" ??? ::: ??: \":? :\"? ??:\r\n:\"? ?\": :?\" \"?: ??: ??\" \"\"? ::? :\"? ?\": ??? :\":","helpText":""},{"lessonExerciseID":"114990","lessonID":"334","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Lets try this out: Now!","exercise":"You are: a great \"typist.\" Are you feeling that?\r\nWhen I see you typing on your \"keyboard,\" I feel\r\nas if you are: awesome, amazing, and great! What\r\ndo you think??? I think \"GREAT!\"","helpText":""},{"lessonExerciseID":"114991","lessonID":"334","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Lets wrap this up","exercise":"When you (or us) leave, we must: thank our hosts +\r\nfill our car with gas -- before we go home -- and\r\nmake sure to realize that gravity = a law. You\r\ncan follow TypingWeb on twitter @typingweb -- you\r\nmay even win a free premium license!! Tip #4:\r\ndon't look at your keyboard ^_^","helpText":""}];
+		lessonData.lessonID = '334';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Symbols and Advanced Punctuation";
+		lessonData.restricted = '';
+		lessonData.playSounds = true;
+		lessonData.course = 'ADVANCED_COURSE';
+		lessonData.hasTrophy = 1;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 1;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+			

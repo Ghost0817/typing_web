@@ -1,0 +1,1604 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+          <trans-unit id="1">
+              <source>free online typing tutor.</source>
+              <target>free online typing tutor.</target>
+          </trans-unit>
+          <trans-unit id="2">
+              <source>Login</source>
+              <target>Login</target>
+          </trans-unit>
+          <trans-unit id="3">
+              <source>Home</source>
+              <target>Home</target>
+          </trans-unit>
+          <trans-unit id="4">
+              <source>Times Taken</source>
+              <target>Times Taken</target>
+          </trans-unit>
+          <trans-unit id="5">
+              <source>Typing Tests</source>
+              <target>Typing Tests</target>
+          </trans-unit>
+          <trans-unit id="6">
+              <source>Blog</source>
+              <target>Blog</target>
+          </trans-unit>
+          <trans-unit id="7">
+              <source>FAQs</source>
+              <target>FAQs</target>
+          </trans-unit>
+          <trans-unit id="8">
+              <source>Frequently Asked Questions</source>
+              <target>Frequently Asked Questions</target>
+          </trans-unit>
+          <trans-unit id="9">
+              <source>Student Progress Overview</source>
+              <target>Student Progress Overview</target>
+          </trans-unit>
+          <trans-unit id="10">
+              <source>Contact Us</source>
+              <target>Contact Us</target>
+          </trans-unit>
+          <trans-unit id="11">
+              <source>Detailed by Lesson</source>
+              <target>Detailed by Lesson</target>
+          </trans-unit>
+          <trans-unit id="12">
+              <source>Class Scoreboard</source>
+              <target>Class Scoreboard</target>
+          </trans-unit>
+          <trans-unit id="13">
+              <source>records</source>
+              <target>records</target>
+          </trans-unit>
+          <trans-unit id="14">
+              <source>Print</source>
+              <target>Print</target>
+          </trans-unit>
+          <trans-unit id="15">
+              <source>Perfect for All Ages</source>
+              <target>Perfect for All Ages</target>
+          </trans-unit>
+          <trans-unit id="16">
+              <source>Lessons for All Skill Levels</source>
+              <target>Lessons for All Skill Levels</target>
+          </trans-unit>
+          <trans-unit id="17">
+              <source>Run Report</source>
+              <target>Run Report</target>
+          </trans-unit>
+          <trans-unit id="18">
+              <source>Select a Date Range</source>
+              <target>Select a Date Range</target>
+          </trans-unit>
+          <trans-unit id="19">
+              <source>Select a Report</source>
+              <target>Select a Report</target>
+          </trans-unit>
+          <trans-unit id="20">
+              <source>Premium Packages</source>
+              <target>Premium Packages</target>
+          </trans-unit>
+          <trans-unit id="21">
+              <source>Bronze</source>
+              <target>Bronze</target>
+          </trans-unit>
+          <trans-unit id="22">
+              <source>Gold</source>
+              <target>Gold</target>
+          </trans-unit>
+          <trans-unit id="23">
+              <source>Platinum</source>
+              <target>Platinum</target>
+          </trans-unit>
+          <trans-unit id="24">
+              <source>Remove Distracting Ads</source>
+              <target>Remove Distracting Ads</target>
+          </trans-unit>
+          <trans-unit id="25">
+              <source>16 Premium Lessons</source>
+              <target>16 Premium Lessons</target>
+          </trans-unit>
+          <trans-unit id="26">
+              <source>Priority email support</source>
+              <target>Priority email support</target>
+          </trans-unit>
+          <trans-unit id="27">
+              <source>Course</source>
+              <target>Course</target>
+          </trans-unit>
+          <trans-unit id="28">
+              <source>Games</source>
+              <target>Games</target>
+          </trans-unit>
+          <trans-unit id="29">
+              <source>Test</source>
+              <target>Test</target>
+          </trans-unit>
+          <trans-unit id="30">
+              <source>Statistics</source>
+              <target>Statistics</target>
+          </trans-unit>
+          <trans-unit id="31">
+              <source>Register Now</source>
+              <target>Register Now</target>
+          </trans-unit>
+          <trans-unit id="32">
+              <source>It's free</source>
+              <target>It's free</target>
+          </trans-unit>
+          <trans-unit id="33">
+              <source>Register with Bicheech to track your progress, access additional content and compete for your place in the Hall of Fame.</source>
+              <target>Register with Bicheech to track your progress, access additional content and compete for your place in the Hall of Fame.</target>
+          </trans-unit>
+          <trans-unit id="34">
+              <source>Your Skill Level</source>
+              <target>Your Skill Level</target>
+          </trans-unit>
+          <trans-unit id="35">
+              <source>Hall of Fame</source>
+              <target>Hall of Fame</target>
+          </trans-unit>
+          <trans-unit id="36">
+              <source>You are not logged in. Typing progress will not be saved.</source>
+              <target>You are not logged in. Typing progress will not be saved.</target>
+          </trans-unit>
+          <trans-unit id="37">
+              <source>Start</source>
+              <target>Start</target>
+          </trans-unit>
+          <trans-unit id="38">
+              <source>Already have an account?</source>
+              <target>Already have an account?</target>
+          </trans-unit>
+          <trans-unit id="39">
+              <source>Please log in to continue.</source>
+              <target>Please log in to continue.</target>
+          </trans-unit>
+          <trans-unit id="40">
+              <source>I forgot my password</source>
+              <target>I forgot my password</target>
+          </trans-unit>
+          <trans-unit id="41">
+              <source>Don't have an account?</source>
+              <target>Don't have an account?</target>
+          </trans-unit>
+          <trans-unit id="42">
+              <source>Create Account</source>
+              <target>Create Account</target>
+          </trans-unit>
+          <trans-unit id="43">
+              <source>Select a Class</source>
+              <target>Select a Class</target>
+          </trans-unit>
+          <trans-unit id="44">
+              <source>total</source>
+              <target>total</target>
+          </trans-unit>
+          <trans-unit id="45">
+              <source>No problem</source>
+              <target>No problem</target>
+          </trans-unit>
+          <trans-unit id="46">
+              <source>Register</source>
+              <target>Register</target>
+          </trans-unit>
+          <trans-unit id="47">
+              <source>No accounts selected</source>
+              <target>No accounts selected</target>
+          </trans-unit>
+          <trans-unit id="48">
+              <source>Hi</source>
+              <target>Hi</target>
+          </trans-unit>
+          <trans-unit id="49">
+              <source>begin</source>
+              <target>begin</target>
+          </trans-unit>
+          <trans-unit id="50">
+              <source>Show/Hide Keyboard Diagram</source>
+              <target>Show/Hide Keyboard Diagram</target>
+          </trans-unit>
+          <trans-unit id="51">
+              <source>Start Over</source>
+              <target>Start Over</target>
+          </trans-unit>
+          <trans-unit id="52">
+              <source>Mongolia Course Overview Statistics</source>
+              <target>Mongolia Course Overview Statistics</target>
+          </trans-unit>
+          <trans-unit id="53">
+              <source>English Course Overview Statistics</source>
+              <target>English Course Overview Statistics</target>
+          </trans-unit>
+          <trans-unit id="54">
+              <source>View</source>
+              <target>View</target>
+          </trans-unit>
+          <trans-unit id="55">
+              <source>Option</source>
+              <target>Option</target>
+          </trans-unit>
+          <trans-unit id="56">
+              <source>Restart Lesson</source>
+              <target>Restart Lesson</target>
+          </trans-unit>
+          <trans-unit id="57">
+              <source>Are you sure you would like to restart the lesson</source>
+              <target>Are you sure you would like to restart the lesson</target>
+          </trans-unit>
+          <trans-unit id="58">
+              <source>retake exercise</source>
+              <target>retake exercise</target>
+          </trans-unit>
+          <trans-unit id="59">
+              <source>continue</source>
+              <target>continue</target>
+          </trans-unit>
+          <trans-unit id="60">
+              <source>Progress Summary</source>
+              <target>Progress Summary</target>
+          </trans-unit>
+          <trans-unit id="61">
+              <source>Time Spent Typing (by day)</source>
+              <target>Time Spent Typing (by day)</target>
+          </trans-unit>
+          <trans-unit id="62">
+              <source>Your Problem Keys</source>
+              <target>Your Problem Keys</target>
+          </trans-unit>
+          <trans-unit id="63">
+              <source>Typing Test Results</source>
+              <target>Typing Test Results</target>
+          </trans-unit>
+          <trans-unit id="64">
+              <source>wpm</source>
+              <target>wpm</target>
+          </trans-unit>
+          <trans-unit id="65">
+              <source>accuracy</source>
+              <target>accuracy</target>
+          </trans-unit>
+          <trans-unit id="66">
+              <source>lesson wpm</source>
+              <target>lesson wpm</target>
+          </trans-unit>
+          <trans-unit id="67">
+              <source>lesson acc</source>
+              <target>lesson acc</target>
+          </trans-unit>
+          <trans-unit id="68">
+              <source>Lesson Averages</source>
+              <target>Lesson Averages</target>
+          </trans-unit>
+          <trans-unit id="69">
+              <source>Lesson Progress</source>
+              <target>Lesson Progress</target>
+          </trans-unit>
+          <trans-unit id="70">
+              <source>Net Speed</source>
+              <target>Net Speed</target>
+          </trans-unit>
+          <trans-unit id="71">
+              <source>Accuracy</source>
+              <target>Accuracy</target>
+          </trans-unit>
+          <trans-unit id="72">
+              <source>complete</source>
+              <target>complete</target>
+          </trans-unit>
+          <trans-unit id="73">
+              <source>404 error</source>
+              <target>404 error</target>
+          </trans-unit>
+          <trans-unit id="74">
+              <source>Page not found(404 error)\nSorry, but the page you are looking for has not \nbeen found. Try checking the URL for errors, then \nhit the refresh button on your browser.</source>
+              <target>Page not found(404 error)\nSorry, but the page you are looking for has not \nbeen found. Try checking the URL for errors, then \nhit the refresh button on your browser.</target>
+          </trans-unit>
+          <trans-unit id="75">
+              <source>Page not found</source>
+              <target>Page not found</target>
+          </trans-unit>
+          <trans-unit id="76">
+              <source>Logout</source>
+              <target>Logout</target>
+          </trans-unit>
+          <trans-unit id="77">
+              <source>Profile</source>
+              <target>Profile</target>
+          </trans-unit>
+          <trans-unit id="78">
+              <source>You must be registered and signed in to use this feature.</source>
+              <target>You must be registered and signed in to use this feature.</target>
+          </trans-unit>
+          <trans-unit id="79">
+              <source>English Language and Keyboard</source>
+              <target>English Language and Keyboard</target>
+          </trans-unit>
+          <trans-unit id="80">
+              <source>Lessons</source>
+              <target>Lessons</target>
+          </trans-unit>
+          <trans-unit id="81">
+              <source>Progress</source>
+              <target>Progress</target>
+          </trans-unit>
+          <trans-unit id="82">
+              <source>Time Spent</source>
+              <target>Time Spent</target>
+          </trans-unit>
+          <trans-unit id="83">
+              <source>Gross Speed</source>
+              <target>Gross Speed</target>
+          </trans-unit>
+          <trans-unit id="84">
+              <source>Speed (wpm)</source>
+              <target>Speed (wpm)</target>
+          </trans-unit>
+          <trans-unit id="85">
+              <source>If a student account was created outside of your Portal, you can add it to your portal here by entering the student's username and password below.</source>
+              <target>If a student account was created outside of your Portal, you can add it to your portal here by entering the student's username and password below.</target>
+          </trans-unit>
+          <trans-unit id="86">
+              <source>Yes</source>
+              <target>Yes</target>
+          </trans-unit>
+          <trans-unit id="87">
+              <source>No</source>
+              <target>No</target>
+          </trans-unit>
+          <trans-unit id="88">
+              <source>minutes</source>
+              <target>minutes</target>
+          </trans-unit>
+          <trans-unit id="89">
+              <source>Minutes Spent Typing</source>
+              <target>Minutes Spent Typing</target>
+          </trans-unit>
+          <trans-unit id="90">
+              <source>Today</source>
+              <target>Today</target>
+          </trans-unit>
+          <trans-unit id="91">
+              <source>Also check out Fun To Type for Free</source>
+              <target>Also check out Fun To Type for Free</target>
+          </trans-unit>
+          <trans-unit id="92">
+              <source>EDUCATION</source>
+              <target>EDUCATION</target>
+          </trans-unit>
+          <trans-unit id="93">
+              <source>Personal Information</source>
+              <target>Personal Information</target>
+          </trans-unit>
+          <trans-unit id="94">
+              <source>Options</source>
+              <target>Options</target>
+          </trans-unit>
+          <trans-unit id="95">
+              <source>Measure speed</source>
+              <target>Measure speed</target>
+          </trans-unit>
+          <trans-unit id="96">
+              <source>Enable sound</source>
+              <target>Enable sound</target>
+          </trans-unit>
+          <trans-unit id="97">
+              <source>First Name</source>
+              <target>First Name</target>
+          </trans-unit>
+          <trans-unit id="98">
+              <source>Last Name</source>
+              <target>Last Name</target>
+          </trans-unit>
+          <trans-unit id="99">
+              <source>Save changes »</source>
+              <target>Save changes »</target>
+          </trans-unit>
+          <trans-unit id="100">
+              <source>Username</source>
+              <target>Username</target>
+          </trans-unit>
+          <trans-unit id="101">
+              <source>Password</source>
+              <target>Password</target>
+          </trans-unit>
+          <trans-unit id="102">
+              <source>Repeat password</source>
+              <target>Repeat password</target>
+          </trans-unit>
+          <trans-unit id="103">
+              <source>Lesson</source>
+              <target>Lesson</target>
+          </trans-unit>
+          <trans-unit id="104">
+              <source>lifetime</source>
+              <target>lifetime</target>
+          </trans-unit>
+          <trans-unit id="105">
+              <source>Name</source>
+              <target>Name</target>
+          </trans-unit>
+          <trans-unit id="106">
+              <source>Email</source>
+              <target>Email</target>
+          </trans-unit>
+          <trans-unit id="107">
+              <source>Message</source>
+              <target>Message</target>
+          </trans-unit>
+          <trans-unit id="108">
+              <source>Send Message</source>
+              <target>Send Message</target>
+          </trans-unit>
+          <trans-unit id="109">
+              <source>year</source>
+              <target>year</target>
+          </trans-unit>
+          <trans-unit id="110">
+              <source>Upgrade Now</source>
+              <target>Upgrade Now</target>
+          </trans-unit>
+          <trans-unit id="111">
+              <source>Sign up</source>
+              <target>Sign up</target>
+          </trans-unit>
+          <trans-unit id="112">
+              <source>Coming soon</source>
+              <target>Coming soon</target>
+          </trans-unit>
+          <trans-unit id="113">
+              <source>Payment Information</source>
+              <target>Payment Information</target>
+          </trans-unit>
+          <trans-unit id="114">
+              <source>Total Price</source>
+              <target>Total Price</target>
+          </trans-unit>
+          <trans-unit id="115">
+              <source>Membership</source>
+              <target>Membership</target>
+          </trans-unit>
+          <trans-unit id="116">
+              <source>This is a one time fee. You will not be charged again unless initiated by you.</source>
+              <target>This is a one time fee. You will not be charged again unless initiated by you.</target>
+          </trans-unit>
+          <trans-unit id="117">
+              <source>Unlock Your Full Typing Potential</source>
+              <target>Unlock Your Full Typing Potential</target>
+          </trans-unit>
+          <trans-unit id="118">
+              <source>Get the most out of your time on Bicheech. For a small fee you can unlock extra premium lessons.</source>
+              <target>Get the most out of your time on Bicheech. For a small fee you can unlock extra premium lessons.</target>
+          </trans-unit>
+          <trans-unit id="119">
+              <source>Purchase »</source>
+              <target>Purchase »</target>
+          </trans-unit>
+          <trans-unit id="120">
+              <source>Download</source>
+              <target>Download</target>
+          </trans-unit>
+          <trans-unit id="121">
+              <source>Forgot password</source>
+              <target>Forgot password</target>
+          </trans-unit>
+          <trans-unit id="122">
+              <source>Your Email Address</source>
+              <target>Your Email Address</target>
+          </trans-unit>
+          <trans-unit id="123">
+              <source>Find My Password</source>
+              <target>Find My Password</target>
+          </trans-unit>
+          <trans-unit id="124">
+              <source>Frequently Asked Questions</source>
+              <target>Frequently Asked Questions</target>
+          </trans-unit>
+          <trans-unit id="125">
+              <source>Bicheech.com is free</source>
+              <target>Bicheech.com is free</target>
+          </trans-unit>
+          <trans-unit id="126">
+              <source>Import Multiple Student Accounts</source>
+              <target>Import Multiple Student Accounts</target>
+          </trans-unit>
+          <trans-unit id="127">
+              <source>Bicheech.com's full typing curriculum</source>
+              <target>Bicheech.com's full typing curriculum</target>
+          </trans-unit>
+          <trans-unit id="128">
+              <source>Create Individual Student Accounts</source>
+              <target>Create Individual Student Accounts</target>
+          </trans-unit>
+          <trans-unit id="129">
+              <source>Please log in to continue.</source>
+              <target>Please log in to continue.</target>
+          </trans-unit>
+          <trans-unit id="130">
+              <source>No Download, Just type</source>
+              <target>No Download, Just type</target>
+          </trans-unit>
+          <trans-unit id="131">
+              <source>Sign Up Now</source>
+              <target>Sign Up Now</target>
+          </trans-unit>
+          <trans-unit id="132">
+              <source>Create Account</source>
+              <target>Create Account</target>
+          </trans-unit>
+          <trans-unit id="133">
+              <source>Premium Account</source>
+              <target>Premium Account</target>
+          </trans-unit>
+          <trans-unit id="134">
+              <source>Unlock Your Full Typing Potential!</source>
+              <target>Unlock Your Full Typing Potential!</target>
+          </trans-unit>
+          <trans-unit id="135">
+              <source>What are Premium Lessons?</source>
+              <target>What are Premium Lessons?</target>
+          </trans-unit>
+          <trans-unit id="136">
+              <source>What is Priority Email Support?</source>
+              <target>What is Priority Email Support?</target>
+          </trans-unit>
+          <trans-unit id="137">
+              <source>Recommended for anyone truly interested in getting the most out of Bicheech, we offer 16 extra premium lessons including individual finger exercises, common medical terms, numeric data entry, as well as fun and interesting facts to keep your learning time fresh and fun.</source>
+              <target>Recommended for anyone truly interested in getting the most out of Bicheech, we offer 16 extra premium lessons including individual finger exercises, common medical terms, numeric data entry, as well as fun and interesting facts to keep your learning time fresh and fun.</target>
+          </trans-unit>
+          <trans-unit id="138">
+              <source>Have a question about your account, or about getting the most out of TypingWeb? Premium members are guaranteed a fast response from our team of experts.</source>
+              <target>Have a question about your account, or about getting the most out of TypingWeb? Premium members are guaranteed a fast response from our team of experts.</target>
+          </trans-unit>
+          <trans-unit id="139">
+              <source>Are Yearly Charges Auto-Recurring?</source>
+              <target>Are Yearly Charges Auto-Recurring?</target>
+          </trans-unit>
+          <trans-unit id="140">
+              <source>No, charges are never auto-recurring. For yearly membership types, we will only charge you once. When your membership expires you can optionally choose to renew.</source>
+              <target>No, charges are never auto-recurring. For yearly membership types, we will only charge you once. When your membership expires you can optionally choose to renew.</target>
+          </trans-unit>
+          <trans-unit id="141">
+              <source>preview lesson</source>
+              <target>preview lesson</target>
+          </trans-unit>
+          <trans-unit id="142">
+              <source>That was a short preview of this premium lesson.</source>
+              <target>That was a short preview of this premium lesson.</target>
+          </trans-unit>
+          <trans-unit id="143">
+              <source>UPGRADE ACCOUNT</source>
+              <target>UPGRADE ACCOUNT</target>
+          </trans-unit>
+          <trans-unit id="144">
+              <source>The full lesson is much longer and more comprehensive.</source>
+              <target>The full lesson is much longer and more comprehensive.</target>
+          </trans-unit>
+          <trans-unit id="145">
+              <source>Upgrading to a Gold Membership</source>
+              <target>Upgrading to a Gold Membership</target>
+          </trans-unit>
+          <trans-unit id="146">
+              <source>will unlock all premium content, and allow for priority email support.</source>
+              <target>will unlock all premium content, and allow for priority email support.</target>
+          </trans-unit>
+          <trans-unit id="147">
+              <source>Save &amp; Continue</source>
+              <target>Save &amp; Continue</target>
+          </trans-unit>
+          <trans-unit id="148">
+              <source>Back to All Posts</source>
+              <target>Back to All Posts</target>
+          </trans-unit>
+          <trans-unit id="149">
+              <source>Bicheech.com Blog</source>
+              <target>Bicheech.com Blog</target>
+          </trans-unit>
+          <trans-unit id="150">
+              <source>Keep up with Bicheech.com features, industry news, educational musings and more.</source>
+              <target>Keep up with Bicheech.com features, industry news, educational musings and more.</target>
+          </trans-unit>
+          <trans-unit id="151">
+              <source>Post Topics</source>
+              <target>Post Topics</target>
+          </trans-unit>
+          <trans-unit id="152">
+              <source>Read More</source>
+              <target>Read More</target>
+          </trans-unit>
+          <trans-unit id="153">
+              <source>Preferences</source>
+              <target>Preferences</target>
+          </trans-unit>
+          <trans-unit id="154">
+              <source>Change password</source>
+              <target>Change password</target>
+          </trans-unit>
+          <trans-unit id="155">
+              <source>Change username</source>
+              <target>Change username</target>
+          </trans-unit>
+          <trans-unit id="156">
+              <source>Delete account</source>
+              <target>Delete account</target>
+          </trans-unit>
+          <trans-unit id="157">
+              <source>Delete your account</source>
+              <target>Delete your account</target>
+          </trans-unit>
+          <trans-unit id="158">
+              <source>Once you delete your account, there is no going back. Please be certain.</source>
+              <target>Once you delete your account, there is no going back. Please be certain.</target>
+          </trans-unit>
+          <trans-unit id="159">
+              <source>Update password</source>
+              <target>Update password</target>
+          </trans-unit>
+          <trans-unit id="160">
+              <source>Old password</source>
+              <target>Old password</target>
+          </trans-unit>
+          <trans-unit id="161">
+              <source>Repeat Password</source>
+              <target>Repeat Password</target>
+          </trans-unit>
+          <trans-unit id="162">
+              <source>Account Settings</source>
+              <target>Account Settings</target>
+          </trans-unit>
+          <trans-unit id="163">
+              <source>Billing</source>
+              <target>Billing</target>
+          </trans-unit>
+          <trans-unit id="164">
+              <source>Account Information</source>
+              <target>Account Information</target>
+          </trans-unit>
+          <trans-unit id="165">
+              <source>Settings</source>
+              <target>Settings</target>
+          </trans-unit>
+          <trans-unit id="166">
+              <source>Enable sounds</source>
+              <target>Enable sounds</target>
+          </trans-unit>
+          <trans-unit id="167">
+              <source>Male</source>
+              <target>Male</target>
+          </trans-unit>
+          <trans-unit id="168">
+              <source>Female</source>
+              <target>Female</target>
+          </trans-unit>
+          <trans-unit id="169">
+              <source>Payment history</source>
+              <target>Payment history</target>
+          </trans-unit>
+          <trans-unit id="170">
+              <source>Billing overview</source>
+              <target>Billing overview</target>
+          </trans-unit>
+          <trans-unit id="171">
+              <source>You have not made any payments.</source>
+              <target>You have not made any payments.</target>
+          </trans-unit>
+          <trans-unit id="172">
+              <source>Submit</source>
+              <target>Submit</target>
+          </trans-unit>
+          <trans-unit id="173">
+              <source>Password reset confirmation sent</source>
+              <target>Password reset confirmation sent</target>
+          </trans-unit>
+          <trans-unit id="174">
+              <source>Password must contain one lowercase letter, one number, and be at least 7 characters long.</source>
+              <target>Password must contain one lowercase letter, one number, and be at least 7 characters long.</target>
+          </trans-unit>
+          <trans-unit id="175">
+              <source>We’ve sent you an email containing a link that will allow you to reset your password for the next 24 hours.</source>
+              <target>We’ve sent you an email containing a link that will allow you to reset your password for the next 24 hours.</target>
+          </trans-unit>
+          <trans-unit id="176">
+              <source>Please check your spam folder if the email doesn’t appear within a few minutes.</source>
+              <target>Please check your spam folder if the email doesn’t appear within a few minutes.</target>
+          </trans-unit>
+          <trans-unit id="177">
+              <source>Bicheech.com</source>
+              <target>Bicheech.com</target>
+          </trans-unit>
+          <trans-unit id="178">
+              <source>Learn to Type</source>
+              <target>Learn to Type</target>
+          </trans-unit>
+          <trans-unit id="179">
+              <source>Typing Games</source>
+              <target>Typing Games</target>
+          </trans-unit>
+          <trans-unit id="180">
+              <source>Tip of the Day</source>
+              <target>Tip of the Day</target>
+          </trans-unit>
+          <trans-unit id="181">
+              <source>Add Existing Accounts</source>
+              <target>Add Existing Accounts</target>
+          </trans-unit>
+          <trans-unit id="182">
+              <source>Typing speed is calculated in two ways: Gross Speed is your overall words typed per minute. A word is 5 typed characters. Net Speed subtracts one word for each incorrectly typed character.</source>
+              <target>Typing speed is calculated in two ways: Gross Speed is your overall words typed per minute. A word is 5 typed characters. Net Speed subtracts one word for each incorrectly typed character.</target>
+          </trans-unit>
+          <trans-unit id="183">
+              <source>Create Student Account</source>
+              <target>Create Student Account</target>
+          </trans-unit>
+          <trans-unit id="184">
+              <source>Have a question about your account, or about getting the most out of Bicheech? Premium members are guaranteed a fast response from our team of experts.</source>
+              <target>Have a question about your account, or about getting the most out of Bicheech? Premium members are guaranteed a fast response from our team of experts.</target>
+          </trans-unit>
+          <trans-unit id="185">
+              <source>Add Student Account</source>
+              <target>Add Student Account</target>
+          </trans-unit>
+          <trans-unit id="186">
+              <source>Completed</source>
+              <target>Completed</target>
+          </trans-unit>
+          <trans-unit id="187">
+              <source>Email address</source>
+              <target>Email address</target>
+          </trans-unit>
+          <trans-unit id="188">
+              <source>Enter message or comment</source>
+              <target>Enter message or comment</target>
+          </trans-unit>
+          <trans-unit id="189">
+              <source>Captcha</source>
+              <target>Captcha</target>
+          </trans-unit>
+          <trans-unit id="190">
+              <source>Enter catpcha</source>
+              <target>Enter catpcha</target>
+          </trans-unit>
+          <trans-unit id="191">
+              <source>Bicheech.com's Teacher Portal is free</source>
+              <target>Bicheech.com's Teacher Portal is free</target>
+          </trans-unit>
+          <trans-unit id="192">
+              <source>Privacy Policy</source>
+              <target>Privacy Policy</target>
+          </trans-unit>
+          <trans-unit id="193">
+              <source>Words Per Minute (WPM)</source>
+              <target>Words Per Minute (WPM)</target>
+          </trans-unit>
+          <trans-unit id="194">
+              <source>Characters Per Minute (CPM)</source>
+              <target>Characters Per Minute (CPM)</target>
+          </trans-unit>
+          <trans-unit id="195">
+              <source>Keyboard layout</source>
+              <target>Keyboard layout</target>
+          </trans-unit>
+          <trans-unit id="196">
+              <source>Keyboard Layout</source>
+              <target>Keyboard Layout</target>
+          </trans-unit>
+          <trans-unit id="197">
+              <source>View in browser</source>
+              <target>View in browser</target>
+          </trans-unit>
+          <trans-unit id="198">
+              <source>Error in loading data.</source>
+              <target>Error in loading data.</target>
+          </trans-unit>
+          <trans-unit id="199">
+              <source>No data to display. You must type more lessons to view statistics.</source>
+              <target>No data to display. You must type more lessons to view statistics.</target>
+          </trans-unit>
+          <trans-unit id="200">
+              <source>Retrieving data. Please wait.</source>
+              <target>Retrieving data. Please wait.</target>
+          </trans-unit>
+          <trans-unit id="201">
+              <source>Please wait</source>
+              <target>Please wait</target>
+          </trans-unit>
+          <trans-unit id="202">
+              <source>Clearing statistics</source>
+              <target>Clearing statistics</target>
+          </trans-unit>
+          <trans-unit id="203">
+              <source>Clear Statistics</source>
+              <target>Clear Statistics</target>
+          </trans-unit>
+          <trans-unit id="204">
+              <source>Are you sure</source>
+              <target>Are you sure</target>
+          </trans-unit>
+          <trans-unit id="205">
+              <source>Teacher Tools</source>
+              <target>Teacher Tools</target>
+          </trans-unit>
+          <trans-unit id="206">
+              <source>Dashboard</source>
+              <target>Dashboard</target>
+          </trans-unit>
+          <trans-unit id="207">
+              <source>Classes</source>
+              <target>Classes</target>
+          </trans-unit>
+          <trans-unit id="208">
+              <source>Reports</source>
+              <target>Reports</target>
+          </trans-unit>
+          <trans-unit id="209">
+              <source>Upgrade</source>
+              <target>Upgrade</target>
+          </trans-unit>
+          <trans-unit id="210">
+              <source>Students</source>
+              <target>Students</target>
+          </trans-unit>
+          <trans-unit id="211">
+              <source>Welcome</source>
+              <target>Welcome</target>
+          </trans-unit>
+          <trans-unit id="212">
+              <source>Manage Account</source>
+              <target>Manage Account</target>
+          </trans-unit>
+          <trans-unit id="213">
+              <source>Teacher Portal</source>
+              <target>Teacher Portal</target>
+          </trans-unit>
+          <trans-unit id="214">
+              <source>Help</source>
+              <target>Help</target>
+          </trans-unit>
+          <trans-unit id="215">
+              <source>Exercise</source>
+              <target>Exercise</target>
+          </trans-unit>
+          <trans-unit id="216">
+              <source>Introduction Text</source>
+              <target>Introduction Text</target>
+          </trans-unit>
+          <trans-unit id="217">
+              <source>Help Text</source>
+              <target>Help Text</target>
+          </trans-unit>
+          <trans-unit id="218">
+              <source>organize your students into classes</source>
+              <target>organize your students into classes</target>
+          </trans-unit>
+          <trans-unit id="219">
+              <source>Create new Class</source>
+              <target>Create new Class</target>
+          </trans-unit>
+          <trans-unit id="220">
+              <source>Create classes to group your students</source>
+              <target>Create classes to group your students</target>
+          </trans-unit>
+          <trans-unit id="221">
+              <source>Add or import students to your classes</source>
+              <target>Add or import students to your classes</target>
+          </trans-unit>
+          <trans-unit id="222">
+              <source>Create/ Import Student Accounts</source>
+              <target>Create/ Import Student Accounts</target>
+          </trans-unit>
+          <trans-unit id="223">
+              <source>manage your students</source>
+              <target>manage your students</target>
+          </trans-unit>
+          <trans-unit id="224">
+              <source>Create / Import Accounts</source>
+              <target>Create / Import Accounts</target>
+          </trans-unit>
+          <trans-unit id="225">
+              <source>Add or import student accounts to your classes</source>
+              <target>Add or import student accounts to your classes</target>
+          </trans-unit>
+          <trans-unit id="226">
+              <source>Export</source>
+              <target>Export</target>
+          </trans-unit>
+          <trans-unit id="227">
+              <source>Export/download your student list to a CSV (comma separated values) file. Note that passwords are encrypted and therefore not exported.</source>
+              <target>Export/download your student list to a CSV (comma separated values) file. Note that passwords are encrypted and therefore not exported.</target>
+          </trans-unit>
+          <trans-unit id="228">
+              <source>monitor your students' typing progress</source>
+              <target>monitor your students' typing progress</target>
+          </trans-unit>
+          <trans-unit id="229">
+              <source>All Students</source>
+              <target>All Students</target>
+          </trans-unit>
+          <trans-unit id="230">
+              <source>Ungrouped Students</source>
+              <target>Ungrouped Students</target>
+          </trans-unit>
+          <trans-unit id="231">
+              <source>bicheech.com's world class typing curriculum</source>
+              <target>bicheech.com's world class typing curriculum</target>
+          </trans-unit>
+          <trans-unit id="232">
+              <source>Yesterday</source>
+              <target>Yesterday</target>
+          </trans-unit>
+          <trans-unit id="233">
+              <source>This Week</source>
+              <target>This Week</target>
+          </trans-unit>
+          <trans-unit id="234">
+              <source>Last Week</source>
+              <target>Last Week</target>
+          </trans-unit>
+          <trans-unit id="235">
+              <source>All Time</source>
+              <target>All Time</target>
+          </trans-unit>
+          <trans-unit id="236">
+              <source>User</source>
+              <target>User</target>
+          </trans-unit>
+          <trans-unit id="237">
+              <source>Day</source>
+              <target>Day</target>
+          </trans-unit>
+          <trans-unit id="238">
+              <source>Week</source>
+              <target>Week</target>
+          </trans-unit>
+          <trans-unit id="239">
+              <source>Month</source>
+              <target>Month</target>
+          </trans-unit>
+          <trans-unit id="240">
+              <source>Custom (Up to Last 40 Days)</source>
+              <target>Custom (Up to Last 40 Days)</target>
+          </trans-unit>
+          <trans-unit id="241">
+              <source>Lesson Name</source>
+              <target>Lesson Name</target>
+          </trans-unit>
+          <trans-unit id="242">
+              <source>View Lesson</source>
+              <target>View Lesson</target>
+          </trans-unit>
+          <trans-unit id="243">
+              <source>No results to display</source>
+              <target>No results to display</target>
+          </trans-unit>
+          <trans-unit id="244">
+              <source>unlock your students' full typing potential</source>
+              <target>unlock your students' full typing potential</target>
+          </trans-unit>
+          <trans-unit id="245">
+              <source>Grade and track your students</source>
+              <target>Grade and track your students</target>
+          </trans-unit>
+          <trans-unit id="246">
+              <source>Great for students of all ages</source>
+              <target>Great for students of all ages</target>
+          </trans-unit>
+          <trans-unit id="247">
+              <source>Save your school tons of money</source>
+              <target>Save your school tons of money</target>
+          </trans-unit>
+          <trans-unit id="248">
+              <source>Teacher Login</source>
+              <target>Teacher Login</target>
+          </trans-unit>
+          <trans-unit id="249">
+              <source>Class Name</source>
+              <target>Class Name</target>
+          </trans-unit>
+          <trans-unit id="250">
+              <source>Students in Class</source>
+              <target>Students in Class</target>
+          </trans-unit>
+          <trans-unit id="251">
+              <source>View and manage students in this class</source>
+              <target>View and manage students in this class</target>
+          </trans-unit>
+          <trans-unit id="252">
+              <source>Edit class name</source>
+              <target>Edit class name</target>
+          </trans-unit>
+          <trans-unit id="253">
+              <source>Delete this class</source>
+              <target>Delete this class</target>
+          </trans-unit>
+          <trans-unit id="254">
+              <source>You have not yet created any classes</source>
+              <target>You have not yet created any classes</target>
+          </trans-unit>
+          <trans-unit id="255">
+              <source>Cancel</source>
+              <target>Cancel</target>
+          </trans-unit>
+          <trans-unit id="256">
+              <source>Class</source>
+              <target>Class</target>
+          </trans-unit>
+          <trans-unit id="257">
+              <source>Last Login</source>
+              <target>Last Login</target>
+          </trans-unit>
+          <trans-unit id="258">
+              <source>Date Enrolled</source>
+              <target>Date Enrolled</target>
+          </trans-unit>
+          <trans-unit id="259">
+              <source>Account Type</source>
+              <target>Account Type</target>
+          </trans-unit>
+          <trans-unit id="260">
+              <source>Never</source>
+              <target>Never</target>
+          </trans-unit>
+          <trans-unit id="261">
+              <source>Standard</source>
+              <target>Standard</target>
+          </trans-unit>
+          <trans-unit id="262">
+              <source>View detailed information for this student</source>
+              <target>View detailed information for this student</target>
+          </trans-unit>
+          <trans-unit id="263">
+              <source>Edit the details for this student</source>
+              <target>Edit the details for this student</target>
+          </trans-unit>
+          <trans-unit id="264">
+              <source>Edit Class</source>
+              <target>Edit Class</target>
+          </trans-unit>
+          <trans-unit id="265">
+              <source>Save</source>
+              <target>Save</target>
+          </trans-unit>
+          <trans-unit id="266">
+              <source>Delete Class</source>
+              <target>Delete Class</target>
+          </trans-unit>
+          <trans-unit id="267">
+              <source>Deleting Class</source>
+              <target>Deleting Class</target>
+          </trans-unit>
+          <trans-unit id="268">
+              <source>Saving</source>
+              <target>Saving</target>
+          </trans-unit>
+          <trans-unit id="269">
+              <source>All students in this class will be moved into the 'Ungrouped Students' class.</source>
+              <target>All students in this class will be moved into the 'Ungrouped Students' class.</target>
+          </trans-unit>
+          <trans-unit id="270">
+              <source>welcome to the teacher portal</source>
+              <target>welcome to the teacher portal</target>
+          </trans-unit>
+          <trans-unit id="271">
+              <source>Welcome back to the Teacher Portal</source>
+              <target>Welcome back to the Teacher Portal</target>
+          </trans-unit>
+          <trans-unit id="272">
+              <source>Student Radar</source>
+              <target>Student Radar</target>
+          </trans-unit>
+          <trans-unit id="273">
+              <source>Last Action</source>
+              <target>Last Action</target>
+          </trans-unit>
+          <trans-unit id="274">
+              <source>Include Offline Students</source>
+              <target>Include Offline Students</target>
+          </trans-unit>
+          <trans-unit id="275">
+              <source>None of your students are currently using Bicheech.com</source>
+              <target>None of your students are currently using Bicheech.com</target>
+          </trans-unit>
+          <trans-unit id="276">
+              <source>Bicheech.com's free Teacher Portal gives you the tools to easily create, track, and manage your students.</source>
+              <target>Bicheech.com's free Teacher Portal gives you the tools to easily create, track, and manage your students.</target>
+          </trans-unit>
+          <trans-unit id="277">
+              <source>The Student Radar allows you to monitor your students in real time.</source>
+              <target>The Student Radar allows you to monitor your students in real time.</target>
+          </trans-unit>
+          <trans-unit id="278">
+              <source>You have not yet added any students to Bicheech.com.</source>
+              <target>You have not yet added any students to Bicheech.com.</target>
+          </trans-unit>
+          <trans-unit id="279">
+              <source>Helpful tips</source>
+              <target>Helpful tips</target>
+          </trans-unit>
+          <trans-unit id="280">
+              <source>There are currently no students in this class.</source>
+              <target>There are currently no students in this class.</target>
+          </trans-unit>
+          <trans-unit id="281">
+              <source>Create / Add Students</source>
+              <target>Create / Add Students</target>
+          </trans-unit>
+          <trans-unit id="282">
+              <source>Switch to Class</source>
+              <target>Switch to Class</target>
+          </trans-unit>
+          <trans-unit id="283">
+              <source>Current Progress</source>
+              <target>Current Progress</target>
+          </trans-unit>
+          <trans-unit id="284">
+              <source>Exercises Completed</source>
+              <target>Exercises Completed</target>
+          </trans-unit>
+          <trans-unit id="285">
+              <source>Avg Gross Speed</source>
+              <target>Avg Gross Speed</target>
+          </trans-unit>
+          <trans-unit id="286">
+              <source>Avg Accuracy</source>
+              <target>Avg Accuracy</target>
+          </trans-unit>
+          <trans-unit id="287">
+              <source>Avg Net Speed</source>
+              <target>Avg Net Speed</target>
+          </trans-unit>
+          <trans-unit id="288">
+              <source>Reuse accounts forever</source>
+              <target>Reuse accounts forever</target>
+          </trans-unit>
+          <trans-unit id="289">
+              <source>upgrades never expire</source>
+              <target>upgrades never expire</target>
+          </trans-unit>
+          <trans-unit id="290">
+              <source>Unlock 16 additional premium typing lessons</source>
+              <target>Unlock 16 additional premium typing lessons</target>
+          </trans-unit>
+          <trans-unit id="291">
+              <source>100% Optional! Bicheech.com is, and always will be, FREE!</source>
+              <target>100% Optional! Bicheech.com is, and always will be, FREE!</target>
+          </trans-unit>
+          <trans-unit id="292">
+              <source>Remove distracting advertisements from student accounts</source>
+              <target>Remove distracting advertisements from student accounts</target>
+          </trans-unit>
+          <trans-unit id="293">
+              <source>Only 50,000₮! 30,000₮ per account when upgrading at least 5 accounts</source>
+              <target>Only 50,000₮! 30,000₮ per account when upgrading at least 5 accounts</target>
+          </trans-unit>
+          <trans-unit id="294">
+              <source>Select Accounts To Upgrade</source>
+              <target>Select Accounts To Upgrade</target>
+          </trans-unit>
+          <trans-unit id="295">
+              <source>Need Support?</source>
+              <target>Need Support?</target>
+          </trans-unit>
+          <trans-unit id="296">
+              <source>Upgrading costs 50,000₮ per account, however if you upgrade 5 or more accounts it only costs 30,000₮ per account.</source>
+              <target>Upgrading costs 50,000₮ per account, however if you upgrade 5 or more accounts it only costs 30,000₮ per account.</target>
+          </trans-unit>
+          <trans-unit id="297">
+              <source>student</source>
+              <target>student</target>
+          </trans-unit>
+          <trans-unit id="298">
+              <source>You must select at least one student to upgrade</source>
+              <target>You must select at least one student to upgrade</target>
+          </trans-unit>
+          <trans-unit id="299">
+              <source>retake</source>
+              <target>retake</target>
+          </trans-unit>
+          <trans-unit id="300">
+              <source>First Name:</source>
+              <target>First Name:</target>
+          </trans-unit>
+          <trans-unit id="301">
+              <source>Last Name:</source>
+              <target>Last Name:</target>
+          </trans-unit>
+          <trans-unit id="302">
+              <source>Password*:</source>
+              <target>Password*:</target>
+          </trans-unit>
+          <trans-unit id="303">
+              <source>User Name*:</source>
+              <target>User Name*:</target>
+          </trans-unit>
+          <trans-unit id="304">
+              <source>Add to Class*:</source>
+              <target>Add to Class*:</target>
+          </trans-unit>
+          <trans-unit id="305">
+              <source>Email:</source>
+              <target>Email:</target>
+          </trans-unit>
+          <trans-unit id="306">
+              <source>Go to Student Import Tool</source>
+              <target>Go to Student Import Tool</target>
+          </trans-unit>
+          <trans-unit id="307">
+              <source>Learn to Type | Free Typing Tutor | Typing Course</source>
+              <target>Learn to Type | Free Typing Tutor | Typing Course</target>
+          </trans-unit>
+          <trans-unit id="308">
+              <source>Bicheech.com - The Web's Most Popular Typing Tutor</source>
+              <target>Bicheech.com - The Web's Most Popular Typing Tutor</target>
+          </trans-unit>
+          <trans-unit id="309">
+              <source>Bicheech.com is a free online typing tutor and keyboarding tutorial for typists of all skill levels.</source>
+              <target>Bicheech.com is a free online typing tutor and keyboarding tutorial for typists of all skill levels.</target>
+          </trans-unit>
+          <trans-unit id="310">
+              <source>Bicheech.com also offers officially sanctioned typing.</source>
+              <target>Bicheech.com also offers officially sanctioned typing.</target>
+          </trans-unit>
+            <trans-unit id="311">
+                <source>Bicheech Blog</source>
+                <target>Bicheech Blog</target>
+            </trans-unit>
+            <trans-unit id="312">
+                <source>The web's most popular, free online typing tutor</source>
+                <target>The web's most popular, free online typing tutor</target>
+            </trans-unit>
+          <trans-unit id="313">
+              <source>Teacher Signup</source>
+              <target>Teacher Signup</target>
+          </trans-unit>
+          <trans-unit id="314">
+              <source>Manage and grade your students</source>
+              <target>Manage and grade your students</target>
+          </trans-unit>
+          <trans-unit id="315">
+              <source>School or Organization Name</source>
+              <target>School or Organization Name</target>
+          </trans-unit>
+          <trans-unit id="316">
+              <source>Sign Up</source>
+              <target>Sign Up</target>
+          </trans-unit>
+          <trans-unit id="317">
+              <source>Organization Type</source>
+              <target>Organization Type</target>
+          </trans-unit>
+          <trans-unit id="318">
+              <source>Your Name</source>
+              <target>Your Name</target>
+          </trans-unit>
+          <trans-unit id="319">
+              <source>Public School</source>
+              <target>Public School</target>
+          </trans-unit>
+          <trans-unit id="320">
+              <source>Private School</source>
+              <target>Private School</target>
+          </trans-unit>
+          <trans-unit id="321">
+              <source>College Instructor</source>
+              <target>College Instructor</target>
+          </trans-unit>
+          <trans-unit id="322">
+              <source>Home School</source>
+              <target>Home School</target>
+          </trans-unit>
+          <trans-unit id="323">
+              <source>Corporation/Company</source>
+              <target>Corporation/Company</target>
+          </trans-unit>
+          <trans-unit id="324">
+              <source>Government</source>
+              <target>Government</target>
+          </trans-unit>
+          <trans-unit id="325">
+              <source>Other</source>
+              <target>Other</target>
+          </trans-unit>
+          <trans-unit id="326">
+              <source>email</source>
+              <target>email</target>
+          </trans-unit>
+          <trans-unit id="327">
+              <source>Step #1 - Upload Data</source>
+              <target>Step #1 - Upload Data</target>
+          </trans-unit>
+          <trans-unit id="328">
+              <source>Select CSV File:</source>
+              <target>Select CSV File:</target>
+          </trans-unit>
+          <trans-unit id="329">
+              <source>Step #2 - Verify Data</source>
+              <target>Step #2 - Verify Data</target>
+          </trans-unit>
+          <trans-unit id="330">
+              <source>Begin Import</source>
+              <target>Begin Import</target>
+          </trans-unit>
+          <trans-unit id="331">
+              <source>Import to Class:</source>
+              <target>Import to Class:</target>
+          </trans-unit>
+          <trans-unit id="332">
+              <source>Import Students</source>
+              <target>Import Students</target>
+          </trans-unit>
+          <trans-unit id="333">
+              <source>import your entire student roster</source>
+              <target>import your entire student roster</target>
+          </trans-unit>
+          <trans-unit id="334">
+              <source>To import your students into Bicheech.com, you must upload a CSV (comma separated format) file in the correct format. To create your file, open a spreadsheet software such as Excel.</source>
+              <target>To import your students into Bicheech.com, you must upload a CSV (comma separated format) file in the correct format. To create your file, open a spreadsheet software such as Excel.</target>
+          </trans-unit>
+          <trans-unit id="335">
+              <source>Click here for an example file in the correct format.</source>
+              <target>Click here for an example file in the correct format.</target>
+          </trans-unit>
+          <trans-unit id="336">
+              <source>Column Order: username*, password*, firstname, lastname, email</source>
+              <target>Column Order: username*, password*, firstname, lastname, email</target>
+          </trans-unit>
+          <trans-unit id="337">
+              <source>Only username and password are required.</source>
+              <target>Only username and password are required.</target>
+          </trans-unit>
+          <trans-unit id="338">
+              <source>Once your spreadsheet is ready, choose the "Save As..." option, and select "Comma Delimited (CSV)" from the Format options, and upload this new file into the form below.</source>
+              <target>Once your spreadsheet is ready, choose the "Save As..." option, and select "Comma Delimited (CSV)" from the Format options, and upload this new file into the form below.</target>
+          </trans-unit>
+          <trans-unit id="339">
+              <source>Note that the upload should take no more than 60 seconds (often much less). If it takes more, most likely there is a problem with your connection or the file format caused an error, and you should try again.</source>
+              <target>Note that the upload should take no more than 60 seconds (often much less). If it takes more, most likely there is a problem with your connection or the file format caused an error, and you should try again.</target>
+          </trans-unit>
+          <trans-unit id="340">
+              <source>Reupload Data File</source>
+              <target>Reupload Data File</target>
+          </trans-unit>
+          <trans-unit id="341">
+              <source>Complete Import</source>
+              <target>Complete Import</target>
+          </trans-unit>
+          <trans-unit id="342">
+              <source>Almost Done!</source>
+              <target>Almost Done!</target>
+          </trans-unit>
+          <trans-unit id="343">
+              <source>Validation Error!</source>
+              <target>Validation Error!</target>
+          </trans-unit>
+          <trans-unit id="344">
+              <source>Create And Add Accounts</source>
+              <target>Create And Add Accounts</target>
+          </trans-unit>
+          <trans-unit id="345">
+              <source>create or import your student roster</source>
+              <target>create or import your student roster</target>
+          </trans-unit>
+          <trans-unit id="346">
+              <source>Deleting Student(s)</source>
+              <target>Deleting Student(s)</target>
+          </trans-unit>
+          <trans-unit id="347">
+              <source>Delete Selected Students</source>
+              <target>Delete Selected Students</target>
+          </trans-unit>
+          <trans-unit id="348">
+              <source>Student(s) and all statistics will be deleted.</source>
+              <target>Student(s) and all statistics will be deleted.</target>
+          </trans-unit>
+          <trans-unit id="349">
+              <source>No students to display</source>
+              <target>No students to display</target>
+          </trans-unit>
+          <trans-unit id="350">
+              <source>No students selected.  Select students by clicking the checkboxes.</source>
+              <target>No students selected.  Select students by clicking the checkboxes.</target>
+          </trans-unit>
+          <trans-unit id="351">
+              <source>Change Classes</source>
+              <target>Change Classes</target>
+          </trans-unit>
+          <trans-unit id="352">
+              <source>Move checked students between classes</source>
+              <target>Move checked students between classes</target>
+          </trans-unit>
+          <trans-unit id="353">
+              <source>Reset Account(s)</source>
+              <target>Reset Account(s)</target>
+          </trans-unit>
+          <trans-unit id="354">
+              <source>Resetting an account permanently deletes all typing progress, statistics, and personal information such as name and email</source>
+              <target>Resetting an account permanently deletes all typing progress, statistics, and personal information such as name and email</target>
+          </trans-unit>
+          <trans-unit id="355">
+              <source>Reset Password(s)</source>
+              <target>Reset Password(s)</target>
+          </trans-unit>
+          <trans-unit id="356">
+              <source>This allows you to quickly reset passwords for multiple student accounts</source>
+              <target>This allows you to quickly reset passwords for multiple student accounts</target>
+          </trans-unit>
+          <trans-unit id="357">
+              <source>Delete Account(s)</source>
+              <target>Delete Account(s)</target>
+          </trans-unit>
+          <trans-unit id="358">
+              <source>Deleting an account will permanently delete the account from Bicheech.com</source>
+              <target>Deleting an account will permanently delete the account from Bicheech.com</target>
+          </trans-unit>
+          <trans-unit id="359">
+              <source>Unlink Account(s)</source>
+              <target>Unlink Account(s)</target>
+          </trans-unit>
+          <trans-unit id="360">
+              <source>Unlinking an account removes the accounts from your Portal, however the account remains intact and available to the student</source>
+              <target>Unlinking an account removes the accounts from your Portal, however the account remains intact and available to the student</target>
+          </trans-unit>
+          <trans-unit id="361">
+              <source>Moving Student(s)</source>
+              <target>Moving Student(s)</target>
+          </trans-unit>
+          <trans-unit id="362">
+              <source>You have not yet created any classes.</source>
+              <target>You have not yet created any classes.</target>
+          </trans-unit>
+          <trans-unit id="363">
+              <source>Create your first class.</source>
+              <target>Create your first class.</target>
+          </trans-unit>
+          <trans-unit id="364">
+              <source>Move Successful!</source>
+              <target>Move Successful!</target>
+          </trans-unit>
+          <trans-unit id="365">
+              <source>The selected student(s) have been moved between classes.</source>
+              <target>The selected student(s) have been moved between classes.</target>
+          </trans-unit>
+          <trans-unit id="366">
+              <source>There was an error</source>
+              <target>There was an error</target>
+          </trans-unit>
+          <trans-unit id="367">
+              <source>Select a class</source>
+              <target>Select a class</target>
+          </trans-unit>
+          <trans-unit id="368">
+              <source>Move Student(s)</source>
+              <target>Move Student(s)</target>
+          </trans-unit>
+          <trans-unit id="369">
+              <source>Move Students Between Classes</source>
+              <target>Move Students Between Classes</target>
+          </trans-unit>
+          <trans-unit id="370">
+              <source>Resetting Student(s)</source>
+              <target>Resetting Student(s)</target>
+          </trans-unit>
+          <trans-unit id="371">
+              <source>Reset Selected Students</source>
+              <target>Reset Selected Students</target>
+          </trans-unit>
+          <trans-unit id="372">
+              <source>Statistics and personal information will be cleared.</source>
+              <target>Statistics and personal information will be cleared.</target>
+          </trans-unit>
+          <trans-unit id="373">
+              <source>Permanently clear all typing progress and personal information from the selected accounts</source>
+              <target>Permanently clear all typing progress and personal information from the selected accounts</target>
+          </trans-unit>
+          <trans-unit id="374">
+              <source>Reset Successful</source>
+              <target>Reset Successful</target>
+          </trans-unit>
+          <trans-unit id="375">
+              <source>Typing data and personal information for the account(s) have been cleared.</source>
+              <target>Typing data and personal information for the account(s) have been cleared.</target>
+          </trans-unit>
+          <trans-unit id="376">
+              <source>Reset Passwords</source>
+              <target>Reset Passwords</target>
+          </trans-unit>
+          <trans-unit id="377">
+              <source>New password</source>
+              <target>New password</target>
+          </trans-unit>
+          <trans-unit id="378">
+              <source>Password Reset Failed</source>
+              <target>Password Reset Failed</target>
+          </trans-unit>
+          <trans-unit id="379">
+              <source>You must enter a password.</source>
+              <target>You must enter a password.</target>
+          </trans-unit>
+          <trans-unit id="380">
+              <source>Resetting Passwords</source>
+              <target>Resetting Passwords</target>
+          </trans-unit>
+          <trans-unit id="381">
+              <source>Password Reset Successful</source>
+              <target>Password Reset Successful</target>
+          </trans-unit>
+          <trans-unit id="382">
+              <source>The password for the account(s) have been reset.</source>
+              <target>The password for the account(s) have been reset.</target>
+          </trans-unit>
+          <trans-unit id="383">
+              <source>Student(s) Deleted</source>
+              <target>Student(s) Deleted</target>
+          </trans-unit>
+          <trans-unit id="384">
+              <source>The selected student accounts have been deleted from Bicheech.com.</source>
+              <target>The selected student accounts have been deleted from Bicheech.com.</target>
+          </trans-unit>
+          <trans-unit id="385">
+              <source>Unlinking Successful</source>
+              <target>Unlinking Successful</target>
+          </trans-unit>
+          <trans-unit id="386">
+              <source>The selected student(s) have been unlinked from your teacher Portal.</source>
+              <target>The selected student(s) have been unlinked from your teacher Portal.</target>
+          </trans-unit>
+          <trans-unit id="387">
+              <source>Unlinking student accounts</source>
+              <target>Unlinking student accounts</target>
+          </trans-unit>
+          <trans-unit id="388">
+              <source>Unlink Students</source>
+              <target>Unlink Students</target>
+          </trans-unit>
+          <trans-unit id="389">
+              <source>Unlinking a student account will remove it from your Teacher Portal, however the account will still exist and be accessible by the student.</source>
+              <target>Unlinking a student account will remove it from your Teacher Portal, however the account will still exist and be accessible by the student.</target>
+          </trans-unit>
+          <trans-unit id="390">
+              <source>Select a Language</source>
+              <target>Select a Language</target>
+          </trans-unit>
+          <trans-unit id="391">
+              <source>Edit Student</source>
+              <target>Edit Student</target>
+          </trans-unit>
+          <trans-unit id="392">
+              <source>Account Information</source>
+              <target>Account Information</target>
+          </trans-unit>
+          <trans-unit id="393">
+              <source>Note: only enter a password to change it</source>
+              <target>Note: only enter a password to change it</target>
+          </trans-unit>
+          <trans-unit id="394">
+              <source>Optional Fields</source>
+              <target>Optional Fields</target>
+          </trans-unit>
+          <trans-unit id="395">
+              <source>Speed Calculation</source>
+              <target>Speed Calculation</target>
+          </trans-unit>
+          <trans-unit id="396">
+              <source>Sentence Spaces</source>
+              <target>Sentence Spaces</target>
+          </trans-unit>
+          <trans-unit id="397">
+              <source>Typing Sounds</source>
+              <target>Typing Sounds</target>
+          </trans-unit>
+          <trans-unit id="398">
+              <source>Student Account Successfully Updated</source>
+              <target>Student Account Successfully Updated</target>
+          </trans-unit>
+          <trans-unit id="399">
+              <source>Usernames must be between 4 and 30 characters, and can contain only letters, numbers, userscores, and one dot (.)</source>
+              <target>Usernames must be between 4 and 30 characters, and can contain only letters, numbers, userscores, and one dot (.)</target>
+          </trans-unit>
+
+        </body>
+    </file>
+</xliff>

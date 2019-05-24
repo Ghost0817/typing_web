@@ -1,0 +1,150 @@
+{% extends 'teacher.html.twig' %}
+
+{% block title %}{% trans %}Bicheech.com{% endtrans %} {% trans %}Teacher Portal{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+    <h3 class="pageHeader">Manage Account<small> manage your personal information</small></h3>
+
+
+	<div class="panel panel-default">
+        <div class="panel-heading">{%trans%}Account Information{%endtrans%}</div>
+          <div class="panel-body">
+
+              {{ form_start(pro_form, {'action': path('accountpage'), 'method': 'POST', 'id': 'form_register', 'autocomplete': 'off'}) }}
+              <div class="form-group">
+                {{ form_label(pro_form.username) }}
+                {{ form_widget(pro_form.username, {'attr': {'class': 'form-control'}}) }}
+                {% if(pro_form.username.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pro_form.username) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form_label(pro_form.lastname) }}
+                {{ form_widget(pro_form.lastname, {'attr': {'class': 'form-control'}}) }}
+                {% if(pro_form.lastname.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pro_form.lastname) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form_label(pro_form.email) }}
+                {{ form_widget(pro_form.email, {'attr': {'class': 'form-control'}}) }}
+                {% if(pro_form.email.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pro_form.email) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form_label(pro_form.language) }}
+                {{ form_widget(pro_form.language, {'attr': {'class': 'form-control'}}) }}
+                {% if(pro_form.language.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pro_form.language) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form_label(pro_form.country) }}
+                {{ form_widget(pro_form.country, {'attr': {'class': 'form-control'}}) }}
+                {% if(pro_form.country.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pro_form.country) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form_label(pro_form.state) }}
+                {{ form_widget(pro_form.state, {'attr': {'class': 'form-control'}}) }}
+                {% if(pro_form.state.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pro_form.state) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form_label(pro_form.city) }}
+                {{ form_widget(pro_form.city, {'attr': {'class': 'form-control'}}) }}
+                {% if(pro_form.city.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pro_form.city) }}</div>
+                {% endif %}
+              </div>
+
+              {% for flash_message in app.session.flashbag.get('pro_success') %}
+                <div class="msg-success">
+                  {{ flash_message }}
+                </div>
+              {% endfor %}
+
+              {{ form_errors(pro_form) }}
+
+              {{ form_end(pro_form) }}
+
+        </div>
+    </div>
+
+
+	<div class="panel panel-default">
+        <div class="panel-heading">{%trans%}Change password{%endtrans%}</div>
+          <div class="panel-body">
+
+              {{ form_start(pass_form, {'action': path('accountpage'), 'method': 'POST', 'id': 'form_register', 'autocomplete': 'off'}) }}
+              <div class="form-group">
+                {{ form_label(pass_form.oldPassword) }}
+                {{ form_widget(pass_form.oldPassword, {'attr': {'class': 'form-control'}}) }}
+                {% if(pass_form.oldPassword.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pass_form.oldPassword) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form_label(pass_form.password.first) }}
+                {{ form_widget(pass_form.password.first, {'attr': {'class': 'form-control'}}) }}
+                {% if(pass_form.password.first.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pass_form.password.first) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form_label(pass_form.password.second) }}
+                {{ form_widget(pass_form.password.second, {'attr': {'class': 'form-control'}}) }}
+                {% if(pass_form.password.second.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(pass_form.password.second) }}</div>
+                {% endif %}
+              </div>
+
+              {% for flash_message in app.session.flashbag.get('pass_success') %}
+                <div class="msg-success">
+                  {{ flash_message }}
+                </div>
+              {% endfor %}
+
+              {{ form_end(pass_form) }}
+
+        </div>
+    </div>
+
+
+	<div class="panel panel-default">
+        <div class="panel-heading">{%trans%}Settings{%endtrans%}</div>
+          <div class="panel-body">
+
+              {{ form_start(sett_form, {'action': path('accountpage'), 'method': 'POST', 'id': 'form_register', 'autocomplete': 'off'}) }}
+              <div class="form-group">
+                {{ form_label(sett_form.scoreboard) }}
+                {{ form_widget(sett_form.scoreboard, {'attr': {'class': 'form-control'}}) }}
+                {% if(sett_form.scoreboard.vars.errors|length) %}
+                    <div class="msg-error">{{ form_errors(sett_form.scoreboard) }}</div>
+                {% endif %}
+              </div>
+              <div class="form-group">
+              The scoreboard allows students to see each other's weekly typing speed and time typing and compete for rankings. The scoreboard resets every weekend.
+              </div>
+
+              {% for flash_message in app.session.flashbag.get('settings_success') %}
+                <div class="msg-success">
+                  {{ flash_message }}
+                </div>
+              {% endfor %}
+
+              {{ form_end(sett_form) }}
+
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+{% endblock %}

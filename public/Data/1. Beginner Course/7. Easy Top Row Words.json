@@ -1,0 +1,33 @@
+
+		lessonData = {};
+		lessonData.userID = '14502999';
+		lessonData.introText = "<p class=\"typinghelp\">Rinse and repeat!  We're now going to move on to words whose first letter originates on the top row.  The words are mostly simple.. mostly!  You may occasionally run across a word that will trip you up, just to keep you on your toes!<\/p><p class=\"typinghelp\">Make sure your fingers are on the home row before you type each word.  Refer to the onscreen keyboard and hands if you are unsure as to which finger should press the key.  Try to keep your eyes off your hands as much as possible.  Good luck!<\/p>";
+		lessonData.congratsText = "<img src=\"\/tutor\/images\/congrats_3.png\" alt=\"\" align=\"right\" \/><p class=\"typinghelp\">That was amazing!  In the next lesson, we'll get into some pretty wacky words as we bust into the bottom row keys.<\/p>";
+		lessonData.exercises = [{"lessonExerciseID":"114788","lessonID":"320","type":"mixed","displayOrder":"2","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Q is for Quip","exercise":"quartz question quail quart quiver queen quarter\r\nquadruplets quintuplets quilt quit quack quell qua\r\nquadev quest queminate quarrel quint quaint quab","helpText":""},{"lessonExerciseID":"114789","lessonID":"320","type":"mixed","displayOrder":"3","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"W is for Wonderful","exercise":"wonder were wet weapon weeds window well wonky wee\r\nwheat when where whack wander waft wall way waste\r\nwant waver wacky wax wave went worn waxing wam","helpText":""},{"lessonExerciseID":"114790","lessonID":"320","type":"mixed","displayOrder":"4","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"E is for Excellent ","exercise":"eerie eep eight eyes eel ewe equestrian eeple\r\negg elk eagle ear earth elephant eleven earn\r\nevil evangelical even evan evermore extend extra","helpText":""},{"lessonExerciseID":"114791","lessonID":"320","type":"mixed","displayOrder":"5","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"R is for Roster","exercise":"rose ring robot record report reputation ruse re\r\nrabbit rain rainbow rake rat rhino raccoon raster\r\nram rave recede rummy razzle rabbit rammington","helpText":""},{"lessonExerciseID":"114792","lessonID":"320","type":"mixed","displayOrder":"6","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"T is for Terrific","exercise":"tent tiger toe toilet toad tomato tooth toil tin\r\ntaxi tadpole table tasty tally tamarah tattle tail\r\ntan tammy tax taxed tacky tazmanian tanner tabby","helpText":""},{"lessonExerciseID":"114793","lessonID":"320","type":"mixed","displayOrder":"7","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"Y is for Yummy","exercise":"yell yolk yogurt yoyo yellow yelling yippy your\r\nyacht yarn yawn yardstick yak yam yag yaffer yad\r\nyaz yax yabby yuma young yummers yummy yamax","helpText":""},{"lessonExerciseID":"114794","lessonID":"320","type":"mixed","displayOrder":"8","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"U is for Unified","exercise":"up upside utensils ur uppity upperson underwhelm\r\nusa unicycle unattended understand upstairs\r\numbrella unicorn unhappy underwear uniform uni","helpText":""},{"lessonExerciseID":"114795","lessonID":"320","type":"mixed","displayOrder":"9","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"I is for Ing","exercise":"iris irate ite import idaho iconic icon immaculate\r\niguana igloo idea island ijams indigo ilene\r\nice ivy icicle inside inundated important intuit","helpText":""},{"lessonExerciseID":"114796","lessonID":"320","type":"mixed","displayOrder":"10","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"O is for Ornate","exercise":"orange orangutan owl orly ornate orchard ore oar\r\noar odd off offer ostentatious offering oatmeal\r\nox one oboe oval octopus onto ovate only ovate ox","helpText":""},{"lessonExerciseID":"114797","lessonID":"320","type":"mixed","displayOrder":"11","timeLimit":"0","accuracyLimit":"30","speedLimit":"0","title":"P is for Portland","exercise":"portland portly pin pure pods privy pencil pig\r\npaint pants pal patagonia pail plane plain pan\r\npam pizza pizzas pomeranian pomegranate pavel","helpText":""}];
+		lessonData.lessonID = '320';
+		lessonData.speedType = 'wpm';
+		lessonData.pauseImg = resourceURL+"/tutor/skins/1/images/pause.png";
+		lessonData.resumeImg = resourceURL+"/tutor/skins/1/images/resume.png";
+		lessonData.exerciseNum = 0;
+		lessonData.lessonCharacters = 0;
+		lessonData.lessonSeconds = 0;
+		lessonData.lessonErrors = 0;
+		lessonData.spaces = " ";
+		lessonData.newslesson = '';
+		lessonData.test = 0;
+		lessonData.showTestGraph = 0;
+		lessonData.numberPad = '0';
+		lessonData.name = "Easy Top Row Words";
+		lessonData.restricted = '';
+		lessonData.playSounds = true;
+		lessonData.course = 'BEGINNER_COURSE';
+		lessonData.hasTrophy = 1;
+		lessonData.achievedTrophy = 0;
+		lessonData.isRestarting =0;
+		lessonData.noKeyboard = 0;
+		lessonData.forceKeyboard = 0;
+		lessonData.keyboardID = 1;
+		lessonData.progress = 0;
+		lessonData.actionName = 'index';
+		lessonData.restricted = 0;
+			

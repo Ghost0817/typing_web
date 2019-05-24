@@ -1,0 +1,141 @@
+{% extends 'teacher.html.twig' %}
+
+{% block title %}{% trans %}Bicheech.com{% endtrans %} {% trans %}Teacher Portal{% endtrans %}{% endblock %}
+
+{% block body %}
+<div class="my_content">
+    <h3 class="pageHeader"><strong>{% trans %}Upgrade{% endtrans %}</strong><small> {% trans %}unlock your students' full typing potential{% endtrans %}</small></h3>
+    <div class="upgradeBenefitList">
+      <ul>
+        <li>{{'Remove distracting advertisements from student accounts'|trans|replace({'Remove distracting advertisements':'<strong>Remove distracting advertisements</strong>','анхаарал татах зар сурталчилгааг арилгах':'<strong>анхаарал татах зар сурталчилгааг арилгах</strong>'})|raw}}</li>
+        <li>{% trans %}Reuse accounts forever{% endtrans %} - <strong>{% trans %}upgrades never expire{% endtrans %}</strong></li>
+        <li>{% trans %}Unlock 16 additional premium typing lessons{% endtrans %}</li>
+      </ul>
+    </div>
+    <div class="upgradeBenefitList">
+      <ul>
+        <li>{{'Only 50,000₮! 30,000₮ per account when upgrading at least 5 accounts'|trans|replace({'50,000 ₮! бүртгэл тутамд 30,000 ₮':'<strong>50,000 ₮! бүртгэл тутамд 30,000 ₮</strong>','50,000₮! 30,000₮ per account':'<strong>50,000₮! 30,000₮ per account</strong>'})|raw}}
+        </li>
+        <li>{% trans %}100% Optional! Bicheech.com is, and always will be, FREE!{% endtrans %}</li>
+      </ul>
+    </div>
+    <div>
+        <div class="upgradeTable">
+            <h3 class="titlewithline">
+                <span>{% trans %}Select Accounts To Upgrade{% endtrans %}</span>
+            </h3>
+            <form name="userForm" method="post" action="/teacher/upgrade/payment/">
+                <table cellspacing="0" width="100%" class="upgradeStudentsList">
+                    <thead>
+                        <tr>
+                            <th class="checkRow"><input type="checkbox" id="checkall"></th>
+                            <th>{% trans %}Username{% endtrans %}</th>
+                            <th>{% trans %}First Name{% endtrans %}</th>
+                            <th>{% trans %}Last Name{% endtrans %}</th>
+                            <th>{% trans %}Last Login{% endtrans %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for clss in classes %}
+                      <tr class="classRow" id="class-header-{{ clss.id }}">
+                          <th class="checkRow"><input type="checkbox" class="class-checkbox" id="class-check-{{ clss.id }}"></th>
+                          <th colspan="4"><a href="#" class="expander open">&nbsp;</a>{% trans %}Class{% endtrans %}: {{ clss.name }}</th>
+                      </tr>
+
+                      {% for student in students %}
+                        {% if(student.grade == clss.id) %}
+                          <tr class="class-row-" style="display: table-row;">
+                              <td class="checkRow"><input type="checkbox" name="user[]" class="user-checkbox user-in-class-{{ clss.id }}" value="{{ student.id }}"></td>
+                              <td>{{ student.username }}</td>
+                              <td>{{ student.firstname }}</td>
+                              <td>{{ student.lastname }}</td>
+                              <td>{{ student.lastlogin|date('Y-m-d') }}</td>
+                          </tr>
+                        {% endif %}
+                      {% endfor %}
+                    {% endfor %}
+                    <tr class="classRow" id="class-header-">
+                        <th class="checkRow"><input type="checkbox" class="class-checkbox" id="class-check-"></th>
+                        <th colspan="4"><a href="#" class="expander open">&nbsp;</a>{% trans %}Class{% endtrans %}: {% trans %}Ungrouped Students{% endtrans %}</th>
+                    </tr>
+
+                    {% for student in students %}
+                      {% if(student.grade == null) %}
+                        <tr class="class-row-" style="display: table-row;">
+                            <td class="checkRow"><input type="checkbox" name="user[]" class="user-checkbox user-in-class-" value="{{ student.id }}"></td>
+                            <td>{{ student.username }}</td>
+                            <td>{{ student.firstname }}</td>
+                            <td>{{ student.lastname }}</td>
+                            <td>{{ student.lastlogin|date('Y-m-d') }}</td>
+                        </tr>
+                      {% endif %}
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="upgradeTableRight">
+            <div class="upgradeTotalBox">
+                <div class="totalHeader">{{'total'|trans|upper}}</div>
+                <p class="totalPrice" id="totalPrice">0₮</p>
+                <p class="pricePerStudent" id="pricePerStudent">{% trans %}No accounts selected{% endtrans %}</p>
+                <a class="dm3-btn" href="#" id="upgradeNowButton">{% trans %}Upgrade Now{% endtrans %}</a>
+            </div>
+
+
+            <div class="supportBox">
+                <p class="supportTitle">{% trans %}Need Support?{% endtrans %}</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> (976) 8002-0255</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:support@bicheech.com">support@bicheech.com</a></p>
+                <!--<br>
+                <p>* If you would like to pay by PO please contact support.</p>
+                <br>
+                <p>* Upgraded accounts are upgraded forever. This allows you use the same accounts year after year with different students by simply "Resetting" their account from the <a href="/portal/users/">Students page</a>.</p>-->
+                <br>
+                <p>{% trans %}Upgrading costs 50,000₮ per account, however if you upgrade 5 or more accounts it only costs 30,000₮ per account.{% endtrans %}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+<style>
+.upgradeBenefitList {
+	width: 475px;
+	float: left;
+}
+.upgradeBenefitList ul{
+padding-left: 0px;
+}
+.upgradeBenefitList ul li {
+	font-size: 16px;
+	font-family: Helvetica, Arial;
+	color: #686868;
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 16px;
+	line-height: 22px;
+}
+</style>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('adapter/ext/ext-base.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/ext-all.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/global.js') }}"></script>
+    <script>
+    	var singlePricing = 50000;
+    	var discountPricing = 30000;
+    	var discountMinimum = 5;
+      var text = {
+      "NO_ACCOUNTS_SELECTED": "{% trans %}No accounts selected{% endtrans %}",
+      "STUDENT": "{% trans %}student{% endtrans %}",
+      "TOTAL": "{% trans %}total{% endtrans %}",
+      "EMPTY_MSG": "{% trans %}You must select at least one student to upgrade{% endtrans %}",
+      };
+    </script>
+    <script type="text/javascript" src="{{ asset('js/upgrade.js') }}"></script>
+{% endblock javascripts %}

@@ -1,0 +1,46 @@
+App\Entity\Blogandtag:
+    type: entity
+    table: blogandtag
+    indexes:
+        tag_id:
+            columns:
+                - tag_id
+        blog_id:
+            columns:
+                - blog_id
+                - tag_id
+        IDX_663315E1DAE07E97:
+            columns:
+                - blog_id
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+                comment: Дугаарлалт
+            id: true
+            generator:
+                strategy: IDENTITY
+    manyToOne:
+        blog:
+            targetEntity: Blog
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                blog_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+        tag:
+            targetEntity: Tag
+            cascade: {  }
+            fetch: LAZY
+            mappedBy: null
+            inversedBy: null
+            joinColumns:
+                tag_id:
+                    referencedColumnName: id
+            orphanRemoval: false
+    lifecycleCallbacks: {  }

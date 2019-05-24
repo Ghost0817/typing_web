@@ -1,0 +1,87 @@
+<style scoped>
+#keyboard{position:relative;margin: 0;padding: 5px;list-style: none;border:1px solid #c0c0c0;display:block;float:left;border-radius:5px;-moz-border-radius: 5px;-webkit-border-radius: 5px;-ms-border-radius: 5px;}
+#current{position:absolute;margin:0 1px 1px 0;width:27px;height:27px;line-height:27px;text-align:center;background-color:transparent !important;border:1px solid #25c6d0 !important;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px;color:#8f8f8f;display:none;top:5px;left:5px;}
+#shiftbttn{position:absolute;margin:0 1px 1px 0;width:70px !important;height:27px;line-height:27px;text-align:center;background-color:transparent !important;border:1px solid #25c6d0 !important;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px;color:#8f8f8f;display:none;top:5px;left:5px;}
+#slash{position:absolute;margin:0 1px 1px 0;width:43px !important;height:27px;line-height:27px;text-align:center;background-color:transparent !important;border:1px solid #25c6d0 !important;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px;color:#8f8f8f;display:none;top:5px;left:5px;}
+#spacebttn{position:absolute;margin:0 1px 1px 0;width: 261px!important;height:27px;line-height:27px;text-align:center;background-color:transparent !important;border:1px solid #25c6d0 !important;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px;color:#8f8f8f;display:none;top:117px;left:85px;}
+#keyboard li {float:left;margin:0 1px 1px 0;width:27px;height:27px;line-height:27px;text-align:center;background:#fff;border:1px solid #e1e1e1;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-ms-border-radius:5px;color:#8f8f8f;}
+#keyboard li.letter{font-weight:bold;text-transform:uppercase;}
+#keyboard li.symbol{line-height: 10px;}
+#keyboard li.symbol span{font-size:9px;clear:both;}
+.capslock, .tab, .left-shift, .left-ctrl {clear: left;}
+#keyboard .tab{width:41px;font-size:9px;}
+#keyboard .delete {width:57px;font-size:9px;}
+#keyboard .slash{width:43px;}
+#keyboard .capslock {width: 53px;font-size:9px;}
+#keyboard .return {width: 59px;font-size:9px;}
+#keyboard .left-shift, #keyboard .right-shift {width:70px;font-size:9px;}
+#keyboard .left-ctrl, #keyboard .right-ctrl, #keyboard .left-alt, #keyboard .right-alt {width: 39px;font-size:9px;}
+.lastitem{margin-right: 0 !important;}
+.uppercase{text-transform: uppercase;}
+#keyboard .space{width: 261px;margin-buttom: 0 !important;}
+.on{display: none;}
+</style>
+<ul id="keyboard">
+    <li id="current"></li>
+    <li id="shiftbttn"></li>
+    <li id="slash"></li>
+    <li id="spacebttn"></li>
+    <li class="symbol"><span>~</span><br><span>`</span></li>
+    <li class="symbol"><span>!</span><br><span>1</span></li>
+    <li class="symbol"><span>@</span><br><span>2</span></li>
+    <li class="symbol"><span>#</span><br><span>3</span></li>
+    <li class="symbol"><span>$</span><br><span>4</span></li>
+    <li class="symbol"><span>%</span><br><span>5</span></li>
+    <li class="symbol"><span>^</span><br><span>6</span></li>
+    <li class="symbol"><span>&amp;</span><br><span>7</span></li>
+    <li class="symbol"><span>*</span><br><span>8</span></li>
+    <li class="symbol"><span>(</span><br><span>9</span></li>
+    <li class="symbol"><span>)</span><br><span>0</span></li>
+    <li class="symbol"><span>_</span><br><span>-</span></li>
+    <li class="symbol"><span>+</span><br><span>=</span></li>
+    <li class="delete lastitem">Backspace</li>
+    <li class="tab">tab</li>
+    <li class="letter">q</li>
+    <li class="letter">w</li>
+    <li class="letter">e</li>
+    <li class="letter">r</li>
+    <li class="letter">t</li>
+    <li class="letter">y</li>
+    <li class="letter">u</li>
+    <li class="letter">i</li>
+    <li class="letter">o</li>
+    <li class="letter">p</li>
+    <li class="symbol"><span>{</span><br><span>[</span></li>
+    <li class="symbol"><span>}</span><br><span>]</span></li>
+    <li class="symbol slash lastitem"><span>|</span><br><span>\</span></li>
+    <li class="capslock">Caps lock</li>
+    <li class="letter">a</li>
+    <li class="letter">s</li>
+    <li class="letter">d</li>
+    <li class="letter">f</li>
+    <li class="letter">g</li>
+    <li class="letter">h</li>
+    <li class="letter">j</li>
+    <li class="letter">k</li>
+    <li class="letter">l</li>
+    <li class="symbol"><span>:</span><br><span>;</span></li>
+    <li class="symbol"><span>&quot;</span><br><span>'</span></li>
+    <li class="return lastitem">Enter</li>
+    <li class="left-shift">Shift</li>
+    <li class="letter">z</li>
+    <li class="letter">x</li>
+    <li class="letter">c</li>
+    <li class="letter">v</li>
+    <li class="letter">b</li>
+    <li class="letter">n</li>
+    <li class="letter">m</li>
+    <li class="symbol"><span>&lt;</span><br><span>,</span></li>
+    <li class="symbol"><span>&gt;</span><br><span>.</span></li>
+    <li class="symbol"><span>?</span><br><span>/</span></li>
+    <li class="right-shift lastitem">Shift</li>
+    <li class="left-ctrl">Ctrl</li>
+    <li class="left-alt">Alt</li>
+    <li class="space">&nbsp;</li>
+    <li class="right-alt">Alt</li>
+    <li class="right-ctrl lastitem">Ctrl</li>
+</ul>

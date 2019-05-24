@@ -1,0 +1,54 @@
+App\Entity\Game:
+    type: entity
+    table: game
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        mnTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: mn_title
+        enTitle:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: en_title
+        mnDiscription:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: mn_discription
+        enDiscription:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: en_discription
+        picture:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        body:
+            type: text
+            nullable: false
+            length: 65535
+            options:
+                fixed: false
+    lifecycleCallbacks: {  }

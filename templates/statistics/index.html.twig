@@ -1,0 +1,283 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="my_content">
+        <div class="right_ads">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                {% include 'tipday.html.twig' %}
+            {% else %}
+                {% include 'rec_regbox.html.twig' %}
+            {% endif %}
+
+            {% include 'levelbox.html.twig' %}
+
+            {% include 'wall_fame.html.twig' %}
+        </div>
+
+        <div class="content">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}{% else %}
+                <div class="login_warring"><a class="close" onclick="jQuery(this).parent().hide()">x</a>{% trans %}You are not logged in. Typing progress will not be saved.{% endtrans %}</div>
+            {% endif %}
+            <div class="container">
+                <section class="widget_accordion">
+                    <ul>
+                        <li>
+                            <article>
+                                <div id="accordion-item">
+                                    <div class="button active" >
+                                        <span>+</span>
+                                        <span>-</span>
+                                    </div>
+                                    <header>
+                                        <h2 class="tran03slinear">{% trans %}Mongolia Course Overview Statistics{% endtrans %}</h2>
+                                    </header>
+                                </div>
+                                <div class="item-container" style="display:block;">
+                                    <ul>
+                                        <li>
+                                            <a id="mongolianSUMMARY" class="graph-stat">
+                                                {% trans %}Progress Summary{% endtrans %}
+                                                <span class="start-btn">{% trans %}View{% endtrans %} »</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="mongolianACTIVITY" class="graph-stat">
+                                                {% trans %}Time Spent Typing (by day){% endtrans %}
+                                                <span class="start-btn">{% trans %}View{% endtrans %} »</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="mongolianPROBLEM_KEYS" class="graph-stat">
+                                                {% trans %}Your Problem Keys{% endtrans %}
+                                                <span class="start-btn">{% trans %}View{% endtrans %} »</span>
+                                            </a>
+                                            <a href="#" class="clr_status" id="mongolia-PROBLEM_KEYS">{% trans %}Clear Statistics{% endtrans %}</a>
+                                        </li>
+                                        <li>
+                                            <a id="mongolianTYPING_TEST" class="graph-stat">
+                                                {% trans %}Typing Test Results{% endtrans %}
+                                                <span class="start-btn">{% trans %}View{% endtrans %} »</span>
+                                            </a>
+                                            <a href="#" class="clr_status" id="mongolia-TYPING_TEST">{% trans %}Clear Statistics{% endtrans %}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li>
+                            <article>
+                                <div id="accordion-item">
+                                    <div class="button" >
+                                        <span>+</span>
+                                        <span>-</span>
+                                    </div>
+                                    <header>
+                                        <h2 class="tran03slinear">{% trans %}English Course Overview Statistics{% endtrans %}</h2>
+                                    </header>
+                                </div>
+                                <div class="item-container" style="display:block;">
+                                    <ul>
+                                        <li>
+                                            <a id="englishSUMMARY" class="graph-stat">
+                                                {% trans %}Progress Summary{% endtrans %}
+                                                <span class="start-btn">{% trans %}View{% endtrans %} »</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="englishACTIVITY" class="graph-stat">
+                                                {% trans %}Time Spent Typing (by day){% endtrans %}
+                                                <span class="start-btn">{% trans %}View{% endtrans %} »</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a id="englishPROBLEM_KEYS" class="graph-stat">
+                                                {% trans %}Your Problem Keys{% endtrans %}
+                                                <span class="start-btn">{% trans %}View{% endtrans %} »</span>
+                                            </a>
+                                            <a href="#" class="clr_status" id="english-PROBLEM_KEYS">{% trans %}Clear Statistics{% endtrans %}</a>
+                                        </li>
+                                        <li>
+                                            <a id="englishTYPING_TEST" class="graph-stat">
+                                                {% trans %}Typing Test Results{% endtrans %}
+                                                <span class="start-btn">{% trans %}View{% endtrans %} »</span>
+                                            </a>
+                                            <a href="#" class="clr_status" id="english-TYPING_TEST">{% trans %}Clear Statistics{% endtrans %}</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+    <textarea id="graph-template">
+      <div class="stat-container">
+    		<div class="stat-header"><h1>{graph}</h1></div>
+    		<div class="reg-close" onclick="window.parent.Shadowbox.close()">
+        <i class="fa fa-times" aria-hidden="true" alt="Close Window"></i>
+        </div>
+
+    		<div class="stat-graph" id="graph-{id}">
+
+    		</div>
+    		<div class="stat-leftbar" onclick="location.href = '/student/statistics/{lang}/export/id/{id}/lid'">
+    			export »
+    		</div>
+    		<div class="stat-rightbar">
+    			<!-- Some further information can go here -->
+    		</div>
+    	</div>
+    </textarea>
+
+{% endblock body %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ asset('js/shadowbox3/shadowbox.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('resources/css/ext-all.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('resources/css/xtheme-gray.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('css/statistics.css') }}" />
+{% endblock stylesheets %}
+
+{% block javascripts %}
+    <script type="text/javascript" src="{{ asset('js/shadowbox3/shadowbox.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('adapter/ext/ext-base.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/ext-all.js') }}"></script>
+    <script src="{{ asset('fusioncharts/fusioncharts.js') }}"></script>
+    <script>
+    url = {};
+    url = {
+        "TUTOR_STATISTICS_GRAPH": "{{ path('usersexportpage', { 'lang':'_lang_id', 'type':'_type_id'}) }}",
+        "TUTOR_STATISTICS_DELETE": "{{ path('status_del') }}",
+    };
+    text = {};
+    text = {
+    "SUMMARY": "{% trans %}Progress Summary{% endtrans %}",
+    "ACTIVITY": "{% trans %}Time Spent Typing (by day){% endtrans %}",
+    "PROBLEM_KEYS": "{% trans %}Your Problem Keys{% endtrans %}",
+    "TYPING_TEST": "{% trans %}Typing Test Results{% endtrans %}",
+    "GRAPH_NO_DATA": "{% trans %}No data to display. You must type more lessons to view statistics.{% endtrans %}",
+    "GRAPH_NO_DATA_ERROR": "{% trans %}Error in loading data.{% endtrans %}",
+    "LOAD_MESSAGE":"{% trans %}Retrieving data. Please wait.{% endtrans %}",
+    "PLEASE_WAIT": "{% trans %}Please wait{% endtrans %}...",
+    "CLEARING_STATISTICS": "{% trans %}Clearing statistics{% endtrans %}",
+    "CLEAR_STATS": "{% trans %}Clear Statistics{% endtrans %}",
+    "ARE_YOU_SURE": "{% trans %}Are you sure{% endtrans %}?",
+    "ADS_BENEFIT1": "Remove Ads",
+    "ADS_BENEFIT2": "Unlock Premium Lessons",
+    "ADS_PRICE": "Only $9.99",
+    "ADVANCED": "Advanced",
+    "BASED_ON_TYPING_TESTS": "Based on typing test",
+    "BEGINNER": "Beginner",
+    "CANCEL": "Cancel",
+    "CERTIFICATION": "Certifications",
+    "COMMUNICATIONS_ERROR": "Bicheech.com Communications Error",
+    "COMMUNICATIONS_ERROR_TEXT": "Your computer is unable to communicate with the Bicheech.com.  It is possible you have lost your Internet connection.  Please check your connection and restart.",
+    "CONGRATULATIONS": "Congratulations!",
+    "FEMALE": "Female",
+    "HALL_OF_FAME": "hall of fame",
+    "HEADLINE_EXERCISES": "News Headline Exercises",
+    "HELLO": "Hello",
+    "IE6_ERROR_NOTICE": "YOU ARE RUNNING AN UNSUPPORTED WEB BROWSER <a href=\"#\" id=\"ie6-help\">what is this?</a>",
+    "INACTIVE_TEXT": "You have been logged out due to inactivity.",
+    "INTERMEDIATE": "Intermediate",
+    "ITS_FREE": "It's free",
+    "I_AM_A": "I am a",
+    "I_LIVE_IN": "I live in",
+    "I_WAS_BORN_IN": "I was born in",
+    "LOGGED_OUT": "Logged Out",
+    "LOGGED_OUT_TEXT": "You have been logged out by the Administrator.",
+    "LOG_IN_NOW": "Would you like to sign in or register now? Registration is completely free.",
+    "LOG_OUT_TEXT": "Are you sure you want to log out?",
+    "MALE": "Male",
+    "MUST_LOG_IN": "You must be registered and signed in to use this feature.",
+    "NAV_CERTIFICATION": "Certifications",
+    "NAV_COURSES": "Courses",
+    "NAV_GAMES": "Games",
+    "NAV_HALL_OF_FAME": "Hall of Fame",
+    "NAV_HELP": "Help",
+    "NAV_LOG_IN": "Log In",
+    "NAV_LOG_OUT": "Log Out",
+    "NAV_PREFERENCES": "Preferences",
+    "NAV_SCOREBOARD": "Class Scoreboard",
+    "NAV_SELECT_LANGUAGE": "Language & Keyboard",
+    "NAV_SKINS": "Skins",
+    "NAV_STATISTICS": "Statistics",
+    "NAV_TEST": "Test",
+    "NAV_TROPHIES": "Trophies",
+    "NEW": "new",
+    "NO": "No",
+    "NOT_LOGGED_IN_CALLOUT": "You are not logged in.  Typing progress will not be saved.",
+    "OFFICIAL": "Official",
+    "ONLINE_TYPING_TUTOR": "Online Typing Tutor",
+    "PLEASE_LOG_IN": "Please Log In",
+    "PREMIUM_LESSONS": "Premium Lessons",
+    "QUICK_SURVEY": "Quick Survey",
+    "REGISTER_NOW": "Register Now",
+    "REGISTER_NOW_TEXT": "Register with Bicheech.com to track your progress, access additional content and compete for your place in the Hall of Fame.",
+    "REMOVE_ADS": "UPGRADE ACCOUNT",
+    "REMOVE_ADS_TEXT": "<u>Remove annoying ads</u><br />Access premium lessons<br />Receive priority support",
+    "REMOVE_ADS_TEXT2": "ONLY $9.99!",
+    "RESTART_LESSON": "Restart Lesson?",
+    "RESTART_LESSON_TEXT": "Are you sure you would like to restart the lesson?",
+    "SCOREBOARD": "Scoreboard",
+    "SEND": "send",
+    "SUGGEST_TRANSLATION": "Suggest Translation Improvement",
+    "TAKE_TYPING_TEST": "Take Typing Test",
+    "TEACHER_TOOLS": "Teacher Tools",
+    "THANK_YOU": "Thank You!",
+    "TIMED_OUT_TEXT": "Your session has timed out.  Please log back in.",
+    "TIP_OF_THE_DAY": "Tip of the Day",
+    "UNKNOWN": "Unknown",
+    "UPGRADE_ACCOUNT": "UPGRADE <span>account</span>",
+    "WHOS_TYPING_NOW": "Who's Typing Now?",
+    "YES": "Yes",
+    "YOUR_SKILL_LEVEL": "Your Skill Level",
+    "ACCURACY": "Accuracy",
+    "ADVANCED_COURSE": "Advanced Course",
+    "BEGINNER_COURSE": "Beginner Course",
+    "BY_AGE": "By Age",
+    "BY_COUNTRY": "By Country",
+    "BY_GENDER": "By Gender",
+    "CERTIFICATE": "Record of Completion (printable)",
+    "COMPLETED": "Completed",
+    "COURSE": "Course",
+    "DEMOGRAPHIC": "Demographic",
+    "EXPORT": "export",
+    "EXPORT_ALL": "export all",
+    "GROSS_SPEED": "Gross Speed",
+    "INTERMEDIATE_COURSE": "Intermediate Course",
+    "LESSONS": "Lessons",
+    "LESSON_DETAILED": "Lesson Detailed",
+    "NET_SPEED": "Net Speed",
+    "NO_LESSONS": "You have not completed any lessons.",
+    "OVERVIEW": "Overview",
+    "PROGRESS": "Progress",
+    "SPECIALTY_COURSE": "Specialty Course",
+    "SPEED": "Speed",
+    "STATISTICS": "Statistics",
+    "TEST_TIME": "Test Time",
+    "VIEW": "view"
+};
+    </script>
+    <script>
+    		Shadowbox.init({
+    			 skipSetup: true,
+    			 animate: false,
+    			 animateFade: true,
+    			 animSequence: false,
+    			 modal: true,
+    			 overlayOpacity: 0.5,
+    			 displayNav: false,
+    			 enableKeys: false
+    		});
+  	</script>
+    <script type="text/javascript" src="{{ asset('js/statistics.js') }}"></script>
+{% endblock javascripts %}

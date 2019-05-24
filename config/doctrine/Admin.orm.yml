@@ -1,0 +1,59 @@
+App\Entity\Admin:
+    type: entity
+    table: admin
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        username:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+        email:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        password:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+        salt:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+        activationkey:
+            type: string
+            nullable: false
+            length: 100
+            options:
+                fixed: false
+            column: activationKey
+        isActive:
+            type: boolean
+            nullable: false
+            column: is_active
+        lastlogin:
+            type: datetime
+            nullable: false
+            column: lastLogin
+        created:
+            type: datetime
+            nullable: false
+        updated:
+            type: datetime
+            nullable: false
+    lifecycleCallbacks: {  }
