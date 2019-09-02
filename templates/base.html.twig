@@ -34,29 +34,34 @@
                     <div class="extra_box">
                         <div class="extra_item text pull-left">{% trans %}free online typing tutor.{% endtrans %}</div>
 
-                        <div class="pull-right">
+                        <a href="javascript:void(0);" class="extra_item text topRetrievedMenu" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <div id="TopExtraNav" class="pull-right">
                             {% if app.user %}
                                 {% if is_granted('ROLE_TEACHER') == 0 %}
-                                    <a href="{{ path('tutor_user_profile_change') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
-                                    <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
-                                    <a class="extra_item text">{% trans %}Hi{% endtrans %} {{app.user.username}}</a>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{ path('tutor_user_profile_change') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>
+                                    <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>
+                                    <a class="extra_item text">{% trans %}Hi{% endtrans %} {{app.user.username}}</a>
                                     <a href="{{ path('student_logout') }}" class="extra_item text">{% trans %}Logout{% endtrans %}</a>
                                 {% else %}
 
-                                    <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
-                                    <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;
-                                    <a href="{{ path('teacher_login') }}" class="extra_item text">{% trans %}Teacher Tools{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
-                                    <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Login{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                    <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>
+                                    <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>
+                                    <a class="extra_item text">|</a>
+                                    <a href="{{ path('teacher_login') }}" class="extra_item text">{% trans %}Teacher Tools{% endtrans %}</a>
+                                    <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Login{% endtrans %}</a>
                                     <a href="{{ path('tutor_new_register') }}" class="extra_item text">{% trans %}Sign up{% endtrans %}</a>
 
                                 {% endif %}
 
                             {% else %}
 
-                                <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
-                                <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;
-                                <a href="{{ path('teacher_login') }}" class="extra_item text">{% trans %}Teacher Tools{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
-                                <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Login{% endtrans %}</a>&nbsp;&nbsp;&nbsp;
+                                <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Preferences{% endtrans %}</a>
+                                <a href="{{ path('contactus_index') }}" class="extra_item text">{% trans %}Contact Us{% endtrans %}</a>
+                                <a class="extra_item text">|</a>
+                                <a href="{{ path('teacher_login') }}" class="extra_item text">{% trans %}Teacher Tools{% endtrans %}</a>
+                                <a href="{{ path('student_login') }}" class="extra_item text">{% trans %}Login{% endtrans %}</a>
                                 <a href="{{ path('tutor_new_register') }}" class="extra_item text">{% trans %}Sign up{% endtrans %}</a>
 
                             {% endif %}
@@ -72,7 +77,10 @@
 
 				                    <a href="{{ path('_welcome') }}" title="Bicheech"><div class="logo"></div></a>
 
-                            <div class="sf-menu">
+                            <a href="javascript:void(0);" class="extra_item text mainRetrievedMenu" onclick="mainFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                            <div id="MainNav" class="sf-menu">
                                 <ul>
                                 {% if app.user %}
                                     {% if is_granted('ROLE_TEACHER') == 0 %}
@@ -156,6 +164,24 @@
           ga('create', 'UA-28558881-1', 'auto');
           ga('send', 'pageview');
 
+        </script>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("TopExtraNav");
+                if (x.className === "pull-right") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "pull-right";
+                }
+            }
+            function mainFunction() {
+                var x = document.getElementById("MainNav");
+                if (x.className === "sf-menu") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "sf-menu";
+                }
+            }
         </script>
     </body>
 </html>
