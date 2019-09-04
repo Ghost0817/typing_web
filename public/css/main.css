@@ -2971,6 +2971,69 @@ body footer .footer-content a:active{
         text-align: left;
     }
     /* end main menu */
+
+    .sf_content .my_content{
+        width: 100%;
+    }
+    .sf_content .my_content .content-mid{
+        width: 100%;
+        float: left;
+    }
+    div.bread-crumb, div.bread-crumb a:link, div.bread-crumb a:visited, div.bread-crumb a:hover, div.bread-crumb a:active
+    {
+        line-height: 16px;
+    }
+    .typing-box .typing-status .time,
+    .typing-box .typing-status .wpm,
+    .typing-box .typing-status .pro,
+    .typing-box .typing-status .lwpm,
+    .typing-box .typing-status .lpro,
+    .typing-box .typing-status .full-screen,
+    .typing-box .typing-status .volume.off
+    {
+    }
+    .typing-box .typing-status .time span, .typing-box .typing-status .wpm span, .typing-box .typing-status .lpro span, .typing-box .typing-status .pro span, .typing-box .typing-status .lwpm span
+    {
+        
+    }
+    .typingtext{
+        width: 100%;
+    }
+    .typingtext div.lesson-text{
+        width: 100%;
+    }
+    .typing-box .typing-position{
+        display: none;
+    }
+
+    /* start popup box */
+    div.lesson-box-text h2{
+        font-size: 20px;
+        float: left;
+    }
+    .lesson-box-text h2 div{
+        padding: 10px 0px;
+        text-align: left;
+        float: left;
+    }
+    div.lesson-box-begin {
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+    div.lesson-box-begin div{
+        float: left;
+        text-align: center;
+    }
+    .lesson-box-begin div a{
+        float: left;
+        position: relative;
+    }
+    #sb-body img {
+        width: 100%;
+    }
+    /* end popup box */
+
 } 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
