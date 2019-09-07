@@ -72,7 +72,7 @@
                         </div>
                     </div>
 
-                    <div class="typing-position" id="keyboardshell" style="{% if subentities.isshowkeys == "" %}visibility:hidden;{% endif %}{% if subentities.keyLayout == 'Keyboard' %}width:100%;{% endif %}{% if subentities.keyLayout == 'Keypad' %}width:330px;{% endif %}">
+                    <div class="typing-position" id="keyboardshell">
                         {% if subentities.keyLayout == 'Keyboard' %}
                             <div class="hands">
                                 <img src="{{ asset('css/images/lhand_'~app.request.locale~'.png') }}" width="166px" alt="Left Hand" />
@@ -241,7 +241,6 @@
 {% endblock body %}
 
 {% block stylesheets %}
-<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/lesson.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('js/shadowbox3/shadowbox.css') }}" />
 {% endblock %}

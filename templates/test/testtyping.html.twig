@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="typing-diagram">
-                    <a onclick="jQuery('.typing-position').css('display') == 'block' ? jQuery('.typing-position').hide():jQuery('.typing-position').show();">Гарын зурагийг нээх ба хаах</a>
+                    <a onclick="jQuery('.typing-position').css('visibility') == 'visible' ? (jQuery('.typing-position').css('visibility','hidden')) :(jQuery('.typing-position').css('visibility','visible'));">{% trans %}Show/Hide Keyboard Diagram{% endtrans %} »</a>
                 </div>
             </div>
         </div>
@@ -227,7 +227,6 @@
 {% endblock body %}
 
 {% block stylesheets %}
-<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 <link rel="stylesheet" href="{{ asset('css/lesson.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('js/shadowbox3/shadowbox.css') }}" />
 {% endblock %}

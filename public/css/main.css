@@ -854,7 +854,7 @@ end header
 .sf_content .my_content .left_bar .remove-zars .remove-zarsmn{background: url(/Reclam/upgrade_mn.png) no-repeat;height:90px;width:160px;display:block;}
 .sf_content .my_content .left_bar .remove-zars .remove-zarsen{background: url(/Reclam/upgrade_en.png) no-repeat;height:90px;width:160px;display:block;}
 .sf_content .my_content .content{float:right;width:610px;min-height:250px;display:block;}
-.sf_content .my_content .right_ads{float:right;width:160px;min-height:250px;display:block !important;margin-left:10px;}
+.sf_content .my_content .right_ads{float:right;width:160px;min-height:250px;display:block;margin-left:10px;}
 .sf_content .my_content .content .login_warring{background-image: url("images/bg-lighting.png");background-position: 0px 0px;background-repeat: repeat-y;animation: animatedBackground 1s linear infinite;-ms-animation: animatedBackground 1s linear infinite;-moz-animation: animatedBackground 1s linear infinite;-webkit-animation: animatedBackground 1s linear infinite;border:1px solid #25c6d0;padding:8px 35px 8px 14px;margin-bottom:10px;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-tap-highlight-color:rgba(255, 255, 255, 0)!important;text-shadow:none;color:#FFFFFF;font-weight:bold;}
 .sf_content .my_content .content .login_warring .close{outline:none;float:right;font-size:20px;font-weight:bold;position:relative;top:0;right:-26px;color:#fff;line-height:14px;text-shadow:none;opacity:0.7;filter:alpha(opacity=60);padding:0 5px;cursor:pointer;text-decoration:none;}
 .sf_content .my_content .content .login_warring .close:hover{opacity:1;filter:alpha(opacity=100);}
@@ -2996,6 +2996,9 @@ body footer .footer-content a:active{
     {
         
     }
+    .typing-box .typing-text{
+        width: 100%;
+    }
     .typingtext{
         width: 100%;
     }
@@ -3003,7 +3006,38 @@ body footer .footer-content a:active{
         width: 100%;
     }
     .typing-box .typing-position{
+        display: none !important;
+    }
+
+    /*right_ads*/
+    .sf_content .my_content .right_ads{
         display: none;
+    }
+
+    /* upgrade page*/
+    .sf_content .my_content .upgrade_content{
+        background-size: 100%;
+        width: 100%;
+    }
+    .sf_content .my_content .upgrade_content .upgrade_head .upgrade_info h1{
+        font-size: 35px;
+    }
+    .sf_content .my_content .upgrade_content .upgrade_body{
+        width: 100%;
+        margin: 0;
+    }
+    .sf_content .my_content .upgrade_content .upgrade_body .titlewithline{
+        float: none;
+        display: inline-block;
+    }
+
+    /*login box*/
+    .middlebox{
+        width: 100%;
+    }
+
+    .sf_content .my_content .content{
+        width:100%;
     }
 
     /* start popup box */
@@ -3034,7 +3068,7 @@ body footer .footer-content a:active{
     }
     /* end popup box */
 
-} 
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
