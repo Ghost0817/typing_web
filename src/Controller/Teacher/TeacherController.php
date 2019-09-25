@@ -449,7 +449,7 @@ class TeacherController extends AbstractController
 
         $data =array();
 
-        foreach ($lssn as $key) {
+        foreach ($lssn1 as $key) {
           $course = $_locale == 'en'? $key['cenTitle']:$key['cmnTitle'];
           $name = $_locale == 'en'? $key['enTitle']:$key['mnTitle'];
           $row['lessonID'] = $key['lessonID'].'';
