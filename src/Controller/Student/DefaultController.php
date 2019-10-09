@@ -135,6 +135,7 @@ class DefaultController extends AbstractController
         $entities = $em->getRepository('App:Category')->findViewCategory($lang, $usr);
 
         $sbentities = null;
+        $as = null;
 
         if (!is_null($usr)) {
             $user = $this->getUser();

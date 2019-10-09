@@ -213,8 +213,6 @@ tw.lesson.prototype = {
 		Shadowbox.open({
 	        player: 'html',
 	        content: text,
-	        width: this.popupBoxWidth,
-	        height: this.popupBoxHeight,
 	        animateFade: false
     });
 	},

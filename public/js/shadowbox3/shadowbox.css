@@ -28,3 +28,19 @@
 #sb-counter a.sb-counter-current{text-decoration:underline;}
 div.sb-message{font-size:12px;padding:10px;text-align:center;}
 div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* start top extra menu */
+    #sb-wrapper {
+        top: 50px !important;
+        left: 0px !important;
+        width: 100% !important;
+        height: auto !important;
+        min-width: auto !important;
+    }
+    #sb-wrapper-inner{
+        height: 420px !important;
+    }
+}
