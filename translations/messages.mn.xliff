@@ -340,7 +340,7 @@
             </trans-unit>
             <trans-unit id="85">
                 <source>If a student account was created outside of your Portal, you can add it to your portal here by entering the student's username and password below.</source>
-                <target>Оюутны бүртгэл таны портал гадна бий болгосон бол, та үүнийг өөрийн порталд энэ доор оюутны хэрэглэгчийн нэр, нууц үгээ оруулж нэмж болно.</target>
+                <target>Сурагчийн бүртгэл таны портал гадна бий болгосон бол, та үүнийг өөрийн порталд энэ доор сурагчийн хэрэглэгчийн нэр, нууц үгээ оруулж нэмж болно.</target>
             </trans-unit>
             <trans-unit id="86">
                 <source>Yes</source>
@@ -504,7 +504,7 @@
             </trans-unit>
             <trans-unit id="126">
                 <source>Import Multiple Student Accounts</source>
-                <target>Олон Оюутны бүртгэл Импортлох</target>
+                <target>Олон сурагчийн бүртгэл Импортлох</target>
             </trans-unit>
             <trans-unit id="127">
                 <source>Bicheech.com's full typing curriculum</source>
@@ -512,7 +512,7 @@
             </trans-unit>
             <trans-unit id="128">
                 <source>Create Individual Student Accounts</source>
-                <target>Хувь хүний Оюутны бүртгэлүүдийг үүсгэх</target>
+                <target>Хувь хүний Сурагчийн бүртгэлүүдийг үүсгэх</target>
             </trans-unit>
             <trans-unit id="129">
                 <source>Please log in to continue.</source>
@@ -732,7 +732,7 @@
             </trans-unit>
             <trans-unit id="183">
                 <source>Create Student Account</source>
-                <target>Оюутны бүртгэл үүсгэх</target>
+                <target>Сурагчийн бүртгэл үүсгэх</target>
             </trans-unit>
             <trans-unit id="184">
                 <source>Have a question about your account, or about getting the most out of Bicheech? Premium members are guaranteed a fast response from our team of experts.</source>
@@ -740,7 +740,7 @@
             </trans-unit>
             <trans-unit id="185">
                 <source>Add Student Account</source>
-                <target>Оюутны бүртгэл нэмэх</target>
+                <target>Сурагчийн бүртгэл нэмэх</target>
             </trans-unit>
             <trans-unit id="186">
                 <source>Completed</source>
@@ -908,7 +908,7 @@
             </trans-unit>
             <trans-unit id="227">
                 <source>Export/download your student list to a CSV (comma separated values) file. Note that passwords are encrypted and therefore not exported.</source>
-                <target>Экспорт/ CSV (таслалаар тусгаарлагдсан утга) файлд өөрийн оюутны жагсаалтыг татаж авч болно. Нууц үг шифрлэгдсэн байдаг тул экспортлох боломжгүйг анхаарна уу.</target>
+                <target>Экспорт/ CSV (таслалаар тусгаарлагдсан утга) файлд өөрийн сурагчийн жагсаалтыг татаж авч болно. Нууц үг шифрлэгдсэн байдаг тул экспортлох боломжгүйг анхаарна уу.</target>
             </trans-unit>
             <trans-unit id="228">
                 <source>monitor your students' typing progress</source>
@@ -1256,7 +1256,7 @@
           </trans-unit>
           <trans-unit id="314">
               <source>Manage and grade your students</source>
-              <target>Оюутнуудаа удирдаж, зэрэглээрэй</target>
+              <target>Сурагчид удирдаж, зэрэглээрэй</target>
           </trans-unit>
           <trans-unit id="315">
               <source>School or Organization Name</source>
@@ -1380,7 +1380,7 @@
           </trans-unit>
           <trans-unit id="345">
               <source>create or import your student roster</source>
-              <target>оюутны жагсаалтыг үүсгэх буюу импорт хийх</target>
+              <target>сурагчийн жагсаалтыг үүсгэх буюу импорт хийх</target>
           </trans-unit>
           <trans-unit id="346">
               <source>Deleting Student(s)</source>
@@ -1631,12 +1631,20 @@
               <target>Бүртгэл амжилттай болсон</target>
           </trans-unit>
           <trans-unit id="408">
-              <source></source>
-              <target></target>
+              <source>You can import any number of students at once using our Student Import Tool. This will allow you to quickly create any number of unique usernames and passwords.</source>
+              <target>Та манай сурагчийн импортын хэрэгслийг ашиглан хэд хэдэн сурагчийг нэг дор импортлох боломжтой. Энэ нь танд олон тооны давтагдашгүй хэрэглэгчийн нэр ба нууц үгийг хурдан үүсгэх боломжийг олгоно.</target>
           </trans-unit>
           <trans-unit id="409">
-              <source></source>
-              <target></target>
+              <source>This allows you to add existing accounts, which were created either in a different portal, or registered manually using the typing tutor portion of Bicheech.com.</source>
+              <target>Энэ нь өөр портал дээр үүсгэгдсэн эсвэл Bicheech.com-ийн шивэлт заах хэсгийг ашиглан гараар бүртгүүлсэн дансуудыг нэмэх боломжийг олгоно.</target>
+          </trans-unit>
+          <trans-unit id="410">
+              <source>BEGIN LESSON</source>
+              <target>ХИЧЭЭЛ ЭХЛЭХ</target>
+          </trans-unit>
+          <trans-unit id="411">
+              <source>Back to Courses</source>
+              <target>Курс руу Буцах</target>
           </trans-unit>
         </body>
     </file>
