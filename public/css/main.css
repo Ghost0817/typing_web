@@ -830,7 +830,7 @@ start header
 .header .header-menu .menu_layout .menu-box{width:100%;display:block;float:left;}
 .header .header-menu .menu_layout .menu-box .logo-box{display:block;float:left;width:100%;}
 .header .header-menu .menu_layout .menu-box .logo-box .logo{float:left;display:block;background: url(/css/images/logo.png) no-repeat;width: 168px;height: 41px;}
-.header .header-menu .menu_layout .menu-box .sf-menu{float:right;display:block;width:765px;}
+.header .header-menu .menu_layout .menu-box .sf-menu{float:right;display:block;width:auto;}
 .header .header-menu .menu_layout .menu-box .sf-menu ul{list-style-type:none;display:block;padding:0;margin:0;float:right;}
 .header .header-menu .menu_layout .menu-box .sf-menu ul li{border-bottom: 4px solid #fff;white-space: nowrap;padding:0;float:left;display:block;}
 .header .header-menu .menu_layout .menu-box .sf-menu ul li a{display:block;font-size:12px;font-weight: 500;height:37px;line-height:37px;text-decoration:none;zoom:1;position:relative;text-align:center;text-shadow: #FFF 0 1px 1px;color:#2F2F2F;white-space:nowrap;padding: 0px 10px;font-weight: bold;}
@@ -839,6 +839,7 @@ start header
 .header .header-menu .menu_layout .menu-box .sf-menu ul li a.removezaren{background: url(/css/images/remove_ads_button_en.png) no-repeat;height: 37px;width: 105px;}
 .header .header-menu .menu_layout .menu-box .sf-menu ul li:hover > a{color:#25C6D0;}
 .header .header-menu .menu_layout .menu-box .sf-menu ul li.current-menu-item > a{color:#25C6D0;}
+.header .header-menu .menu_layout .menu-box .sub-title{float: left;display: inline-block;line-height: 38px;padding-left: 8px;padding-top: 3px;}
 /*
 end header
 */
