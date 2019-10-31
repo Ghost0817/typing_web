@@ -3073,17 +3073,70 @@ body footer .footer-content a:active{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .header .header-links .extra_layout {
+        width: 100%;
+        display: block;
+    }
+    .header .header-menu .menu_layout {
+        width: 100%;
+    }
+    .sf_content .my_content{
+        width: 100%;
+    }
+    .typing-box .typing-position{
+        display: none !important;
+    }
+    .middlebox{
+        width: 100%;
+    }
+    .sf_content .my_content .content{
+        width:100%;
+    }
+    .sf_content .my_content .content-mid{
+        width: 100%;
+        float: left;
+    }
+    .typing-box .typing-text{
+        width: 100%;
+    }
+    .typingtext{
+        width: 100%;
+    }
 
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
+    .header .header-links .extra_layout {width: 100%;display: block;}
+    .header .header-menu .menu_layout {width: 100%;}
+    .sf_content .my_content{width: 100%;}
+    .typing-box .typing-position{display: none !important;}
+    .middlebox{width: 100%;}
+	.sf_content .my_content .content{width:610px;}
+    .sf_content .my_content .content-mid{width: 100%;float: right;}
+    .typing-box .typing-text{width: 100%;}
+    .typingtext{width: 100%;}
+	.typingtext div.lesson-text{width:100%;}
 } 
+/* additional style (landscape tablets, 778px and up) */
+@media only screen and (min-width: 778px) {
+    .typing-box .typing-text{width:auto;}
+	.typingtext{width:778px;}
+	.typingtext div.lesson-text{width:778px;}
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
+/* in this case our page is min-width 950px and up and we change min-width. */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 950px) {
+	.header .header-links .extra_layout{width:950px;}
+	.header .header-menu .menu_layout{width:950px;}
+	.sf_content .my_content{width:950px;}
+	.sf_content .my_content .content{width:610px;}
+	.sf_content .my_content .content-mid{width:780px;float: right;}
+    .typing-box .typing-text{width:auto;}
+	.typingtext{width:778px;}
+	.typingtext div.lesson-text{width:778px;}
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
