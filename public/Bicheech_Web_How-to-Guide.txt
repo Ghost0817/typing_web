@@ -1,0 +1,60 @@
+Technology in the Classroom –  Bicheech
+
+www.bicheech.com 
+
+Bicheech is a free online typing and keyboard tutorial of proven curriculum designed to improve students’ typing skills by preparing them for the Common Core State Standards Initiative for Writing. Manage student accounts from the Teacher Portal where you can also view and grade student progress. 
+Students learn typing skills through progressive lessons which keep track of problem keys creating custom lessons focusing on their 5 most troublesome letters. Students can also keep up with their own progress by completing the typing test at any time. With the completion of each activity, students earn trophies and certificates of completion. Students also earn extra motivation by competing for rank within the Class Scoreboard.
+This guide will be divided into two parts: Part 1 – Teacher Portal and Part 2 – Student Login 
+Part 1 – Teacher Portal
+Step 1) Teacher Portal Signup 
+Go to bicheech.com and click on Teacher Portal in the top right of the screen. In the Teacher Portal Signup box, enter your School Name, Your Name, Email, and create a Password. Enter your password again to confirm. Select your school type from the drop down menu, and click Sign Up.
+
+After creating your new Teacher Portal, you can log in at any time at bicheech.com by clicking on Teacher Log In at the top right of the home screen to access your account. Enter your email address and password to log in.
+After you create student accounts and classes, your students can access Bicheech at www.bicheech.com/mn/student/start by entering the usernames and passwords that you created for them. Note: Students can still practice their typing skills without an account by simply exiting out of the log in window; however, their progress will not be saved or monitored from Teacher Portal.
+Step 2) Teacher Portal 
+After creating an account or logging into Bicheech, you will be directed to the Teacher Portal. From the Teacher Portal, you can manage your students and classes, review reports, and view the Bicheech lessons. 
+On the Dashboard of the Teacher Portal is the Student Radar, which allows you to monitor your students in real time as they complete lesson, play games, and take tests.
+Step 3) Create a Class 
+This step is most beneficial if you teach more than one class. 
+a)	Click on the Classes Tab at the top of the Teacher Portal to view the Classes page. 
+b)	Click on the Create New Class button. 
+c)	Enter a name for the class in the pop-up window, and click on Save. You can create as many classes as needed. 
+Step 4) Create Student Accounts
+a)	Click on the Students Tab at the top of the Teacher Portal to view the Students page. To add students, click on the Create/Import Accounts button on the left of the page. 
+b)	There are 3 options to create or import your student roster. 
+•	Option 1: Create Individual Student Accounts 
+Choose a unique username and password for your individual students. Since Bicheech is a free site with multiple users, you must choose a very unique username for each student. The username must be between 4 and 30 characters and can contain only letters, numbers, underscores (_), and one dot. Select the class (if any). Optional fields include the student’s first name, last name, and email address. Click on Create Student Account when finished. You will have to provide each student with his or her created username and password.
+•	Option 2: Import Multiple Student Accounts 
+With this option, you can import any number of students at once using the Student Import Tool. This tool allows you to quickly create any number of unique usernames and passwords. Click on Go to Student Import Tool to begin.
+To use the Student Import Tool, you upload your student information in a CSV spreadsheet in Microsoft Excel. Bicheech provides an example file for your use. Click on Click here for an example file to download the sample CSV file.
+In the downloaded template, input the student information in the following column order: Column A – Username, Column B – Password, Column C – First name, Column D – Last name, and Column E – Email address. Only the username and password are required.
+After save your file, upload it to Bicheech by clicking the Browse button. From the drop down menu, select the class (if any) to import the students. Click Begin Import.
+In the next page, review the information and click the Complete Import button at the bottom of the table. If you need to change any information, go back to the previous page and edit and save the spreadsheet before uploading it again.
+You will be taken back to the Student Import Tool and see a message stating that your student accounts have been successfully imported.
+•	Option 3: Add Existing Accounts
+If a student account was created outside of your Teacher Portal (i.e. in another teacher’s class), you can add the account to your Portal by entering the student’s username and password.
+Click on the Students tab to view all of the created student accounts. Click on the pencil next to each name to edit the details for the student. Click on the magnifying glass to view the detailed information for each student including their progress and account activity.
+On the Students page you can also change the class of a student, reset an account, reset a password, or delete an account.
+Step 5) Manage Your Students
+a)	As your students complete lessons, games, and tests on Bicheech; you can view their progress in real time on the Student Radar on your Dashboard, which can be accessed at any time by clicking on the Dashboard tab of your Teacher Portal. 
+b)	You can also view detailed information for each student by clicking on the magnifying glass or double clicking on a row under the Students Tab. 
+c)	On the Student Details page, you can view a student’s lesson and typing test progress, including gross typing speed (words per minute), accuracy, net speed, time spent on each activity, individual activity progress, and the last log in date.
+You can also view and export graphs of problem keys and activity summaries.
+Step 6) Monitor Your Students’ Typing Progress
+a)	Click on the Report Tab at the top of the teacher portal to generate custom reports on student progress.
+b)	To generate a report from the Reports page you must: 
+•	Select a Date Range: Custom (you must choose the dates within the past 40 days), Today, Yesterday, This Week, Last Week, or All Time. 
+•	Select a Report: Student Progress Summary, Detailed by Lesson, Typing Tests, or Class Scoreboard 
+•	Select a Class 
+Click the Run Report button to generate the report on the page. You also have the option to Export the report as an Excel spreadsheet or Print it.
+Bicheech’s World Class Typing Curriculum 
+Click on the Lessons Tab to view the different typing curriculum available to you and your students. Click on the magnifying glass next to a lesson title to view the lesson’s details.
+
+Courses are categorized as Beginner, Intermediate, Advanced, and Specialty. Note that some lessons are only available with a paid premium account, but the majority is available with the free version.
+Part 2 – Student Login
+
+•	Students access Bicheech at URL www.bicheech.com/mn/tutor/start. Students enter their teacher-created usernames and passwords to log in. Students can access this site and complete activities from anywhere. 
+•	Students start a lesson by clicking on a Course Category and selecting a lesson name. As a student begins to tackle a lesson, his or her progress will be displayed next to the title. A student’s skill level is always displayed on the left of the screen. 
+As students participate in an activity, they are presented with a diagram of the keyboard on the screen to help them with their finger placements without looking at the keyboard. They also receive immediate feedback as they progress through the lesson including speed and accuracy.
+•	Students can also take a break from their lessons by playing typing games, which are found under the Games Tab. The time a student spends playing a game will not be recorded on the student detail page on the Teacher Portal. As a result you will know if a student spends all of his or her time playing games instead of completing lessons.
+•	TypingWeb suggests that students take a typing test under the Typing Tab after completing a lesson to track their progress. Their progress can be viewed from your Teacher Portal.
